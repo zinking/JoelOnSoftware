@@ -4,7 +4,7 @@
 
 #Joel测试：12步写出更高质量代码
 
->#####by Joel Spolsky Wednesday, August 09, 2000
+>######by Joel Spolsky Wednesday, August 09, 2000
 ---
 >Have you ever heard of SEMA ? It's a fairly esoteric system for measuring how good a software team is. No, wait! Don't follow that link! It will take you about six years just to understand that stuff. So I've come up with my own, highly irresponsible, sloppy test to rate the quality of a software team. The great part about it is that it takes about 3 minutes. With all the time you save, you can go to medical school.
 
