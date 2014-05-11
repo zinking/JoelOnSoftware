@@ -2,6 +2,7 @@ var path = require("path");
 
 module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-gitbook');
+    grunt.loadNpmTasks('grunt-build-gh-pages');
     grunt.loadNpmTasks('grunt-gh-pages');
     grunt.loadNpmTasks('grunt-contrib-clean');
     grunt.loadNpmTasks('grunt-http-server');
