@@ -1,2 +1,0 @@
-# Joel On Software
-
