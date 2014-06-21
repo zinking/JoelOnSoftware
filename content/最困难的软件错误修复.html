@@ -1,0 +1,855 @@
+<!DOCTYPE HTML>
+<html lang="en-US" manifest="../manifest.appcache">
+    <head prefix="og: http://ogp.me/ns# book: http://ogp.me/ns/book#">
+        
+        <meta charset="UTF-8">
+        <title>最困难的软件错误修复 | JoelOnSoftware</title>
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="robots" content="index, follow">
+        <meta name="author" content="zinking">
+        <meta name="description" content="����Joel̸����">
+        <meta name="keywords" content="gitbook,github" >
+        <meta name="generator" content="www.gitbook.io">
+
+        
+        <link rel="next" href="../content/别让宇航架构师吓倒你.html" />
+        
+        
+        <link rel="prev" href="../content/每日构建是你的朋友.html" />
+        
+
+        <meta property="og:title" content="最困难的软件错误修复 | JoelOnSoftware">
+        <meta property="og:site_name" content="JoelOnSoftware">
+        <meta property="og:type" content="book">
+        <meta property="og:locale" content="en_US">
+
+        <meta property="book:author" content="https://github.com/zinking">
+        <meta property="book:tag" content="GitBook">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+        <link rel="shortcut icon" href="..\gitbook/images/favicon.ico" type="image/x-icon">
+        
+    </head>
+    <body>
+        
+
+        <link rel="stylesheet" href="..\gitbook/style.css">
+        
+
+
+        
+    <div class="book" data-github="zinking/JoelOnSoftware" data-level="14" data-basepath=".." data-revision="1403332886419">
+    <div class="book-header">
+    <!-- Actions Left -->
+    
+    <a href="https://github.com/zinking/JoelOnSoftware" target="_blank" class="btn pull-left"><i class="fa fa-bookmark-o"></i></a>
+    
+    <a href="#" class="btn pull-left toggle-summary"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search"><i class="fa fa-search"></i></a>
+    <span id="font-settings-wrapper">
+        <a href="#" class="btn pull-left toggle-font-settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+	<div class="dropdown-caret">
+  <span class="caret-outer"></span>
+  <span class="caret-inner"></span>
+</div>
+
+	<div class="btn-group btn-block">
+		<button id="reduce-font-size" class="btn btn-default">A</button>
+		<button id="enlarge-font-size" class="btn btn-default">A</button>
+	</div>
+
+	<ul class="list-group font-family-list">
+		<li class="list-group-item" data-font="0">Serif</li>
+		<li class="list-group-item" data-font="1">Sans</li>
+	</ul>
+
+	<div class="btn-group btn-group-xs btn-block color-theme-list">
+	  <button type="button" class="btn btn-default" id="color-theme-preview-0" data-theme="0">White</button>
+	  <button type="button" class="btn btn-default" id="color-theme-preview-1" data-theme="1">Sepia</button>
+	  <button type="button" class="btn btn-default" id="color-theme-preview-2" data-theme="2">Night</button>
+	</div>
+</div>
+
+    </span>
+
+    <!-- Actions Right -->
+    
+    <a href="#" target="_blank" class="btn pull-right" data-sharing="google-plus"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right" data-sharing="facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right" data-sharing="twitter"><i class="fa fa-twitter"></i></a>
+    
+
+    
+    <a href="https://github.com/zinking/JoelOnSoftware/stargazers" target="_blank" class="btn pull-right count-star hidden-xs"><i class="fa fa-star-o"></i> Star (<span>-</span>)</a>
+    <a href="https://github.com/zinking/JoelOnSoftware/watchers" target="_blank" class="btn pull-right count-watch hidden-xs"><i class="fa fa-eye"></i> Watch (<span>-</span>)</a>
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-spinner fa-spin"></i>
+        <a href="../" >JoelOnSoftware</a>
+    </h1>
+</div>
+
+    <div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+        <li>
+            <a href="https://github.com/zinking" target="blank">About the author</a>
+        </li>
+        
+
+        
+        <li>
+            <a href="https://github.com/zinking/JoelOnSoftware/issues" target="blank">Questions and Issues</a>
+        </li>
+        
+
+        
+        <li>
+            <a href="https://github.com/zinking/JoelOnSoftware/edit/master/content/最困难的软件错误修复.md" target="blank">Edit and Contribute</a>
+        </li>
+        
+
+        
+        <li class="divider"></li>
+        
+
+        <li data-level="0" data-path="index.html">
+            <a href="../"><i class="fa fa-check"></i> Introduction</a>
+        </li>
+        
+            <li  data-level="1" data-path="content/选择一门语言.html">
+                
+                <a href="../content/选择一门语言.html">
+                    <i class="fa fa-check"></i> <b>1.</b> 选择一门语言
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="2" data-path="content/回归基础.html">
+                
+                <a href="../content/回归基础.html">
+                    <i class="fa fa-check"></i> <b>2.</b> 回归基础
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="3" data-path="content/Joel测试.html">
+                
+                <a href="../content/Joel测试.html">
+                    <i class="fa fa-check"></i> <b>3.</b> Joel测试
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="4" data-path="content/Unicode.html">
+                
+                <a href="../content/Unicode.html">
+                    <i class="fa fa-check"></i> <b>4.</b> Unicode
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="5" data-path="content/无痛功能规范-第一部分.html">
+                
+                <a href="../content/无痛功能规范-第一部分.html">
+                    <i class="fa fa-check"></i> <b>5.</b> 无痛功能规范-第一部分
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="6" data-path="content/功能规范-样例.html">
+                
+                <a href="../content/功能规范-样例.html">
+                    <i class="fa fa-check"></i> <b>6.</b> 功能规范-样例
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="7" data-path="content/无痛功能规范-第二部分.html">
+                
+                <a href="../content/无痛功能规范-第二部分.html">
+                    <i class="fa fa-check"></i> <b>7.</b> 无痛功能规范-第二部分
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="8" data-path="content/无痛功能规范-第三部分.html">
+                
+                <a href="../content/无痛功能规范-第三部分.html">
+                    <i class="fa fa-check"></i> <b>8.</b> 无痛功能规范-第三部分
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="9" data-path="content/无痛功能规范-第四部分.html">
+                
+                <a href="../content/无痛功能规范-第四部分.html">
+                    <i class="fa fa-check"></i> <b>9.</b> 无痛功能规范-第四部分
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="10" data-path="content/Joel测试.html">
+                
+                <a href="../content/Joel测试.html">
+                    <i class="fa fa-check"></i> <b>10.</b> Joel测试
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="11" data-path="content/Unicode.html">
+                
+                <a href="../content/Unicode.html">
+                    <i class="fa fa-check"></i> <b>11.</b> Unicode
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="12" data-path="content/基于事实的进度计划.html">
+                
+                <a href="../content/基于事实的进度计划.html">
+                    <i class="fa fa-check"></i> <b>12.</b> 基于事实的进度计划
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="13" data-path="content/每日构建是你的朋友.html">
+                
+                <a href="../content/每日构建是你的朋友.html">
+                    <i class="fa fa-check"></i> <b>13.</b> 每日构建是你的朋友
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="14" data-path="content/最困难的软件错误修复.html">
+                
+                <a href="../content/最困难的软件错误修复.html">
+                    <i class="fa fa-check"></i> <b>14.</b> 最困难的软件错误修复
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="15" data-path="content/别让宇航架构师吓倒你.html">
+                
+                <a href="../content/别让宇航架构师吓倒你.html">
+                    <i class="fa fa-check"></i> <b>15.</b> 别让宇航架构师吓倒你
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="16" data-path="content/五个世界.html">
+                
+                <a href="../content/五个世界.html">
+                    <i class="fa fa-check"></i> <b>16.</b> 五个世界
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="17" data-path="content/纸质原型.html">
+                
+                <a href="../content/纸质原型.html">
+                    <i class="fa fa-check"></i> <b>17.</b> 纸质原型
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="18" data-path="content/移动-开火.html">
+                
+                <a href="../content/移动-开火.html">
+                    <i class="fa fa-check"></i> <b>18.</b> 移动-开火
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="19" data-path="content/两种文化.html">
+                
+                <a href="../content/两种文化.html">
+                    <i class="fa fa-check"></i> <b>19.</b> 两种文化
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="20" data-path="content/从用户处自动获得崩溃报告.html">
+                
+                <a href="../content/从用户处自动获得崩溃报告.html">
+                    <i class="fa fa-check"></i> <b>20.</b> 从用户处自动获得崩溃报告
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="21" data-path="content/有害的薪酬激励.html">
+                
+                <a href="../content/有害的薪酬激励.html">
+                    <i class="fa fa-check"></i> <b>21.</b> 有害的薪酬激励
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="22" data-path="content/不用测试人员的五大错误理由.html">
+                
+                <a href="../content/不用测试人员的五大错误理由.html">
+                    <i class="fa fa-check"></i> <b>22.</b> 不用测试人员的五大错误理由
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="23" data-path="content/有害的工作切换.html">
+                
+                <a href="../content/有害的工作切换.html">
+                    <i class="fa fa-check"></i> <b>23.</b> 有害的工作切换
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="24" data-path="content/计算机科学的三个错误观念.html">
+                
+                <a href="../content/计算机科学的三个错误观念.html">
+                    <i class="fa fa-check"></i> <b>24.</b> 计算机科学的三个错误观念
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="25" data-path="content/突击面试指南-3.0.html">
+                
+                <a href="../content/突击面试指南-3.0.html">
+                    <i class="fa fa-check"></i> <b>25.</b> 突击面试指南-3.0
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="26" data-path="content/手艺.html">
+                
+                <a href="../content/手艺.html">
+                    <i class="fa fa-check"></i> <b>26.</b> 手艺
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="27" data-path="content/绝对不要做-第一部分.html">
+                
+                <a href="../content/绝对不要做-第一部分.html">
+                    <i class="fa fa-check"></i> <b>27.</b> 绝对不要做-第一部分
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="28" data-path="content/揭露冰山般的秘密.html">
+                
+                <a href="../content/揭露冰山般的秘密.html">
+                    <i class="fa fa-check"></i> <b>28.</b> 揭露冰山般的秘密
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="29" data-path="content/抽象失效定律.html">
+                
+                <a href="../content/抽象失效定律.html">
+                    <i class="fa fa-check"></i> <b>29.</b> 抽象失效定律
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="30" data-path="content/帕默斯顿勋爵谈编程.html">
+                
+                <a href="../content/帕默斯顿勋爵谈编程.html">
+                    <i class="fa fa-check"></i> <b>30.</b> 帕默斯顿勋爵谈编程
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="31" data-path="content/衡量.html">
+                
+                <a href="../content/衡量.html">
+                    <i class="fa fa-check"></i> <b>31.</b> 衡量
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="32" data-path="content/狗在这个国家是干什么的.html">
+                
+                <a href="../content/狗在这个国家是干什么的.html">
+                    <i class="fa fa-check"></i> <b>32.</b> 狗在这个国家是干什么的
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="33" data-path="content/初出茅庐的时候把事情做完.html">
+                
+                <a href="../content/初出茅庐的时候把事情做完.html">
+                    <i class="fa fa-check"></i> <b>33.</b> 初出茅庐的时候把事情做完
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="34" >
+                
+                <span><b>34.</b> [两个故事两个故事.md)</span>
+                
+                
+            </li>
+        
+            <li  data-level="35" data-path="content/再小的事也不简单.html">
+                
+                <a href="../content/再小的事也不简单.html">
+                    <i class="fa fa-check"></i> <b>35.</b> 再小的事也不简单
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="36" data-path="content/支持非我所创综合症.html">
+                
+                <a href="../content/支持非我所创综合症.html">
+                    <i class="fa fa-check"></i> <b>36.</b> 支持非我所创综合症
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="37" data-path="content/战略来信一-本杰瑞vs亚马逊.html">
+                
+                <a href="../content/战略来信一-本杰瑞vs亚马逊.html">
+                    <i class="fa fa-check"></i> <b>37.</b> 战略来信一-本杰瑞vs亚马逊
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="38" data-path="content/战略书信二-鸡和蛋问题.html">
+                
+                <a href="../content/战略书信二-鸡和蛋问题.html">
+                    <i class="fa fa-check"></i> <b>38.</b> 战略书信二-鸡和蛋问题
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="39" data-path="content/战略书信-让我回去.html">
+                
+                <a href="../content/战略书信-让我回去.html">
+                    <i class="fa fa-check"></i> <b>39.</b> 战略书信-让我回去
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="40" data-path="content/战略书信四-膨胀软件和神秘的8020原则.html">
+                
+                <a href="../content/战略书信四-膨胀软件和神秘的8020原则.html">
+                    <i class="fa fa-check"></i> <b>40.</b> 战略书信四-膨胀软件和神秘的8020原则
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="41" data-path="content/战略书信五-开源经济学.html">
+                
+                <a href="../content/战略书信五-开源经济学.html">
+                    <i class="fa fa-check"></i> <b>41.</b> 战略书信五-开源经济学
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="42" data-path="content/一周疯狂遭遇墨菲定律.html">
+                
+                <a href="../content/一周疯狂遭遇墨菲定律.html">
+                    <i class="fa fa-check"></i> <b>42.</b> 一周疯狂遭遇墨菲定律
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="43" data-path="content/微软是如何输掉API之战的.html">
+                
+                <a href="../content/微软是如何输掉API之战的.html">
+                    <i class="fa fa-check"></i> <b>43.</b> 微软是如何输掉API之战的
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="44" data-path="content/微软疯了.html">
+                
+                <a href="../content/微软疯了.html">
+                    <i class="fa fa-check"></i> <b>44.</b> 微软疯了
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="45" data-path="content/我们的.NET战略.html">
+                
+                <a href="../content/我们的.NET战略.html">
+                    <i class="fa fa-check"></i> <b>45.</b> 我们的.NET战略
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="46" data-path="content/先生我能要个编译器么.html">
+                
+                <a href="../content/先生我能要个编译器么.html">
+                    <i class="fa fa-check"></i> <b>46.</b> 先生我能要个编译器么
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="47" data-path="content/里克查普曼在搜寻愚蠢.html">
+                
+                <a href="../content/里克查普曼在搜寻愚蠢.html">
+                    <i class="fa fa-check"></i> <b>47.</b> 里克查普曼在搜寻愚蠢
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="48" data-path="content/巨无霸vs裸身大厨.html">
+                
+                <a href="../content/巨无霸vs裸身大厨.html">
+                    <i class="fa fa-check"></i> <b>48.</b> 巨无霸vs裸身大厨
+                </a>
+                
+                
+            </li>
+        
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="http://www.gitbook.io/" target="blank">Generated using GitBook</a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="page-wrapper" tabindex="-1">
+                <div class="book-progress">
+    <div class="bar">
+        <div class="inner" style="width: 13.333333333333334%;min-width: 11.11111111111111%;"></div>
+    </div>
+    <div class="chapters">
+    
+        <a href="../index.html" title="Introduction" class="chapter done new-chapter" data-progress="0" style="left: 0%;"></a>
+    
+        <a href="../content/选择一门语言.html" title="选择一门语言" class="chapter done new-chapter" data-progress="1" style="left: 2.2222222222222223%;"></a>
+    
+        <a href="../content/Joel测试.html" title="Joel测试" class="chapter done " data-progress="10" style="left: 4.444444444444445%;"></a>
+    
+        <a href="../content/Unicode.html" title="Unicode" class="chapter done " data-progress="11" style="left: 6.666666666666667%;"></a>
+    
+        <a href="../content/基于事实的进度计划.html" title="基于事实的进度计划" class="chapter done " data-progress="12" style="left: 8.88888888888889%;"></a>
+    
+        <a href="../content/每日构建是你的朋友.html" title="每日构建是你的朋友" class="chapter done " data-progress="13" style="left: 11.11111111111111%;"></a>
+    
+        <a href="../content/最困难的软件错误修复.html" title="最困难的软件错误修复" class="chapter done " data-progress="14" style="left: 13.333333333333334%;"></a>
+    
+        <a href="../content/别让宇航架构师吓倒你.html" title="别让宇航架构师吓倒你" class="chapter  " data-progress="15" style="left: 15.555555555555555%;"></a>
+    
+        <a href="../content/五个世界.html" title="五个世界" class="chapter  " data-progress="16" style="left: 17.77777777777778%;"></a>
+    
+        <a href="../content/纸质原型.html" title="纸质原型" class="chapter  " data-progress="17" style="left: 20%;"></a>
+    
+        <a href="../content/移动-开火.html" title="移动-开火" class="chapter  " data-progress="18" style="left: 22.22222222222222%;"></a>
+    
+        <a href="../content/两种文化.html" title="两种文化" class="chapter  " data-progress="19" style="left: 24.444444444444443%;"></a>
+    
+        <a href="../content/回归基础.html" title="回归基础" class="chapter  new-chapter" data-progress="2" style="left: 26.666666666666668%;"></a>
+    
+        <a href="../content/从用户处自动获得崩溃报告.html" title="从用户处自动获得崩溃报告" class="chapter  " data-progress="20" style="left: 28.88888888888889%;"></a>
+    
+        <a href="../content/有害的薪酬激励.html" title="有害的薪酬激励" class="chapter  " data-progress="21" style="left: 31.11111111111111%;"></a>
+    
+        <a href="../content/不用测试人员的五大错误理由.html" title="不用测试人员的五大错误理由" class="chapter  " data-progress="22" style="left: 33.333333333333336%;"></a>
+    
+        <a href="../content/有害的工作切换.html" title="有害的工作切换" class="chapter  " data-progress="23" style="left: 35.55555555555556%;"></a>
+    
+        <a href="../content/计算机科学的三个错误观念.html" title="计算机科学的三个错误观念" class="chapter  " data-progress="24" style="left: 37.77777777777778%;"></a>
+    
+        <a href="../content/突击面试指南-3.0.html" title="突击面试指南-3.0" class="chapter  " data-progress="25" style="left: 40%;"></a>
+    
+        <a href="../content/手艺.html" title="手艺" class="chapter  " data-progress="26" style="left: 42.22222222222222%;"></a>
+    
+        <a href="../content/绝对不要做-第一部分.html" title="绝对不要做-第一部分" class="chapter  " data-progress="27" style="left: 44.44444444444444%;"></a>
+    
+        <a href="../content/揭露冰山般的秘密.html" title="揭露冰山般的秘密" class="chapter  " data-progress="28" style="left: 46.666666666666664%;"></a>
+    
+        <a href="../content/抽象失效定律.html" title="抽象失效定律" class="chapter  " data-progress="29" style="left: 48.888888888888886%;"></a>
+    
+        <a href="../content/帕默斯顿勋爵谈编程.html" title="帕默斯顿勋爵谈编程" class="chapter  " data-progress="30" style="left: 51.111111111111114%;"></a>
+    
+        <a href="../content/衡量.html" title="衡量" class="chapter  " data-progress="31" style="left: 53.333333333333336%;"></a>
+    
+        <a href="../content/狗在这个国家是干什么的.html" title="狗在这个国家是干什么的" class="chapter  " data-progress="32" style="left: 55.55555555555556%;"></a>
+    
+        <a href="../content/初出茅庐的时候把事情做完.html" title="初出茅庐的时候把事情做完" class="chapter  " data-progress="33" style="left: 57.77777777777778%;"></a>
+    
+        <a href="../content/再小的事也不简单.html" title="再小的事也不简单" class="chapter  " data-progress="35" style="left: 60%;"></a>
+    
+        <a href="../content/支持非我所创综合症.html" title="支持非我所创综合症" class="chapter  " data-progress="36" style="left: 62.22222222222222%;"></a>
+    
+        <a href="../content/战略来信一-本杰瑞vs亚马逊.html" title="战略来信一-本杰瑞vs亚马逊" class="chapter  " data-progress="37" style="left: 64.44444444444444%;"></a>
+    
+        <a href="../content/战略书信二-鸡和蛋问题.html" title="战略书信二-鸡和蛋问题" class="chapter  " data-progress="38" style="left: 66.66666666666667%;"></a>
+    
+        <a href="../content/战略书信-让我回去.html" title="战略书信-让我回去" class="chapter  " data-progress="39" style="left: 68.88888888888889%;"></a>
+    
+        <a href="../content/战略书信四-膨胀软件和神秘的8020原则.html" title="战略书信四-膨胀软件和神秘的8020原则" class="chapter  " data-progress="40" style="left: 71.11111111111111%;"></a>
+    
+        <a href="../content/战略书信五-开源经济学.html" title="战略书信五-开源经济学" class="chapter  " data-progress="41" style="left: 73.33333333333333%;"></a>
+    
+        <a href="../content/一周疯狂遭遇墨菲定律.html" title="一周疯狂遭遇墨菲定律" class="chapter  " data-progress="42" style="left: 75.55555555555556%;"></a>
+    
+        <a href="../content/微软是如何输掉API之战的.html" title="微软是如何输掉API之战的" class="chapter  " data-progress="43" style="left: 77.77777777777777%;"></a>
+    
+        <a href="../content/微软疯了.html" title="微软疯了" class="chapter  " data-progress="44" style="left: 80%;"></a>
+    
+        <a href="../content/我们的.NET战略.html" title="我们的.NET战略" class="chapter  " data-progress="45" style="left: 82.22222222222223%;"></a>
+    
+        <a href="../content/先生我能要个编译器么.html" title="先生我能要个编译器么" class="chapter  " data-progress="46" style="left: 84.44444444444444%;"></a>
+    
+        <a href="../content/里克查普曼在搜寻愚蠢.html" title="里克查普曼在搜寻愚蠢" class="chapter  " data-progress="47" style="left: 86.66666666666667%;"></a>
+    
+        <a href="../content/巨无霸vs裸身大厨.html" title="巨无霸vs裸身大厨" class="chapter  " data-progress="48" style="left: 88.88888888888889%;"></a>
+    
+        <a href="../content/无痛功能规范-第一部分.html" title="无痛功能规范-第一部分" class="chapter  new-chapter" data-progress="5" style="left: 91.11111111111111%;"></a>
+    
+        <a href="../content/功能规范-样例.html" title="功能规范-样例" class="chapter  new-chapter" data-progress="6" style="left: 93.33333333333333%;"></a>
+    
+        <a href="../content/无痛功能规范-第二部分.html" title="无痛功能规范-第二部分" class="chapter  new-chapter" data-progress="7" style="left: 95.55555555555556%;"></a>
+    
+        <a href="../content/无痛功能规范-第三部分.html" title="无痛功能规范-第三部分" class="chapter  new-chapter" data-progress="8" style="left: 97.77777777777777%;"></a>
+    
+        <a href="../content/无痛功能规范-第四部分.html" title="无痛功能规范-第四部分" class="chapter  new-chapter" data-progress="9" style="left: 100%;"></a>
+    
+    </div>
+</div>
+
+                <div class="page-inner">
+                
+                    <section class="normal" id="section-gitbook_51">
+                    
+                        <blockquote>
+<p>Joel on Software</p>
+<p>Hard-assed Bug Fixin&#39;</p>
+</blockquote>
+<p>最困难的软件错误修复</p>
+<blockquote>
+<p>by Joel Spolsky Tuesday, July 31, 2001</p>
+</blockquote>
+<p>&gt;</p>
+<p>&gt;</p>
+<blockquote>
+<p>Software quality, or the lack thereof, is something everybody loves to gripe about. Now that I have my own company I finally decided to do something about it. Over the last two weeks we stopped everything atFog Creek to ship a new incremental version of FogBUGZ with the goal of eliminating all known bugs (there were about 30).</p>
+</blockquote>
+<p>软件质量，通常是最缺乏的，通常是每个人都喜欢诟病的。 我终于成立了自己的公司，我最终决定为软件质量做点儿什么。 为了清除所有已知的软件错误（大约30个），上两周我们停止了FogCreek公司的所有事情来发布FogBUGZ的一款增量版本。</p>
+<blockquote>
+<p>As a software developer, fixing bugs is a good thing. Right? Isn&#39;t it always a good thing?</p>
+</blockquote>
+<p>作为软件开发人员，修复软件错误通常是件好事。对吧？难道不一定是一件好事？</p>
+<blockquote>
+<p>No!</p>
+<p>Fixing bugs is only important when the value of having the bug fixed exceeds the cost of the fixing it.</p>
+</blockquote>
+<p>是的。</p>
+<p>修复软件错误这件事情只有当修复软件错误产生的价值超过了修复软件所需的代价的时候才是最重要的。</p>
+<blockquote>
+<p>These things are hard, but not impossible, to measure. Let me give you an example. Suppose you operate a peanut-butter-and-jelly sandwich factory. Your factory produces 100,000 sandwiches a day. Recently, due to the introduction of some new flavors (garlic peanut butter with spicy Habanero jam), demand for your product has gone through the roof. The factory is operating full-out at 100,000 sandwiches, but the demand is probably closer to 200,000. You just can&#39;t make any more. And each sandwich earns you a profit of 15 cents. So you&#39;re losing $15,000 a day in potential earnings because you don&#39;t have enough capacity.</p>
+<p>Building a new factory would cost way too much. You don&#39;t have the capital, and you&#39;re afraid that spicy/garlicky sandwiches are just a fad which will pass, anyway. But you&#39;re still losing that $15,000 a day.</p>
+</blockquote>
+<p>这些事情很难衡量，但绝非不可能。让我给你举个例子。架设你运营一家“花生-黄油-果冻 ”三明治工厂。你的工厂每天生产100，000个三明治。 最近，由于新口味（大蒜花生黄油蘸辣哈瓦那酱）的引入，你的产品需求订单已经顶破了屋顶。 工厂以全部的产能100，000每天运作，但是需求大概是200，000.你没办法再做更多了。每个三明治你的利润是15美分。所以你每天因为产能不足而导致的潜在盈利损失大约是15，000$. 造一座新工厂花费太多。你没有资本，而且你也害怕那种辣/大蒜口味的三明治不过是一时流行它们最终要过气，不管怎样，你每天都会损失15，000$ 。</p>
+<blockquote>
+<p>It&#39;s a good thing you hired Jason. Jason is a fourteen year old programmer who hacked into the computers that run the factory, and believes that he has come up with a way to speed up the assembly line by a factor of 2. Something about overclocking that he heard on slashdot. And it seemed to work in a test run.</p>
+</blockquote>
+<p>幸运的是你雇了Jason。Jason是个14岁的程序员，他黑进了运营工厂的电脑系统，然后他觉得已经知道到了能够加速流水线两倍的方法，这是他从slashdot上听来的超频之类的东西。而且在测试的时候确实有效。</p>
+<blockquote>
+<p>There&#39;s only one thing stopping you from rolling it out. There&#39;s a teeny tiny wee little bug that causes a sandwich to be mushed once an hour or so. Jason wants to fix the wee bug. He thinks he can fix it in three days. Do you let him fix it, or do you roll out the software in its bug-addled state?</p>
+</blockquote>
+<p>只有一件事情阻止你把这种方法辅助实施。 这种方法有个很小很小的纰漏，导致每一个小时会压烂一个三明治。 Jason想要修复这个错误。他觉得能在三天内修复好。你是让他修复那个错误呢？还是以这种瑕疵状态实施这种方法？</p>
+<blockquote>
+<p>Rolling out the software three days later will cost you $45,000 in lost profits. And it will save you, um, the cost of raw materials for 72 sandwiches. (In either case Jason will get the bug fixed three days later). Well, I don&#39;t know how much sandwiches cost on your planet, but here on Earth, they&#39;re a lot less than $625.</p>
+</blockquote>
+<p>晚三天实施这种方法会导致你损失45，000$利润。 而同时这也会节约你，恩，72个三明治的原材料费用。（两种情况Jason都可以在3天内修复错误）。呵呵，我不知道你们星球上三明治买多少钱一个，不过在我们这儿地球上，总共花费远少于625$。</p>
+<blockquote>
+<p>Where was I. Oh yeah. Sometimes it is not worth fixing a bug. Here&#39;s another bug that&#39;s not worth fixing: if you have a bug that totally crashes your program when you open gigantic files, but it only happens to your single user who has OS/2 and who, for all you know, doesn&#39;t even use large files. Well, don&#39;t fix it. Worse things have happened at sea. Similarly I&#39;ve generally given up caring about people with 16 color screens or people running off-the-shelf Windows 95 with no upgrades in 7 years. People like that don&#39;t spend much money on packaged software products. Trust me.</p>
+</blockquote>
+<p>刚刚说到哪儿了？哦，对了，有时候不值得修复软件错误。这儿有另一个例子关于不值得修复的软件错误：如果你有一个错误当且仅当你的程序打开巨大文件的时候导致程序崩溃，而且它仅仅发生在你唯一的使用OS/2的用户身上，而大部分用户甚至都不会使用巨大文件。那就别修正这个错误了。还有一堆更糟糕的事情呢。 类似的，我基本上放弃了对使用16色显示屏或者是运行着Windows95七年没更新的用户的支持。相信我，那样的人不会花很多钱购买软件产品的。</p>
+<blockquote>
+<p>But mostly, it&#39;s worth fixing bugs. Even if they are &quot;harmless&quot; bugs, they may reduce the reputation of your company and your product, which, in the long run, will have a significant impact on your earnings. It&#39;s hard to overcome the reputation of having a buggy product. When you do want to do that .01 release, here are some ideas for finding and fixing the right bugs: the ones that it is economically worth fixing.</p>
+</blockquote>
+<p>除此之外大多数情况下，还是值得去修复软件错误的。哪怕是“无害”的软件错误，它们会对你的公司以及公司的产品的信誉带来影响，而这，在长远的未来将对你公司的营收产生至关重要的影响。很难克服公司产品到处是错误的负面形象带来的影响。当你确实决定要发布一个.01版本的时候，下面是一些关于寻找和修复恰当错误的建议：要寻找那些经济上值得去修复的软件错误来修复。</p>
+<blockquote>
+<p>Step One: Make Sure You Find Out About The Bugs.</p>
+</blockquote>
+<p>第一步：确定你找到了那些错误。</p>
+<blockquote>
+<p>In the case of FogBUGZ, we have two ways of doing that. First, we trap all bugs on our free demo server, capture as much information as we can, and email the whole thing to the development team. That found an awful lot of bugs, which was very cool. For example, we discovered a bunch of people who didn&#39;t enter dates where they were supposed to in the &quot;Fix For&quot; screen. We didn&#39;t even have an error message in that case, we just &quot;crashed&quot; (which, in a web app, just means you got an ugly IIS error instead of what you expected). Oops.</p>
+</blockquote>
+<p>在FogBUGZ的例子中，我们有两种方法来做那件事情。首先，我们会在我们的演示服务器上捕获所有的软件错误，获得尽可能多的信息，然后把所有这些信息发电子邮件给开发团队。这个过程发现了一堆软件错误，超级酷。例如，我们发现有一堆人在“修复”页面应该要输入日期的地方没有输入日期。我们甚至没有考虑到这种错误情况，我们只好让程序崩溃（对于网站应用意味着一个丑陋的IIS出错页面而不是你预期的就诶过）。哎呦荷。</p>
+<blockquote>
+<p>When I worked at Juno, we had an even cooler system in place to collect bugs &quot;from the field&quot; automatically. We installed a handler using TOOLHELP.DLL so that every time Juno crashed, it stayed alive just long enough to dump the stack into a log file before going to its grave. The next time the program connected to the Internet to send mail, it uploaded the log file. During betas, we gathered these log files, collated all the crashes, and entered them into the bug tracking database. This found literally hundreds of crashing bugs. When you have a million users, it is amazing what will crash, often because of severe low memory conditions or severely crappy computers (can you spell Packard Bell?) You could have code like this:</p>
+</blockquote>
+<p>当我在Juno工作的时候，我们有个更“酷”的自建系统自动的从输入表单域搜集错误。我们给Juno用TOOLHELP.DLL安装了一个句柄，这样每次Juno崩溃的时候，它都有足够的时间在它消失之前把调用栈信息导出到一个日志文件。下一次程序连接到因特网的时候，它上传日志文件，发送邮件。在Beta测试的时候，我们搜集了所有这些日志文件，校对了这些崩溃，然后把它们输入到软件错误跟踪系统数据库。这个过程几乎发现了上百个会导致程序崩溃的软件错误。当你有了上百万用户的时候，你会很吃惊什么样的场景造成程序崩溃， 通常会是极低的内存条件或是超级破的电脑（你能想象小霸王么？）你可能会这样的代码：</p>
+<blockquote>
+<p>int foo( object&amp; r )</p>
+<p>{</p>
+<p>   r.Blah();</p>
+<p>   return 1;</p>
+<p>}</p>
+<p>and you would get crashes there because the r reference was NULL, even though that&#39;s completely impossible, there&#39;s no such thing as a NULL reference, C++ guarantees it, and you don&#39;t have to believe me but when you wait long enough and have millions of users and religiously collect their stack dumps, you will find crashes in places like that and you won&#39;t believe your eyes. (And you won&#39;t fix them. Cosmic rays, man. Get a new computer and this time don&#39;t install every cool shareware taskbar lint gizmo you find. Sheesh.)</p>
+</blockquote>
+<p>你会发现有个软件崩溃因为r引用是空的，即使完全不可能，根本没有这种“空引用”的概念，C++保证这点，你可以不相信我但是当你等了足够长时间开始有上百万用户了，然后开始yicheng的搜集他们的崩溃时调用堆栈转储，你就会发现奔溃出现在你眼睛无法直视的地方。（你没办法修复，宇宙射线导致的，亲。重新买个电脑吧，这回不要把你找到的每个很酷的共享任务栏小插件软件全部都装到电脑上。天）</p>
+<blockquote>
+<p>The other thing we do is consider each and every tech support call to be evidence of a bug. When we take the call, we try to figure out what we could have done to eliminate it. For example, the old FogBUGZ Setup used to assume that FogBUGZ would run under the anonymous Internet user account. That was a good assumption 95% of the time, and a bad assumption 5% of the time, but every one of those 5% cases ended up in a call to our support line. So we modified Setup to prompt for an account.</p>
+</blockquote>
+<p>另外一件事就是要把每一桶打来的技术支持电话都当作是软件错误的证据。当我们接了这种电话，我们通常会尝试用我们知道的方法来消除这些现象。例如，旧的FogBUGZ安装过程会假设FogBUGZ会以匿名因特网账户运行。95%的情况下这都是很好的架设，不过还有5%的情况是不正确的架设，那些5%的假设里的人最后就会通过技术支持热线打进来找你。所以我们最后修改了安装过程，提示用户来选择上网账户。</p>
+<blockquote>
+<p>Step Two: Make Sure You Get Economic Feedback</p>
+</blockquote>
+<p>第二步：确保你获得经济实用的反馈</p>
+<blockquote>
+<p>You may not be able to figure out exactly how much it&#39;s worth to fix each bug, but there&#39;s something you can do: charge the &quot;cost&quot; of tech support back to the business unit. In the early nineties there was a financial reorganization at Microsoft under which each product unit was charged for the full cost of all tech support calls. So the product units started insisting that PSS (Microsoft&#39;s tech support) provide lists of Top Ten Bugs regularly. When the development team concentrated on those, product support costs plummeted.</p>
+</blockquote>
+<p>你也许没办法精确的计算出修复每个软件错误的代价，但是你还是有些能做的事情的：把每次“技术支持”的花费全部算到业务部门的账上。在90年代早期微软有这样的财务重组，每个产品部门都会为所有技术支持的花费买单。这样产品部门才会开始坚持让PSS（微软的技术支持部门）有规律的提供10大软件错误列表。当开发团队集中处理这些软件错误的时候，技术支持费用就直线下降了。</p>
+<blockquote>
+<p>This is a bit in contradiction with the new trend of letting the tech support department pay for its own operation, something that most large companies do. At Juno tech support was expected to break even by charging people for tech support. By moving the economic burden of bugs onto the users themselves, you lose what limited ability you might have had to detect the damage they were causing. (Instead you get irate users who resent having to pay for your bug, who tell their friends, and you can&#39;t even measure how much that costs you. To be fair to Juno, the product itself was free, so stop yer bitchin.)</p>
+</blockquote>
+<p>这和现在的新趋势—“大部分大公司通常都让技术支持部门自负盈亏”有点矛盾，在Juno技术支持费用由用户均分。通过把软件错误的经济负担转移到用户身上，你失去了自己仅剩的那点找出软件错误所导致的损失的那种能力。（相反，你获得的是那些后悔付钱购买了你软件错误的恼羞成怒的用户，他们会告诉他们的朋友，这种代价对你将造成的损失你甚至无法衡量。为了对Juno公平起见，他们家产品本身是免费的，别在那儿嚼舌头了。）</p>
+<blockquote>
+<p>One way of resolving the two is to not charge the user when the support call was caused by a bug in your own product. Microsoft does this, and it&#39;s quite nice, and I&#39;ve never paid for a call to Microsoft :) Instead, charge the $245 or whatever one developer incident costs these days back to the product unit. That blows away their profit completely for the product they sold you (several times over), and creates exactly the right economic incentives. Which reminds me of one reason DOS games were a terrible business... to get them to look good and run fast, you usually  needed strange video drivers, and a single tech support call about the video drivers would blow away the profit you could make from 20 copies of your product, assuming Egghead and Ingram and the ad on MTV hadn&#39;t already guzzled awayall your earnings.</p>
+</blockquote>
+<p>解决这两个问题的一个方法是：当用户的技术支持电话是因为你软件本身的错误导致的，那么就不要让用户付钱。 微软是这样做的，这相当友善，我从来没因为技术支持电话给微软打过钱。相反，把如今一个开发者支持的费用约$245记回到产品部门头上。那就会彻底干掉他们卖给你产品获得的利润（甚至是超过几倍），而且这个过程产生了完全合理的经济学动机。这让我想起了为什么DOS游戏是烂生意的一个理由。。。。。。为了让这些游戏看上去不错而且能快速运行， 你通常需要奇怪的视频驱动，简单一个关于视频驱动的技术支持电话就足以完全抹去你销售20份产品挣来的利润，这还是在假设在知识，理论和MTV广告上的开销还没有耗光你所有盈利的情况下。</p>
+<blockquote>
+<p>Step Three: Figure Out What It&#39;s Worth To You To Fix Them All.</p>
+</blockquote>
+<p>第三步：搞清楚全部修复这些软件错误给你带来的价值在哪里。</p>
+<blockquote>
+<p>At Fog Creek Software, well, we&#39;re a tiny company (except in our own minds), and the development team just takes the tech support calls. The cost was running about 1 hour per day, which, based on our consulting rates, is somewhere around $75000 a year. We were pretty confident that we could get that down to 15 minutes a day by fixing all known bugs.</p>
+</blockquote>
+<p>在FogCreek软件公司，恩，我们是个小公司（除了我们的脑袋以外），开发团队负责技术支持电话。花费是每天约1小时，根据我们的咨询费用，大约是每年75000$。我们相当自信如果我们能把所有的已知软件错误都修复的话这个花费能降到大约15分钟。</p>
+<blockquote>
+<p>Using very sloppy numbers, here, that means that the net present value of the savings would be about $150,000. That justifies 62 days of work: if you can do it in less than 62 person-days, it&#39;s worth doing.</p>
+</blockquote>
+<p>通过非常粗略的估算，这意味着我们节省的费用的净现值约为150000$，也就是大约62天的工作时间：如果你能在62人天之内修复所有的软件错误，那么这就是值得去做的。</p>
+<blockquote>
+<p>Using the handy estimation feature built into FogBUGZ, we calculated that it would take 20 person-days (two people two weeks) to fix everything - that&#39;s $48,000 &quot;spent&quot; for a return of $150,000, which is a great return on investment just on the basis of the tech support savings. (Observe that you could substitute the cost of programmer&#39;s salaries and overhead instead of our consulting rate and get the same 3:1 result, since it cancels out).</p>
+</blockquote>
+<p>使用FogBUGZ方便的内建的估算功能，我们计算出大约要花20人天（两个人俩礼拜）来修复所有的软件缺陷 – 这大约是 48，000$“花费”，为了150，000$的回报。仅根据节省技术支持来讲，这是一比相当可观的投资回报。（注意，因为两者相等，你可以将程序员的薪水及其他支出取代我们的咨询费，获得大约是3：1的比例）。</p>
+<blockquote>
+<p>I haven&#39;t even begun to count the value from having a better product, but I can start doing that, too. We had 55 crashes on the demo server during the month of July with the old code, representing 17 distinct users. You have to imagine that at least one of those people decided not to buy FogBUGZ because they thought it was buggy when they ran the demo (although I don&#39;t have real statistics for that.) In any case the lost sales was probably costing us somewhere between $7,000 and $100,000 in present value. (If you were serious enough, it wouldn&#39;t be too hard to get a real number).</p>
+</blockquote>
+<p>我甚至还没开始考虑获得更好的产品带来的价值，不过我也可以那样做。 我们在7月份旧代码部署的演示服务器上获得了55次崩溃，分别代表了17个不同的用户。你可以想象他们中至少有一个人会决定不购买FogBUGZ因为当他们运行演示版本的时候程序崩溃了，所以他们觉得软件到处都是错误。（虽然我没有真实的统计数据。）不管怎么样，销售损失给我们带来的损失大约在7000$到10000$现值之间。（如果你相当严谨，要算出准确的数字也不难）。</p>
+<blockquote>
+<p>Next question. Can you charge more for a less buggy product? That would add a whole bunch of value to debugging. I suspect that at the extremes, bug count does affect price, but I am hard pressed to think of an example from the world of packaged software where this has been the case.</p>
+</blockquote>
+<p>下一个问题，你可以因为软件错误减少了而提高软件的售价么？那会给调试代码带来一整套新的价值。我怀疑在极端情况下，软件错误数量确实影响价格，不过我怎么也想不出现实中打包销售的软件这样的例子。</p>
+<blockquote>
+<p>Please Don&#39;t Beat Me Up!</p>
+</blockquote>
+<p>不要打我。</p>
+<blockquote>
+<p>Inevitably people read essays like this and come to silly conclusions, like, Joel doesn&#39;t think you should fix bugs. In fact I think that for most of the kinds of bugs that most people fix, there&#39;s a clear return on investment. But there may be an even higher monetary value to doing something other than fixing every last bug. If you have to decide between fixing the bug for OS/2 guy and adding a new feature that will sell 20,000 copies of your software to General Electric, well, sorry, OS/2 guy. And if you&#39;re dumb enough to think that it&#39;s still more important to fix OS/2 than to add the GE feature, maybe your competitors won&#39;t be and you&#39;ll be out of business.</p>
+</blockquote>
+<p>不可避免的，人们阅读了这样的散文然后得出简单愚蠢的结论，例如，Joel觉得你不应该修复软件错误。实际上，我觉得对于大部分人在修复的各种各样软件错误里的大多数，都有着明确的投资回报。但是也许存在着比修复最后的软件错误更高的价值回报的事情。如果你要决定是帮那个OS/2家伙修复软件错误还是要开发一个能卖20，000分你的软件拷贝给通用电器的特性的时候，对不起，OS/2用户。如果你蠢到了还是觉得修复OS/2比增加GE特性更重要的程度的话，你的竞争对手也许没那么蠢，然后你不久就要失业了。</p>
+<blockquote>
+<p>With all that said, I&#39;m optimistic at heart, and I believe that there is a lot of hidden value to producing very high quality products that is not very easy to capture. Your employees will be prouder. Fewer of your customers will send you back your CD in the mail after microwaving it and chopping it to bits with an ax. So I tend to err on the side of quality (indeed, we fixed every known bug in FogBUGZ, not just the big bang ones) and take pride in that, and feel confident, by the complete elimination of errors from the demo server, that we have a rock-solid product.</p>
+</blockquote>
+<p>综上所述，我本质上是个乐观主义者，而且我相信创造高质量的软件产品隐含了很多不容易发现的价值。你的员工会更自豪。把你的软件安装CD先用微波炉煮了然后用大斧砍成一片一片然后寄回给你的用户会越来越少。所以我会诟病软件质量（实际上，我们修复了FogBUGZ里的所有已知软件错误，不仅仅是那些重量级的错误），我为之骄傲，感到自信，通过从展示版本服务器上完全的消除错误，我们获得了坚如磐石的软件产品。</p>
+<p>。</p>
+
+                    
+                    </section>
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../content/每日构建是你的朋友.html" class="navigation navigation-prev "><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../content/别让宇航架构师吓倒你.html" class="navigation navigation-next "><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.1.3/ace.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.1.3/mode-javascript.js"></script>
+        <script src="..\gitbook/jsrepl/jsrepl.js" id="jsrepl-script"></script>
+        <script src="..\gitbook/app.js"></script>
+        
+
+    
+    <script src="..\gitbook/plugins/gitbook-plugin-mixpanel/plugin.js"></script>
+    
+
+    
+    <script src="http://cdn.mathjax.org/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+    
+    <script src="..\gitbook/plugins/gitbook-plugin-mathjax/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {};
+    gitbook.start(config);
+});
+</script>
+
+    </body>
+</html>

@@ -1,0 +1,810 @@
+<!DOCTYPE HTML>
+<html lang="en-US" manifest="../manifest.appcache">
+    <head prefix="og: http://ogp.me/ns# book: http://ogp.me/ns/book#">
+        
+        <meta charset="UTF-8">
+        <title>抽象失效定律 | JoelOnSoftware</title>
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="robots" content="index, follow">
+        <meta name="author" content="zinking">
+        <meta name="description" content="����Joel̸����">
+        <meta name="keywords" content="gitbook,github" >
+        <meta name="generator" content="www.gitbook.io">
+
+        
+        <link rel="next" href="../content/帕默斯顿勋爵谈编程.html" />
+        
+        
+        <link rel="prev" href="../content/揭露冰山般的秘密.html" />
+        
+
+        <meta property="og:title" content="抽象失效定律 | JoelOnSoftware">
+        <meta property="og:site_name" content="JoelOnSoftware">
+        <meta property="og:type" content="book">
+        <meta property="og:locale" content="en_US">
+
+        <meta property="book:author" content="https://github.com/zinking">
+        <meta property="book:tag" content="GitBook">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+        <link rel="shortcut icon" href="..\gitbook/images/favicon.ico" type="image/x-icon">
+        
+    </head>
+    <body>
+        
+
+        <link rel="stylesheet" href="..\gitbook/style.css">
+        
+
+
+        
+    <div class="book" data-github="zinking/JoelOnSoftware" data-level="29" data-basepath=".." data-revision="1403332886419">
+    <div class="book-header">
+    <!-- Actions Left -->
+    
+    <a href="https://github.com/zinking/JoelOnSoftware" target="_blank" class="btn pull-left"><i class="fa fa-bookmark-o"></i></a>
+    
+    <a href="#" class="btn pull-left toggle-summary"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search"><i class="fa fa-search"></i></a>
+    <span id="font-settings-wrapper">
+        <a href="#" class="btn pull-left toggle-font-settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+	<div class="dropdown-caret">
+  <span class="caret-outer"></span>
+  <span class="caret-inner"></span>
+</div>
+
+	<div class="btn-group btn-block">
+		<button id="reduce-font-size" class="btn btn-default">A</button>
+		<button id="enlarge-font-size" class="btn btn-default">A</button>
+	</div>
+
+	<ul class="list-group font-family-list">
+		<li class="list-group-item" data-font="0">Serif</li>
+		<li class="list-group-item" data-font="1">Sans</li>
+	</ul>
+
+	<div class="btn-group btn-group-xs btn-block color-theme-list">
+	  <button type="button" class="btn btn-default" id="color-theme-preview-0" data-theme="0">White</button>
+	  <button type="button" class="btn btn-default" id="color-theme-preview-1" data-theme="1">Sepia</button>
+	  <button type="button" class="btn btn-default" id="color-theme-preview-2" data-theme="2">Night</button>
+	</div>
+</div>
+
+    </span>
+
+    <!-- Actions Right -->
+    
+    <a href="#" target="_blank" class="btn pull-right" data-sharing="google-plus"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right" data-sharing="facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right" data-sharing="twitter"><i class="fa fa-twitter"></i></a>
+    
+
+    
+    <a href="https://github.com/zinking/JoelOnSoftware/stargazers" target="_blank" class="btn pull-right count-star hidden-xs"><i class="fa fa-star-o"></i> Star (<span>-</span>)</a>
+    <a href="https://github.com/zinking/JoelOnSoftware/watchers" target="_blank" class="btn pull-right count-watch hidden-xs"><i class="fa fa-eye"></i> Watch (<span>-</span>)</a>
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-spinner fa-spin"></i>
+        <a href="../" >JoelOnSoftware</a>
+    </h1>
+</div>
+
+    <div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+        <li>
+            <a href="https://github.com/zinking" target="blank">About the author</a>
+        </li>
+        
+
+        
+        <li>
+            <a href="https://github.com/zinking/JoelOnSoftware/issues" target="blank">Questions and Issues</a>
+        </li>
+        
+
+        
+        <li>
+            <a href="https://github.com/zinking/JoelOnSoftware/edit/master/content/抽象失效定律.md" target="blank">Edit and Contribute</a>
+        </li>
+        
+
+        
+        <li class="divider"></li>
+        
+
+        <li data-level="0" data-path="index.html">
+            <a href="../"><i class="fa fa-check"></i> Introduction</a>
+        </li>
+        
+            <li  data-level="1" data-path="content/选择一门语言.html">
+                
+                <a href="../content/选择一门语言.html">
+                    <i class="fa fa-check"></i> <b>1.</b> 选择一门语言
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="2" data-path="content/回归基础.html">
+                
+                <a href="../content/回归基础.html">
+                    <i class="fa fa-check"></i> <b>2.</b> 回归基础
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="3" data-path="content/Joel测试.html">
+                
+                <a href="../content/Joel测试.html">
+                    <i class="fa fa-check"></i> <b>3.</b> Joel测试
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="4" data-path="content/Unicode.html">
+                
+                <a href="../content/Unicode.html">
+                    <i class="fa fa-check"></i> <b>4.</b> Unicode
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="5" data-path="content/无痛功能规范-第一部分.html">
+                
+                <a href="../content/无痛功能规范-第一部分.html">
+                    <i class="fa fa-check"></i> <b>5.</b> 无痛功能规范-第一部分
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="6" data-path="content/功能规范-样例.html">
+                
+                <a href="../content/功能规范-样例.html">
+                    <i class="fa fa-check"></i> <b>6.</b> 功能规范-样例
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="7" data-path="content/无痛功能规范-第二部分.html">
+                
+                <a href="../content/无痛功能规范-第二部分.html">
+                    <i class="fa fa-check"></i> <b>7.</b> 无痛功能规范-第二部分
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="8" data-path="content/无痛功能规范-第三部分.html">
+                
+                <a href="../content/无痛功能规范-第三部分.html">
+                    <i class="fa fa-check"></i> <b>8.</b> 无痛功能规范-第三部分
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="9" data-path="content/无痛功能规范-第四部分.html">
+                
+                <a href="../content/无痛功能规范-第四部分.html">
+                    <i class="fa fa-check"></i> <b>9.</b> 无痛功能规范-第四部分
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="10" data-path="content/Joel测试.html">
+                
+                <a href="../content/Joel测试.html">
+                    <i class="fa fa-check"></i> <b>10.</b> Joel测试
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="11" data-path="content/Unicode.html">
+                
+                <a href="../content/Unicode.html">
+                    <i class="fa fa-check"></i> <b>11.</b> Unicode
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="12" data-path="content/基于事实的进度计划.html">
+                
+                <a href="../content/基于事实的进度计划.html">
+                    <i class="fa fa-check"></i> <b>12.</b> 基于事实的进度计划
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="13" data-path="content/每日构建是你的朋友.html">
+                
+                <a href="../content/每日构建是你的朋友.html">
+                    <i class="fa fa-check"></i> <b>13.</b> 每日构建是你的朋友
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="14" data-path="content/最困难的软件错误修复.html">
+                
+                <a href="../content/最困难的软件错误修复.html">
+                    <i class="fa fa-check"></i> <b>14.</b> 最困难的软件错误修复
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="15" data-path="content/别让宇航架构师吓倒你.html">
+                
+                <a href="../content/别让宇航架构师吓倒你.html">
+                    <i class="fa fa-check"></i> <b>15.</b> 别让宇航架构师吓倒你
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="16" data-path="content/五个世界.html">
+                
+                <a href="../content/五个世界.html">
+                    <i class="fa fa-check"></i> <b>16.</b> 五个世界
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="17" data-path="content/纸质原型.html">
+                
+                <a href="../content/纸质原型.html">
+                    <i class="fa fa-check"></i> <b>17.</b> 纸质原型
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="18" data-path="content/移动-开火.html">
+                
+                <a href="../content/移动-开火.html">
+                    <i class="fa fa-check"></i> <b>18.</b> 移动-开火
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="19" data-path="content/两种文化.html">
+                
+                <a href="../content/两种文化.html">
+                    <i class="fa fa-check"></i> <b>19.</b> 两种文化
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="20" data-path="content/从用户处自动获得崩溃报告.html">
+                
+                <a href="../content/从用户处自动获得崩溃报告.html">
+                    <i class="fa fa-check"></i> <b>20.</b> 从用户处自动获得崩溃报告
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="21" data-path="content/有害的薪酬激励.html">
+                
+                <a href="../content/有害的薪酬激励.html">
+                    <i class="fa fa-check"></i> <b>21.</b> 有害的薪酬激励
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="22" data-path="content/不用测试人员的五大错误理由.html">
+                
+                <a href="../content/不用测试人员的五大错误理由.html">
+                    <i class="fa fa-check"></i> <b>22.</b> 不用测试人员的五大错误理由
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="23" data-path="content/有害的工作切换.html">
+                
+                <a href="../content/有害的工作切换.html">
+                    <i class="fa fa-check"></i> <b>23.</b> 有害的工作切换
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="24" data-path="content/计算机科学的三个错误观念.html">
+                
+                <a href="../content/计算机科学的三个错误观念.html">
+                    <i class="fa fa-check"></i> <b>24.</b> 计算机科学的三个错误观念
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="25" data-path="content/突击面试指南-3.0.html">
+                
+                <a href="../content/突击面试指南-3.0.html">
+                    <i class="fa fa-check"></i> <b>25.</b> 突击面试指南-3.0
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="26" data-path="content/手艺.html">
+                
+                <a href="../content/手艺.html">
+                    <i class="fa fa-check"></i> <b>26.</b> 手艺
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="27" data-path="content/绝对不要做-第一部分.html">
+                
+                <a href="../content/绝对不要做-第一部分.html">
+                    <i class="fa fa-check"></i> <b>27.</b> 绝对不要做-第一部分
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="28" data-path="content/揭露冰山般的秘密.html">
+                
+                <a href="../content/揭露冰山般的秘密.html">
+                    <i class="fa fa-check"></i> <b>28.</b> 揭露冰山般的秘密
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="29" data-path="content/抽象失效定律.html">
+                
+                <a href="../content/抽象失效定律.html">
+                    <i class="fa fa-check"></i> <b>29.</b> 抽象失效定律
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="30" data-path="content/帕默斯顿勋爵谈编程.html">
+                
+                <a href="../content/帕默斯顿勋爵谈编程.html">
+                    <i class="fa fa-check"></i> <b>30.</b> 帕默斯顿勋爵谈编程
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="31" data-path="content/衡量.html">
+                
+                <a href="../content/衡量.html">
+                    <i class="fa fa-check"></i> <b>31.</b> 衡量
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="32" data-path="content/狗在这个国家是干什么的.html">
+                
+                <a href="../content/狗在这个国家是干什么的.html">
+                    <i class="fa fa-check"></i> <b>32.</b> 狗在这个国家是干什么的
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="33" data-path="content/初出茅庐的时候把事情做完.html">
+                
+                <a href="../content/初出茅庐的时候把事情做完.html">
+                    <i class="fa fa-check"></i> <b>33.</b> 初出茅庐的时候把事情做完
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="34" >
+                
+                <span><b>34.</b> [两个故事两个故事.md)</span>
+                
+                
+            </li>
+        
+            <li  data-level="35" data-path="content/再小的事也不简单.html">
+                
+                <a href="../content/再小的事也不简单.html">
+                    <i class="fa fa-check"></i> <b>35.</b> 再小的事也不简单
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="36" data-path="content/支持非我所创综合症.html">
+                
+                <a href="../content/支持非我所创综合症.html">
+                    <i class="fa fa-check"></i> <b>36.</b> 支持非我所创综合症
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="37" data-path="content/战略来信一-本杰瑞vs亚马逊.html">
+                
+                <a href="../content/战略来信一-本杰瑞vs亚马逊.html">
+                    <i class="fa fa-check"></i> <b>37.</b> 战略来信一-本杰瑞vs亚马逊
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="38" data-path="content/战略书信二-鸡和蛋问题.html">
+                
+                <a href="../content/战略书信二-鸡和蛋问题.html">
+                    <i class="fa fa-check"></i> <b>38.</b> 战略书信二-鸡和蛋问题
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="39" data-path="content/战略书信-让我回去.html">
+                
+                <a href="../content/战略书信-让我回去.html">
+                    <i class="fa fa-check"></i> <b>39.</b> 战略书信-让我回去
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="40" data-path="content/战略书信四-膨胀软件和神秘的8020原则.html">
+                
+                <a href="../content/战略书信四-膨胀软件和神秘的8020原则.html">
+                    <i class="fa fa-check"></i> <b>40.</b> 战略书信四-膨胀软件和神秘的8020原则
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="41" data-path="content/战略书信五-开源经济学.html">
+                
+                <a href="../content/战略书信五-开源经济学.html">
+                    <i class="fa fa-check"></i> <b>41.</b> 战略书信五-开源经济学
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="42" data-path="content/一周疯狂遭遇墨菲定律.html">
+                
+                <a href="../content/一周疯狂遭遇墨菲定律.html">
+                    <i class="fa fa-check"></i> <b>42.</b> 一周疯狂遭遇墨菲定律
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="43" data-path="content/微软是如何输掉API之战的.html">
+                
+                <a href="../content/微软是如何输掉API之战的.html">
+                    <i class="fa fa-check"></i> <b>43.</b> 微软是如何输掉API之战的
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="44" data-path="content/微软疯了.html">
+                
+                <a href="../content/微软疯了.html">
+                    <i class="fa fa-check"></i> <b>44.</b> 微软疯了
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="45" data-path="content/我们的.NET战略.html">
+                
+                <a href="../content/我们的.NET战略.html">
+                    <i class="fa fa-check"></i> <b>45.</b> 我们的.NET战略
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="46" data-path="content/先生我能要个编译器么.html">
+                
+                <a href="../content/先生我能要个编译器么.html">
+                    <i class="fa fa-check"></i> <b>46.</b> 先生我能要个编译器么
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="47" data-path="content/里克查普曼在搜寻愚蠢.html">
+                
+                <a href="../content/里克查普曼在搜寻愚蠢.html">
+                    <i class="fa fa-check"></i> <b>47.</b> 里克查普曼在搜寻愚蠢
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="48" data-path="content/巨无霸vs裸身大厨.html">
+                
+                <a href="../content/巨无霸vs裸身大厨.html">
+                    <i class="fa fa-check"></i> <b>48.</b> 巨无霸vs裸身大厨
+                </a>
+                
+                
+            </li>
+        
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="http://www.gitbook.io/" target="blank">Generated using GitBook</a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="page-wrapper" tabindex="-1">
+                <div class="book-progress">
+    <div class="bar">
+        <div class="inner" style="width: 48.888888888888886%;min-width: 46.666666666666664%;"></div>
+    </div>
+    <div class="chapters">
+    
+        <a href="../index.html" title="Introduction" class="chapter done new-chapter" data-progress="0" style="left: 0%;"></a>
+    
+        <a href="../content/选择一门语言.html" title="选择一门语言" class="chapter done new-chapter" data-progress="1" style="left: 2.2222222222222223%;"></a>
+    
+        <a href="../content/Joel测试.html" title="Joel测试" class="chapter done " data-progress="10" style="left: 4.444444444444445%;"></a>
+    
+        <a href="../content/Unicode.html" title="Unicode" class="chapter done " data-progress="11" style="left: 6.666666666666667%;"></a>
+    
+        <a href="../content/基于事实的进度计划.html" title="基于事实的进度计划" class="chapter done " data-progress="12" style="left: 8.88888888888889%;"></a>
+    
+        <a href="../content/每日构建是你的朋友.html" title="每日构建是你的朋友" class="chapter done " data-progress="13" style="left: 11.11111111111111%;"></a>
+    
+        <a href="../content/最困难的软件错误修复.html" title="最困难的软件错误修复" class="chapter done " data-progress="14" style="left: 13.333333333333334%;"></a>
+    
+        <a href="../content/别让宇航架构师吓倒你.html" title="别让宇航架构师吓倒你" class="chapter done " data-progress="15" style="left: 15.555555555555555%;"></a>
+    
+        <a href="../content/五个世界.html" title="五个世界" class="chapter done " data-progress="16" style="left: 17.77777777777778%;"></a>
+    
+        <a href="../content/纸质原型.html" title="纸质原型" class="chapter done " data-progress="17" style="left: 20%;"></a>
+    
+        <a href="../content/移动-开火.html" title="移动-开火" class="chapter done " data-progress="18" style="left: 22.22222222222222%;"></a>
+    
+        <a href="../content/两种文化.html" title="两种文化" class="chapter done " data-progress="19" style="left: 24.444444444444443%;"></a>
+    
+        <a href="../content/回归基础.html" title="回归基础" class="chapter done new-chapter" data-progress="2" style="left: 26.666666666666668%;"></a>
+    
+        <a href="../content/从用户处自动获得崩溃报告.html" title="从用户处自动获得崩溃报告" class="chapter done " data-progress="20" style="left: 28.88888888888889%;"></a>
+    
+        <a href="../content/有害的薪酬激励.html" title="有害的薪酬激励" class="chapter done " data-progress="21" style="left: 31.11111111111111%;"></a>
+    
+        <a href="../content/不用测试人员的五大错误理由.html" title="不用测试人员的五大错误理由" class="chapter done " data-progress="22" style="left: 33.333333333333336%;"></a>
+    
+        <a href="../content/有害的工作切换.html" title="有害的工作切换" class="chapter done " data-progress="23" style="left: 35.55555555555556%;"></a>
+    
+        <a href="../content/计算机科学的三个错误观念.html" title="计算机科学的三个错误观念" class="chapter done " data-progress="24" style="left: 37.77777777777778%;"></a>
+    
+        <a href="../content/突击面试指南-3.0.html" title="突击面试指南-3.0" class="chapter done " data-progress="25" style="left: 40%;"></a>
+    
+        <a href="../content/手艺.html" title="手艺" class="chapter done " data-progress="26" style="left: 42.22222222222222%;"></a>
+    
+        <a href="../content/绝对不要做-第一部分.html" title="绝对不要做-第一部分" class="chapter done " data-progress="27" style="left: 44.44444444444444%;"></a>
+    
+        <a href="../content/揭露冰山般的秘密.html" title="揭露冰山般的秘密" class="chapter done " data-progress="28" style="left: 46.666666666666664%;"></a>
+    
+        <a href="../content/抽象失效定律.html" title="抽象失效定律" class="chapter done " data-progress="29" style="left: 48.888888888888886%;"></a>
+    
+        <a href="../content/帕默斯顿勋爵谈编程.html" title="帕默斯顿勋爵谈编程" class="chapter  " data-progress="30" style="left: 51.111111111111114%;"></a>
+    
+        <a href="../content/衡量.html" title="衡量" class="chapter  " data-progress="31" style="left: 53.333333333333336%;"></a>
+    
+        <a href="../content/狗在这个国家是干什么的.html" title="狗在这个国家是干什么的" class="chapter  " data-progress="32" style="left: 55.55555555555556%;"></a>
+    
+        <a href="../content/初出茅庐的时候把事情做完.html" title="初出茅庐的时候把事情做完" class="chapter  " data-progress="33" style="left: 57.77777777777778%;"></a>
+    
+        <a href="../content/再小的事也不简单.html" title="再小的事也不简单" class="chapter  " data-progress="35" style="left: 60%;"></a>
+    
+        <a href="../content/支持非我所创综合症.html" title="支持非我所创综合症" class="chapter  " data-progress="36" style="left: 62.22222222222222%;"></a>
+    
+        <a href="../content/战略来信一-本杰瑞vs亚马逊.html" title="战略来信一-本杰瑞vs亚马逊" class="chapter  " data-progress="37" style="left: 64.44444444444444%;"></a>
+    
+        <a href="../content/战略书信二-鸡和蛋问题.html" title="战略书信二-鸡和蛋问题" class="chapter  " data-progress="38" style="left: 66.66666666666667%;"></a>
+    
+        <a href="../content/战略书信-让我回去.html" title="战略书信-让我回去" class="chapter  " data-progress="39" style="left: 68.88888888888889%;"></a>
+    
+        <a href="../content/战略书信四-膨胀软件和神秘的8020原则.html" title="战略书信四-膨胀软件和神秘的8020原则" class="chapter  " data-progress="40" style="left: 71.11111111111111%;"></a>
+    
+        <a href="../content/战略书信五-开源经济学.html" title="战略书信五-开源经济学" class="chapter  " data-progress="41" style="left: 73.33333333333333%;"></a>
+    
+        <a href="../content/一周疯狂遭遇墨菲定律.html" title="一周疯狂遭遇墨菲定律" class="chapter  " data-progress="42" style="left: 75.55555555555556%;"></a>
+    
+        <a href="../content/微软是如何输掉API之战的.html" title="微软是如何输掉API之战的" class="chapter  " data-progress="43" style="left: 77.77777777777777%;"></a>
+    
+        <a href="../content/微软疯了.html" title="微软疯了" class="chapter  " data-progress="44" style="left: 80%;"></a>
+    
+        <a href="../content/我们的.NET战略.html" title="我们的.NET战略" class="chapter  " data-progress="45" style="left: 82.22222222222223%;"></a>
+    
+        <a href="../content/先生我能要个编译器么.html" title="先生我能要个编译器么" class="chapter  " data-progress="46" style="left: 84.44444444444444%;"></a>
+    
+        <a href="../content/里克查普曼在搜寻愚蠢.html" title="里克查普曼在搜寻愚蠢" class="chapter  " data-progress="47" style="left: 86.66666666666667%;"></a>
+    
+        <a href="../content/巨无霸vs裸身大厨.html" title="巨无霸vs裸身大厨" class="chapter  " data-progress="48" style="left: 88.88888888888889%;"></a>
+    
+        <a href="../content/无痛功能规范-第一部分.html" title="无痛功能规范-第一部分" class="chapter  new-chapter" data-progress="5" style="left: 91.11111111111111%;"></a>
+    
+        <a href="../content/功能规范-样例.html" title="功能规范-样例" class="chapter  new-chapter" data-progress="6" style="left: 93.33333333333333%;"></a>
+    
+        <a href="../content/无痛功能规范-第二部分.html" title="无痛功能规范-第二部分" class="chapter  new-chapter" data-progress="7" style="left: 95.55555555555556%;"></a>
+    
+        <a href="../content/无痛功能规范-第三部分.html" title="无痛功能规范-第三部分" class="chapter  new-chapter" data-progress="8" style="left: 97.77777777777777%;"></a>
+    
+        <a href="../content/无痛功能规范-第四部分.html" title="无痛功能规范-第四部分" class="chapter  new-chapter" data-progress="9" style="left: 100%;"></a>
+    
+    </div>
+</div>
+
+                <div class="page-inner">
+                
+                    <section class="normal" id="section-gitbook_40">
+                    
+                        <blockquote>
+<p>Joel on Software</p>
+<p>The Law of Leaky Abstractions</p>
+</blockquote>
+<p>抽象失效定律</p>
+<blockquote>
+<p>by Joel Spolsky Monday, November 11, 2002</p>
+</blockquote>
+<p>&gt;</p>
+<p>&gt;</p>
+<blockquote>
+<p>There&#39;s a key piece of magic in the engineering of the Internet which you rely on every single day. It happens in the TCP protocol, one of the fundamental building blocks of the Internet.</p>
+<p>TCP is a way to transmit data that is reliable. By this I mean: if you send a message over a network using TCP, it will arrive, and it won&#39;t be garbled or corrupted.</p>
+<p>We use TCP for many things like fetching web pages and sending email. The reliability of TCP is why every exciting email from embezzling East Africans arrives in letter-perfect condition. O joy.</p>
+<p>By comparison, there is another method of transmitting data called IP which is unreliable. Nobody promises that your data will arrive, and it might get messed up before it arrives. If you send a bunch of messages with IP, don&#39;t be surprised if only half of them arrive, and some of those are in a different order than the order in which they were sent, and some of them have been replaced by alternate messages, perhaps containing pictures of adorable baby orangutans, or more likely just a lot of unreadable garbage that looks like the subject line of Taiwanese spam.</p>
+<p>Here&#39;s the magic part: TCP is built on top of IP. In other words, TCP is obliged to somehow send data reliably using only an unreliable tool.</p>
+</blockquote>
+<p>你每天依赖的因特网工程学上有种关键的魔法力量。 这种力量存在于TCP协议之中，也是构筑起因特网的基石。</p>
+<blockquote>
+<p>TCP是可靠传输数据的方式，这样说的意思是： 如果你在网络上用TCP协议传输一则消息， 消息最终会送达，而不会丢失或者损坏。</p>
+</blockquote>
+<p>我们使用TCP做很多事情：查看网页，发送email。 TCP的稳定性保证了从东非海盗湾来的电子有点都一字不阿查。 哦真开心。</p>
+<p>相比之下，还有一种传输数据的方式叫做IP则是不可靠的。 没有保证说数据一定会到达， 在到达之前可能就弄错了。 如果你用IP发一堆消息，如果只有一半到达了也不要感到很吃惊，其中有且到达的顺序跟发送相比还不同， 有一些消息被其他的消息代替了，例如包含着可爱的婴儿猩猩的照片， 或者更可能的是一大堆无法阅读的垃圾，看起来就像台语写的垃圾邮件的标题。 </p>
+<p>神奇的部分是：TCP构建与IP之上。 换句话说， TCP能够在用不可靠的工具发送可靠的数据。 </p>
+<blockquote>
+<p>To illustrate why this is magic, consider the following morally equivalent, though somewhat ludicrous, scenario from the real world.</p>
+<p>Imagine that we had a way of sending actors from Broadway to Hollywood that involved putting them in cars and driving them across the country. Some of these cars crashed, killing the poor actors. Sometimes the actors got drunk on the way and shaved their heads or got nasal tattoos, thus becoming too ugly to work in Hollywood, and frequently the actors arrived in a different order than they had set out, because they all took different routes. Now imagine a new service called Hollywood Express, which delivered actors to Hollywood, guaranteeing that they would (a) arrive (b) in order (c) in perfect condition. The magic part is that Hollywood Express doesn&#39;t have any method of delivering the actors, other than the unreliable method of putting them in cars and driving them across the country. Hollywood Express works by checking that each actor arrives in perfect condition, and, if he doesn&#39;t, calling up the home office and requesting that the actor&#39;s identical twin be sent instead. If the actors arrive in the wrong order Hollywood Express rearranges them. If a large UFO on its way to Area 51 crashes on the highway in Nevada, rendering it impassable, all the actors that went that way are rerouted via Arizona and Hollywood Express doesn&#39;t even tell the movie directors in California what happened. To them, it just looks like the actors are arriving a little bit more slowly than usual, and they never even hear about the UFO crash.</p>
+</blockquote>
+<p>为了解释为什么有这种魔法，请你考虑以下观念上相同但是有点儿滑稽的现实场景。想象我们有某种方式把演员从百老汇送到好莱坞，先把他们塞入汽车，然后横穿整个美国。这当中有些汽车会撞毁，害死那些可怜的演员；有时候有些演员会在半路上喝醉，然后剃头甚至给鼻子刺上纹身，这样就变得太丑而不能在好莱坞工作了；大多数情况下，因为走的路线不同，演员们会以出发的时候不同的顺序到达。现在来想象一下一项叫做好莱坞快递的服务,专门将演员运送到好莱坞，并且保证：一：送达，二：顺序 三：完好无损。神奇的地方就是：除了演员们塞进汽车然后横穿美国之外好莱坞快递并没有任何方法来运这些演员。好莱坞快递在演员们被送达的时候会检查每个演员是否处于毫发无损的状态，如果不是的话，就会打电话给办公室，再送演员的孪生双胞胎过来；如果演员们以错误的顺序抵达，好莱坞快递就会重新安排它们的顺序。如果一个大型的UFO在前往内华达州51区高速公路上坠毁，使得该条公路无法通过，那么走该条路线的演员们就会重新选亚利桑那的路线，好莱坞快递甚至都不会告诉加利福尼亚的电影导演发生了什么。对他们而言，演员们只是看起来比平常晚了一些，他们甚至根本不会知道什么UFO坠毁了。</p>
+<blockquote>
+<p>That is, approximately, the magic of TCP. It is what computer scientists like to call an abstraction: a simplification of something much more complicated that is going on under the covers. As it turns out, a lot of computer programming consists of building abstractions. What is a string library? It&#39;s a way to pretend that computers can manipulate strings just as easily as they can manipulate numbers. What is a file system? It&#39;s a way to pretend that a hard drive isn&#39;t really a bunch of spinning magnetic platters that can store bits at certain locations, but rather a hierarchical system of folders-within-folders containing individual files that in turn consist of one or more strings of bytes.</p>
+</blockquote>
+<p>这大概就是tcp的魔法，也就是计算机科学家喜欢提的抽象。所谓抽象，就是对内部发生的更加复杂的事情的一种简化。结果。，大量的计算机编程就包含了构建抽象。什么是字符串库？就是一种假设计算机能够像处理数字一样容易地处理字符串的方式。什么是文件系统？就是假设硬盘驱动器并不仅仅是一堆能够在特定的位置存储比特的旋转磁盘，而是一种文件夹包含文件夹包含单独的文件进而包含一个或多个字符串比特的分级式系统。</p>
+<blockquote>
+<p>Back to TCP. Earlier for the sake of simplicity I told a little fib, and some of you have steam coming out of your ears by now because this fib is driving you crazy. I said that TCP guarantees that your message will arrive. It doesn&#39;t, actually. If your pet snake has chewed through the network cable leading to your computer, and no IP packets can get through, then TCP can&#39;t do anything about it and your message doesn&#39;t arrive. If you were curt with the system administrators in your company and they punished you by plugging you into an overloaded hub, only some of your IP packets will get through, and TCP will work, but everything will be really slow.</p>
+</blockquote>
+<p>回到tcp的话题。前面问的简单起见我撒了个谎，这样有些人可能会怒气冲天，因为这个谎言可能要把你逼疯了。我说tcp保证你的消息会送达，其实不是。如果你的宠物蛇卡在通往你计算机的网络电缆里，那么没有ip包能够通过，对此tcp也无能为力，你的消息就无法送达。公司的系统管理员给你穿小鞋，他们把你的网络电缆插入到一个过载的集线器，那么你的ip包还是能通过，tcp还能工作，但是所有的事情都会变得非常慢。</p>
+<blockquote>
+<p>This is what I call a leaky abstraction. TCP attempts to provide a complete abstraction of an underlying unreliable network, but sometimes, the network leaks through the abstraction and you feel the things that the abstraction can&#39;t quite protect you from. This is but one example of what I&#39;ve dubbed the Law of Leaky Abstractions:</p>
+<p>All non-trivial abstractions, to some degree, are leaky.</p>
+<p>Abstractions fail. Sometimes a little, sometimes a lot. There&#39;s leakage. Things go wrong. It happens all over the place when you have abstractions. Here are some examples.</p>
+</blockquote>
+<p>这就是我说的有纰漏的抽象。Tcp尝试给内在不可靠的网络提供一个完整的抽象，而网络有的时候能脱离这种抽象，然后你就能发现那些抽象并不能保证的东西。这不过是我发明的纰漏抽象定律的一个例子而已：</p>
+<p>所有的非基本抽象，在一定程度上，都是有纰漏的。</p>
+<p>抽象会失效。有时候多点，有时少点，但总归有纰漏。东西会出错。所有有抽象的地方都会发生这种情。下面是几个例子：</p>
+<p>•    Something as simple as iterating over a large two-dimensional array can have radically different performance if you do it horizontally rather than vertically, depending on the &quot;grain of the wood&quot; -- one direction may result in vastly more page faults than the other direction, and page faults are slow. Even assembly programmers are supposed to be allowed to pretend that they have a big flat address space, but virtual memory means it&#39;s really just an abstraction, which leaks when there&#39;s a page fault and certain memory fetches take way more nanoseconds than other memory fetches.</p>
+<p>•    哪怕是遍历二维数组这么简单的事情，如果你是横着做，而不是竖着做，都会出现极端不同的性能表现。这取决于“木头的纹路” --一个方向相比另外一个方向会导致大量的缺页错误，而缺页中断则非常慢。哪怕汇编程序员都可以假设有很大的线性地址空间，但对于虚拟内存来讲那只是一个抽象，这种抽象在产生缺页中断或者内存存取相比其他普通的内存存取远超纳秒级别的时候会失效。</p>
+<p>•    The SQL language is meant to abstract away the procedural steps that are needed to query a database, instead allowing you to define merely what you want and let the database figure out the procedural steps to query it. But in some cases, certain SQL queries are thousands of times slower than other logically equivalent queries. A famous example of this is that some SQL servers are dramatically faster if you specify &quot;where a=b and b=c and a=c&quot; than if you only specify &quot;where a=b and b=c&quot; even though the result set is the same. You&#39;re not supposed to have to care about the procedure, only the specification. But sometimes the abstraction leaks and causes horrible performance and you have to break out the query plan analyzer and study what it did wrong, and figure out how to make your query run faster.</p>
+<p>•    SQL是想抽象那些查询数据库所需的具体步骤，这样你就只需要弄清楚你要什么然后让数据库来搞清楚查询这些数据所需的具体步骤。但是在某些情况下，有一些sql查询会比逻辑上相等的其他查询慢一千倍。一个著名的例子就是在一些sql服务器上面如果你规定&quot;where a=b and b=c and a=c&quot;要比你只归定&quot;where a=b and b=c&quot;快很多，哪怕结果其实是一样的。你本不应该关心步骤只需要关心数据规范。但是有的时候抽象是有纰漏的，并且给你造成了可怕的性能问题。你只好打断查询计划分析器，然后研究他哪做错了，并且搞清楚如何让你的查询运行更快。</p>
+<p>•    Even though network libraries like NFS and SMB let you treat files on remote machines &quot;as if&quot; they were local, sometimes the connection becomes very slow or goes down, and the file stops acting like it was local, and as a programmer you have to write code to deal with this. The abstraction of &quot;remote file is the same as local file&quot; leaks. Here&#39;s a concrete example for Unix sysadmins. If you put users&#39; home directories on NFS-mounted drives (one abstraction), and your users create .forward files to forward all their email somewhere else (another abstraction), and the NFS server goes down while new email is arriving, the messages will not be forwarded because the .forward file will not be found. The leak in the abstraction actually caused a few messages to be dropped on the floor.</p>
+<p>•    即使NFS和SMB这样的网络程序库能够你像处理本地文件一样处理远程机器上的文，有的时候网络连接会变得非常慢甚至断开，网络文件就开始变得不像本地文件一样，然后作为程序员就必须写代码来处理这种情况。“远程文件像本地文件一样”这种抽象就会失效。这里有一个Unix系统管理的具体例子：如果你把用户的home文件夹放在NFS映射的网络驱动（一层抽象）上面，然后你的用户创建了.forward文件来把他们所有的电子邮件转发到其他地方（另一个抽象），然后NFS服务器宕机的新的电子邮件到达了，这样电子邮件不会被转发因为无法发现.forward文件。抽象的这种纰漏实际上导致一些信息被丢在了地板上。</p>
+<p>•    C++ string classes are supposed to let you pretend that strings are first-class data. They try to abstract away the fact thatstrings are hard and let you act as if they were as easy as integers. Almost all C++ string classes overload the + operator so you can write s + &quot;bar&quot; to concatenate. But you know what? No matter how hard they try, there is no C++ string class on Earth that will let you type &quot;foo&quot; + &quot;bar&quot;, because string literals in C++ are always char*&#39;s, never strings. The abstraction has sprung a leak that the language doesn&#39;t let you plug. (Amusingly, the history of the evolution of C++ over time can be described as a history of trying to plug the leaks in the string abstraction. Why they couldn&#39;t just add a native string class to the language itself eludes me at the moment.)</p>
+<p>•    C++的字符串类是想能够让你处理第一类数据那样处理字符串。他们想尝试着抽象掉字符串困难的那一面，想你觉得字符串跟整数一样简单。几乎所有的C++字符串类都会重载+号运算符以便让你能够书写。S+“bar” 来实现字符串拼接。但你知道吗？不管他们多努力地去尝试，世界上都没有c++字符串类能够让你输入“foo”+“bar”，因为在c++里字符串常数都是char*类型的，而不是字符串类型。这种抽象有一种语言不让你实现的弹性漏洞（搞笑的是，c++随时间进化的历史可以描述成尝试着往字符串抽象插入漏洞的历史。他们为什么不在语言本身就加入一个原始的字符串类型在此刻让我陷入了沉思）</p>
+<p>•    And you can&#39;t drive as fast when it&#39;s raining, even though your car has windshield wipers and headlights and a roof and a heater, all of which protect you from caring about the fact that it&#39;s raining (they abstract away the weather), but lo, you have to worry about hydroplaning (or aquaplaning in England) and sometimes the rain is so strong you can&#39;t see very far ahead so you go slower in the rain, because the weather can never be completely abstracted away, because of the law of leaky abstractions.</p>
+<p>•    就像下雨天的时候你不能够开得很快，哪怕你的汽车有雨刮器，有头灯，有顶棚，有取暖器，所有的这些都能够让你不用去思考现在外面在下雨（他们抽象了下雨），但是捏，担心下雨打滑（英语里叫aquaplaning），有的时候雨下的如此之大以至于你不能够看到你前方很远的地方，你只好在雨中慢下来。因为纰漏抽象定理，天气永远不能够被抽象掉。</p>
+<blockquote>
+<p>One reason the law of leaky abstractions is problematic is that it means that abstractions do not really simplify our lives as much as they were meant to. When I&#39;m training someone to be a C++ programmer, it would be nice if I never had to teach them about char<em>&#39;s and pointer arithmetic. It would be nice if I could go straight to STL strings. But one day they&#39;ll write the code &quot;foo&quot; + &quot;bar&quot;, and truly bizarre things will happen, and then I&#39;ll have to stop and teach them all about char</em>&#39;s anyway. Or one day they&#39;ll be trying to call a Windows API function that is documented as having an OUT LPTSTR argument and they won&#39;t be able to understand how to call it until they learn about char*&#39;s, and pointers, and Unicode, and wchar_t&#39;s, and the TCHAR header files, and all that stuff that leaks up.</p>
+</blockquote>
+<p>抽象定理有问题的一个原因就在于：他们不像看上去那样能够极大的简化我们的生活。当我在培训一个人成为c++程序员的时候，如果可以不用教他们char<em>和指针运算似乎很好，我可以直接教他们使用STL字符串。但是有一天刚开始写“foo”+“bar” 这样的代码的时候就会发生奇怪的事情，然后我还是得停下来教他们Char</em>。或者有一天他们会去尝试调用一个WindowsAPI函数，函数的文档上写着该函数有一个OUT LPTSTR的参数，然后他们就不明白如何调用这个函数，直到他们学习了char*，指针，Unicode wchar_t，以及TCHAR的头文件，以及所有抽象遗漏的地方。</p>
+<blockquote>
+<p>In teaching someone about COM programming, it would be nice if I could just teach them how to use the Visual Studio wizards and all the code generation features, but if anything goes wrong, they will not have the vaguest idea what happened or how to debug it and recover from it. I&#39;m going to have to teach them all about IUnknown and CLSIDs and ProgIDS and ... oh, the humanity!</p>
+</blockquote>
+<p>在教某人关于com编程的时候，如果我能够只教他们如何使用VisualStudio向导以及代码自动生成的功能会很方便，但是一旦有任何事情出错，他们就浑然不知发生了什么？或者如何去调试，如何从该错误中恢复。然后我还是得教他们所有关于Iunkown CLSID ProgID… 天哪还有人性么！</p>
+<blockquote>
+<p>In teaching someone about ASP.NET programming, it would be nice if I could just teach them that they can double-click on things and then write code that runs on the server when the user clicks on those things. Indeed ASP.NET abstracts away the difference between writing the HTML code to handle clicking on a hyperlink (<a>) and the code to handle clicking on a button. Problem: the ASP.NET designers needed to hide the fact that in HTML, there&#39;s no way to submit a form from a hyperlink. They do this by generating a few lines of JavaScript and attaching an onclick handler to the hyperlink. The abstraction leaks, though. If the end-user has JavaScript disabled, the ASP.NET application doesn&#39;t work correctly, and if the programmer doesn&#39;t understand what ASP.NET was abstracting away, they simply won&#39;t have any clue what is wrong.</p>
+</blockquote>
+<p>在教某人关于asp.net编程的时候，如果能够只教他们如何在某样东西上面双击然后编写用户点击的时候会在服务器上运行的代码会很方便。 实际上ASP.NET抽象掉了编写HTML代码处理超链接（<a>）点击和处理按钮点击的不同指出。 问题在于:ASP.NET的设计者需要抽象掉在html里面没有办法使用超链接提交表单这种事情。通过给超链接的onclick处理函数添加一小段JS代码来实现一种抽象。而如果终端用户如果禁止使用JS，那么这种抽象就会失效，ASP.NET程序就无法正确工作。如果程序员不理解ASP.NET的这种抽象，他们就完全不知道什么错了。</p>
+<blockquote>
+<p>The law of leaky abstractions means that whenever somebody comes up with a wizzy new code-generation tool that is supposed to make us all ever-so-efficient, you hear a lot of people saying &quot;learn how to do it manually first, then use the wizzy tool to save time.&quot; Code generation tools which pretend to abstract out something, like all abstractions, leak, and the only way to deal with the leaks competently is to learn about how the abstractions work and what they are abstracting. So the abstractions save us time working, but they don&#39;t save us time learning.</p>
+<p>And all this means that paradoxically, even as we have higher and higher level programming tools with better and better abstractions, becoming a proficient programmer is getting harder and harder.</p>
+<p>During my first Microsoft internship, I wrote string libraries to run on the Macintosh. A typical assignment: write a version of strcat that returns a pointer to the end of the new string. A few lines of C code. Everything I did was right from K&amp;R -- one thin book about the C programming language.</p>
+<p>Today, to work on CityDesk, I need to know Visual Basic, COM, ATL, C++, InnoSetup, Internet Explorer internals, regular expressions, DOM, HTML, CSS, and XML. All high level tools compared to the old K&amp;R stuff, but I still have to know the K&amp;R stuff or I&#39;m toast.</p>
+</blockquote>
+<p>抽象失效定律也意味着：不管什么时候什么人发明一种超级棒的新的代码生成工具来让所有人变得高效无比的时候，你经常会听到别人说：“先学习如何手动完成这件事情，然后用伟大的工具来节省时间。”代码生成工具就像所有的抽象那样，先假定能够抽象的一些问题，然后所有的抽象那样也会失效，要处理这种失效的唯一办法就是去学习抽象是如何工作的，什么东西被抽象掉了。这样，抽象确实节省了我们的工作时间，但是他们不能节省我们学习的时间。</p>
+<p>然而矛盾的是。哪怕我们有着越来越高级的编程工具，越来越好的抽象，要成为一个熟练的程序员却越来越难。我在微软第一份实习的时候，曾经写了一个运行在mac上的字符串库。很典型的作业： 编写一个strcat函数要能返回新拼接字符串的末尾的指针。 只用了几行的C代码。所有的操作都源自于K&amp;R那本很薄的《C语言编程》。</p>
+<p>今天，工作在CityDesk上的时候，我需要知道：VB,COM,ATL,C++, InnoSetup， IE内部调用，正则表达式， DOM,HTML,CSS和XML。相比于K&amp;R的所有这些高级工具，到我还是得知道K&amp;R否则我就完了。</p>
+<blockquote>
+<p>Ten years ago, we might have imagined that new programming paradigms would have made programming easier by now. Indeed, the abstractions we&#39;ve created over the years do allow us to deal with new orders of complexity in software development that we didn&#39;t have to deal with ten or fifteen years ago, like GUI programming and network programming. And while these great tools, like modern OO forms-based languages, let us get a lot of work done incredibly quickly, suddenly one day we need to figure out a problem where the abstraction leaked, and it takes 2 weeks. And when you need to hire a programmer to do mostly VB programming, it&#39;s not good enough to hire a VB programmer, because they will get completely stuck in tar every time the VB abstraction leaks.</p>
+<p>The Law of Leaky Abstractions is dragging us down.</p>
+</blockquote>
+<p>十年以前，我们想象会出现新的编程范式，让我们今天的编程变得更容易。事实上十年来我们开发出的新的抽象确实能够让我们处理在十年之前或者15年之前不需要面对的软件开发复杂度，就像用户界面编程和网络编程。然而正当这些伟大的工具，就像现代基于面向对象的语言让我们确实能够很快的完成手头工作的时候。今天我们还是得处理抽象失效的一个问题，然后这个问题需要花两个礼拜。当你需要雇一个程序员来做大部分VB编程的时候，单单雇一个只会VB的程序员是不够的，因为每当VB抽象失效的时候，他们就会完全卡壳。</p>
+<p>抽象失效定律拖了我们的后腿。</p>
+
+                    
+                    </section>
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../content/揭露冰山般的秘密.html" class="navigation navigation-prev "><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../content/帕默斯顿勋爵谈编程.html" class="navigation navigation-next "><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.1.3/ace.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.1.3/mode-javascript.js"></script>
+        <script src="..\gitbook/jsrepl/jsrepl.js" id="jsrepl-script"></script>
+        <script src="..\gitbook/app.js"></script>
+        
+
+    
+    <script src="..\gitbook/plugins/gitbook-plugin-mixpanel/plugin.js"></script>
+    
+
+    
+    <script src="http://cdn.mathjax.org/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+    
+    <script src="..\gitbook/plugins/gitbook-plugin-mathjax/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {};
+    gitbook.start(config);
+});
+</script>
+
+    </body>
+</html>

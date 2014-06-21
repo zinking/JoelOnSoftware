@@ -1,0 +1,821 @@
+<!DOCTYPE HTML>
+<html lang="en-US" manifest="../manifest.appcache">
+    <head prefix="og: http://ogp.me/ns# book: http://ogp.me/ns/book#">
+        
+        <meta charset="UTF-8">
+        <title>无痛功能规范-第三部分 | JoelOnSoftware</title>
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="robots" content="index, follow">
+        <meta name="author" content="zinking">
+        <meta name="description" content="����Joel̸����">
+        <meta name="keywords" content="gitbook,github" >
+        <meta name="generator" content="www.gitbook.io">
+
+        
+        <link rel="next" href="../content/无痛功能规范-第四部分.html" />
+        
+        
+        <link rel="prev" href="../content/无痛功能规范-第二部分.html" />
+        
+
+        <meta property="og:title" content="无痛功能规范-第三部分 | JoelOnSoftware">
+        <meta property="og:site_name" content="JoelOnSoftware">
+        <meta property="og:type" content="book">
+        <meta property="og:locale" content="en_US">
+
+        <meta property="book:author" content="https://github.com/zinking">
+        <meta property="book:tag" content="GitBook">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+        <link rel="shortcut icon" href="..\gitbook/images/favicon.ico" type="image/x-icon">
+        
+    </head>
+    <body>
+        
+
+        <link rel="stylesheet" href="..\gitbook/style.css">
+        
+
+
+        
+    <div class="book" data-github="zinking/JoelOnSoftware" data-level="8" data-basepath=".." data-revision="1403332886419">
+    <div class="book-header">
+    <!-- Actions Left -->
+    
+    <a href="https://github.com/zinking/JoelOnSoftware" target="_blank" class="btn pull-left"><i class="fa fa-bookmark-o"></i></a>
+    
+    <a href="#" class="btn pull-left toggle-summary"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search"><i class="fa fa-search"></i></a>
+    <span id="font-settings-wrapper">
+        <a href="#" class="btn pull-left toggle-font-settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+	<div class="dropdown-caret">
+  <span class="caret-outer"></span>
+  <span class="caret-inner"></span>
+</div>
+
+	<div class="btn-group btn-block">
+		<button id="reduce-font-size" class="btn btn-default">A</button>
+		<button id="enlarge-font-size" class="btn btn-default">A</button>
+	</div>
+
+	<ul class="list-group font-family-list">
+		<li class="list-group-item" data-font="0">Serif</li>
+		<li class="list-group-item" data-font="1">Sans</li>
+	</ul>
+
+	<div class="btn-group btn-group-xs btn-block color-theme-list">
+	  <button type="button" class="btn btn-default" id="color-theme-preview-0" data-theme="0">White</button>
+	  <button type="button" class="btn btn-default" id="color-theme-preview-1" data-theme="1">Sepia</button>
+	  <button type="button" class="btn btn-default" id="color-theme-preview-2" data-theme="2">Night</button>
+	</div>
+</div>
+
+    </span>
+
+    <!-- Actions Right -->
+    
+    <a href="#" target="_blank" class="btn pull-right" data-sharing="google-plus"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right" data-sharing="facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right" data-sharing="twitter"><i class="fa fa-twitter"></i></a>
+    
+
+    
+    <a href="https://github.com/zinking/JoelOnSoftware/stargazers" target="_blank" class="btn pull-right count-star hidden-xs"><i class="fa fa-star-o"></i> Star (<span>-</span>)</a>
+    <a href="https://github.com/zinking/JoelOnSoftware/watchers" target="_blank" class="btn pull-right count-watch hidden-xs"><i class="fa fa-eye"></i> Watch (<span>-</span>)</a>
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-spinner fa-spin"></i>
+        <a href="../" >JoelOnSoftware</a>
+    </h1>
+</div>
+
+    <div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+        <li>
+            <a href="https://github.com/zinking" target="blank">About the author</a>
+        </li>
+        
+
+        
+        <li>
+            <a href="https://github.com/zinking/JoelOnSoftware/issues" target="blank">Questions and Issues</a>
+        </li>
+        
+
+        
+        <li>
+            <a href="https://github.com/zinking/JoelOnSoftware/edit/master/content/无痛功能规范-第三部分.md" target="blank">Edit and Contribute</a>
+        </li>
+        
+
+        
+        <li class="divider"></li>
+        
+
+        <li data-level="0" data-path="index.html">
+            <a href="../"><i class="fa fa-check"></i> Introduction</a>
+        </li>
+        
+            <li  data-level="1" data-path="content/选择一门语言.html">
+                
+                <a href="../content/选择一门语言.html">
+                    <i class="fa fa-check"></i> <b>1.</b> 选择一门语言
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="2" data-path="content/回归基础.html">
+                
+                <a href="../content/回归基础.html">
+                    <i class="fa fa-check"></i> <b>2.</b> 回归基础
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="3" data-path="content/Joel测试.html">
+                
+                <a href="../content/Joel测试.html">
+                    <i class="fa fa-check"></i> <b>3.</b> Joel测试
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="4" data-path="content/Unicode.html">
+                
+                <a href="../content/Unicode.html">
+                    <i class="fa fa-check"></i> <b>4.</b> Unicode
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="5" data-path="content/无痛功能规范-第一部分.html">
+                
+                <a href="../content/无痛功能规范-第一部分.html">
+                    <i class="fa fa-check"></i> <b>5.</b> 无痛功能规范-第一部分
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="6" data-path="content/功能规范-样例.html">
+                
+                <a href="../content/功能规范-样例.html">
+                    <i class="fa fa-check"></i> <b>6.</b> 功能规范-样例
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="7" data-path="content/无痛功能规范-第二部分.html">
+                
+                <a href="../content/无痛功能规范-第二部分.html">
+                    <i class="fa fa-check"></i> <b>7.</b> 无痛功能规范-第二部分
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="8" data-path="content/无痛功能规范-第三部分.html">
+                
+                <a href="../content/无痛功能规范-第三部分.html">
+                    <i class="fa fa-check"></i> <b>8.</b> 无痛功能规范-第三部分
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="9" data-path="content/无痛功能规范-第四部分.html">
+                
+                <a href="../content/无痛功能规范-第四部分.html">
+                    <i class="fa fa-check"></i> <b>9.</b> 无痛功能规范-第四部分
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="10" data-path="content/Joel测试.html">
+                
+                <a href="../content/Joel测试.html">
+                    <i class="fa fa-check"></i> <b>10.</b> Joel测试
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="11" data-path="content/Unicode.html">
+                
+                <a href="../content/Unicode.html">
+                    <i class="fa fa-check"></i> <b>11.</b> Unicode
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="12" data-path="content/基于事实的进度计划.html">
+                
+                <a href="../content/基于事实的进度计划.html">
+                    <i class="fa fa-check"></i> <b>12.</b> 基于事实的进度计划
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="13" data-path="content/每日构建是你的朋友.html">
+                
+                <a href="../content/每日构建是你的朋友.html">
+                    <i class="fa fa-check"></i> <b>13.</b> 每日构建是你的朋友
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="14" data-path="content/最困难的软件错误修复.html">
+                
+                <a href="../content/最困难的软件错误修复.html">
+                    <i class="fa fa-check"></i> <b>14.</b> 最困难的软件错误修复
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="15" data-path="content/别让宇航架构师吓倒你.html">
+                
+                <a href="../content/别让宇航架构师吓倒你.html">
+                    <i class="fa fa-check"></i> <b>15.</b> 别让宇航架构师吓倒你
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="16" data-path="content/五个世界.html">
+                
+                <a href="../content/五个世界.html">
+                    <i class="fa fa-check"></i> <b>16.</b> 五个世界
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="17" data-path="content/纸质原型.html">
+                
+                <a href="../content/纸质原型.html">
+                    <i class="fa fa-check"></i> <b>17.</b> 纸质原型
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="18" data-path="content/移动-开火.html">
+                
+                <a href="../content/移动-开火.html">
+                    <i class="fa fa-check"></i> <b>18.</b> 移动-开火
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="19" data-path="content/两种文化.html">
+                
+                <a href="../content/两种文化.html">
+                    <i class="fa fa-check"></i> <b>19.</b> 两种文化
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="20" data-path="content/从用户处自动获得崩溃报告.html">
+                
+                <a href="../content/从用户处自动获得崩溃报告.html">
+                    <i class="fa fa-check"></i> <b>20.</b> 从用户处自动获得崩溃报告
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="21" data-path="content/有害的薪酬激励.html">
+                
+                <a href="../content/有害的薪酬激励.html">
+                    <i class="fa fa-check"></i> <b>21.</b> 有害的薪酬激励
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="22" data-path="content/不用测试人员的五大错误理由.html">
+                
+                <a href="../content/不用测试人员的五大错误理由.html">
+                    <i class="fa fa-check"></i> <b>22.</b> 不用测试人员的五大错误理由
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="23" data-path="content/有害的工作切换.html">
+                
+                <a href="../content/有害的工作切换.html">
+                    <i class="fa fa-check"></i> <b>23.</b> 有害的工作切换
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="24" data-path="content/计算机科学的三个错误观念.html">
+                
+                <a href="../content/计算机科学的三个错误观念.html">
+                    <i class="fa fa-check"></i> <b>24.</b> 计算机科学的三个错误观念
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="25" data-path="content/突击面试指南-3.0.html">
+                
+                <a href="../content/突击面试指南-3.0.html">
+                    <i class="fa fa-check"></i> <b>25.</b> 突击面试指南-3.0
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="26" data-path="content/手艺.html">
+                
+                <a href="../content/手艺.html">
+                    <i class="fa fa-check"></i> <b>26.</b> 手艺
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="27" data-path="content/绝对不要做-第一部分.html">
+                
+                <a href="../content/绝对不要做-第一部分.html">
+                    <i class="fa fa-check"></i> <b>27.</b> 绝对不要做-第一部分
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="28" data-path="content/揭露冰山般的秘密.html">
+                
+                <a href="../content/揭露冰山般的秘密.html">
+                    <i class="fa fa-check"></i> <b>28.</b> 揭露冰山般的秘密
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="29" data-path="content/抽象失效定律.html">
+                
+                <a href="../content/抽象失效定律.html">
+                    <i class="fa fa-check"></i> <b>29.</b> 抽象失效定律
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="30" data-path="content/帕默斯顿勋爵谈编程.html">
+                
+                <a href="../content/帕默斯顿勋爵谈编程.html">
+                    <i class="fa fa-check"></i> <b>30.</b> 帕默斯顿勋爵谈编程
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="31" data-path="content/衡量.html">
+                
+                <a href="../content/衡量.html">
+                    <i class="fa fa-check"></i> <b>31.</b> 衡量
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="32" data-path="content/狗在这个国家是干什么的.html">
+                
+                <a href="../content/狗在这个国家是干什么的.html">
+                    <i class="fa fa-check"></i> <b>32.</b> 狗在这个国家是干什么的
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="33" data-path="content/初出茅庐的时候把事情做完.html">
+                
+                <a href="../content/初出茅庐的时候把事情做完.html">
+                    <i class="fa fa-check"></i> <b>33.</b> 初出茅庐的时候把事情做完
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="34" >
+                
+                <span><b>34.</b> [两个故事两个故事.md)</span>
+                
+                
+            </li>
+        
+            <li  data-level="35" data-path="content/再小的事也不简单.html">
+                
+                <a href="../content/再小的事也不简单.html">
+                    <i class="fa fa-check"></i> <b>35.</b> 再小的事也不简单
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="36" data-path="content/支持非我所创综合症.html">
+                
+                <a href="../content/支持非我所创综合症.html">
+                    <i class="fa fa-check"></i> <b>36.</b> 支持非我所创综合症
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="37" data-path="content/战略来信一-本杰瑞vs亚马逊.html">
+                
+                <a href="../content/战略来信一-本杰瑞vs亚马逊.html">
+                    <i class="fa fa-check"></i> <b>37.</b> 战略来信一-本杰瑞vs亚马逊
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="38" data-path="content/战略书信二-鸡和蛋问题.html">
+                
+                <a href="../content/战略书信二-鸡和蛋问题.html">
+                    <i class="fa fa-check"></i> <b>38.</b> 战略书信二-鸡和蛋问题
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="39" data-path="content/战略书信-让我回去.html">
+                
+                <a href="../content/战略书信-让我回去.html">
+                    <i class="fa fa-check"></i> <b>39.</b> 战略书信-让我回去
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="40" data-path="content/战略书信四-膨胀软件和神秘的8020原则.html">
+                
+                <a href="../content/战略书信四-膨胀软件和神秘的8020原则.html">
+                    <i class="fa fa-check"></i> <b>40.</b> 战略书信四-膨胀软件和神秘的8020原则
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="41" data-path="content/战略书信五-开源经济学.html">
+                
+                <a href="../content/战略书信五-开源经济学.html">
+                    <i class="fa fa-check"></i> <b>41.</b> 战略书信五-开源经济学
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="42" data-path="content/一周疯狂遭遇墨菲定律.html">
+                
+                <a href="../content/一周疯狂遭遇墨菲定律.html">
+                    <i class="fa fa-check"></i> <b>42.</b> 一周疯狂遭遇墨菲定律
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="43" data-path="content/微软是如何输掉API之战的.html">
+                
+                <a href="../content/微软是如何输掉API之战的.html">
+                    <i class="fa fa-check"></i> <b>43.</b> 微软是如何输掉API之战的
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="44" data-path="content/微软疯了.html">
+                
+                <a href="../content/微软疯了.html">
+                    <i class="fa fa-check"></i> <b>44.</b> 微软疯了
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="45" data-path="content/我们的.NET战略.html">
+                
+                <a href="../content/我们的.NET战略.html">
+                    <i class="fa fa-check"></i> <b>45.</b> 我们的.NET战略
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="46" data-path="content/先生我能要个编译器么.html">
+                
+                <a href="../content/先生我能要个编译器么.html">
+                    <i class="fa fa-check"></i> <b>46.</b> 先生我能要个编译器么
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="47" data-path="content/里克查普曼在搜寻愚蠢.html">
+                
+                <a href="../content/里克查普曼在搜寻愚蠢.html">
+                    <i class="fa fa-check"></i> <b>47.</b> 里克查普曼在搜寻愚蠢
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="48" data-path="content/巨无霸vs裸身大厨.html">
+                
+                <a href="../content/巨无霸vs裸身大厨.html">
+                    <i class="fa fa-check"></i> <b>48.</b> 巨无霸vs裸身大厨
+                </a>
+                
+                
+            </li>
+        
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="http://www.gitbook.io/" target="blank">Generated using GitBook</a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="page-wrapper" tabindex="-1">
+                <div class="book-progress">
+    <div class="bar">
+        <div class="inner" style="width: 97.77777777777777%;min-width: 95.55555555555556%;"></div>
+    </div>
+    <div class="chapters">
+    
+        <a href="../index.html" title="Introduction" class="chapter done new-chapter" data-progress="0" style="left: 0%;"></a>
+    
+        <a href="../content/选择一门语言.html" title="选择一门语言" class="chapter done new-chapter" data-progress="1" style="left: 2.2222222222222223%;"></a>
+    
+        <a href="../content/Joel测试.html" title="Joel测试" class="chapter done " data-progress="10" style="left: 4.444444444444445%;"></a>
+    
+        <a href="../content/Unicode.html" title="Unicode" class="chapter done " data-progress="11" style="left: 6.666666666666667%;"></a>
+    
+        <a href="../content/基于事实的进度计划.html" title="基于事实的进度计划" class="chapter done " data-progress="12" style="left: 8.88888888888889%;"></a>
+    
+        <a href="../content/每日构建是你的朋友.html" title="每日构建是你的朋友" class="chapter done " data-progress="13" style="left: 11.11111111111111%;"></a>
+    
+        <a href="../content/最困难的软件错误修复.html" title="最困难的软件错误修复" class="chapter done " data-progress="14" style="left: 13.333333333333334%;"></a>
+    
+        <a href="../content/别让宇航架构师吓倒你.html" title="别让宇航架构师吓倒你" class="chapter done " data-progress="15" style="left: 15.555555555555555%;"></a>
+    
+        <a href="../content/五个世界.html" title="五个世界" class="chapter done " data-progress="16" style="left: 17.77777777777778%;"></a>
+    
+        <a href="../content/纸质原型.html" title="纸质原型" class="chapter done " data-progress="17" style="left: 20%;"></a>
+    
+        <a href="../content/移动-开火.html" title="移动-开火" class="chapter done " data-progress="18" style="left: 22.22222222222222%;"></a>
+    
+        <a href="../content/两种文化.html" title="两种文化" class="chapter done " data-progress="19" style="left: 24.444444444444443%;"></a>
+    
+        <a href="../content/回归基础.html" title="回归基础" class="chapter done new-chapter" data-progress="2" style="left: 26.666666666666668%;"></a>
+    
+        <a href="../content/从用户处自动获得崩溃报告.html" title="从用户处自动获得崩溃报告" class="chapter done " data-progress="20" style="left: 28.88888888888889%;"></a>
+    
+        <a href="../content/有害的薪酬激励.html" title="有害的薪酬激励" class="chapter done " data-progress="21" style="left: 31.11111111111111%;"></a>
+    
+        <a href="../content/不用测试人员的五大错误理由.html" title="不用测试人员的五大错误理由" class="chapter done " data-progress="22" style="left: 33.333333333333336%;"></a>
+    
+        <a href="../content/有害的工作切换.html" title="有害的工作切换" class="chapter done " data-progress="23" style="left: 35.55555555555556%;"></a>
+    
+        <a href="../content/计算机科学的三个错误观念.html" title="计算机科学的三个错误观念" class="chapter done " data-progress="24" style="left: 37.77777777777778%;"></a>
+    
+        <a href="../content/突击面试指南-3.0.html" title="突击面试指南-3.0" class="chapter done " data-progress="25" style="left: 40%;"></a>
+    
+        <a href="../content/手艺.html" title="手艺" class="chapter done " data-progress="26" style="left: 42.22222222222222%;"></a>
+    
+        <a href="../content/绝对不要做-第一部分.html" title="绝对不要做-第一部分" class="chapter done " data-progress="27" style="left: 44.44444444444444%;"></a>
+    
+        <a href="../content/揭露冰山般的秘密.html" title="揭露冰山般的秘密" class="chapter done " data-progress="28" style="left: 46.666666666666664%;"></a>
+    
+        <a href="../content/抽象失效定律.html" title="抽象失效定律" class="chapter done " data-progress="29" style="left: 48.888888888888886%;"></a>
+    
+        <a href="../content/帕默斯顿勋爵谈编程.html" title="帕默斯顿勋爵谈编程" class="chapter done " data-progress="30" style="left: 51.111111111111114%;"></a>
+    
+        <a href="../content/衡量.html" title="衡量" class="chapter done " data-progress="31" style="left: 53.333333333333336%;"></a>
+    
+        <a href="../content/狗在这个国家是干什么的.html" title="狗在这个国家是干什么的" class="chapter done " data-progress="32" style="left: 55.55555555555556%;"></a>
+    
+        <a href="../content/初出茅庐的时候把事情做完.html" title="初出茅庐的时候把事情做完" class="chapter done " data-progress="33" style="left: 57.77777777777778%;"></a>
+    
+        <a href="../content/再小的事也不简单.html" title="再小的事也不简单" class="chapter done " data-progress="35" style="left: 60%;"></a>
+    
+        <a href="../content/支持非我所创综合症.html" title="支持非我所创综合症" class="chapter done " data-progress="36" style="left: 62.22222222222222%;"></a>
+    
+        <a href="../content/战略来信一-本杰瑞vs亚马逊.html" title="战略来信一-本杰瑞vs亚马逊" class="chapter done " data-progress="37" style="left: 64.44444444444444%;"></a>
+    
+        <a href="../content/战略书信二-鸡和蛋问题.html" title="战略书信二-鸡和蛋问题" class="chapter done " data-progress="38" style="left: 66.66666666666667%;"></a>
+    
+        <a href="../content/战略书信-让我回去.html" title="战略书信-让我回去" class="chapter done " data-progress="39" style="left: 68.88888888888889%;"></a>
+    
+        <a href="../content/战略书信四-膨胀软件和神秘的8020原则.html" title="战略书信四-膨胀软件和神秘的8020原则" class="chapter done " data-progress="40" style="left: 71.11111111111111%;"></a>
+    
+        <a href="../content/战略书信五-开源经济学.html" title="战略书信五-开源经济学" class="chapter done " data-progress="41" style="left: 73.33333333333333%;"></a>
+    
+        <a href="../content/一周疯狂遭遇墨菲定律.html" title="一周疯狂遭遇墨菲定律" class="chapter done " data-progress="42" style="left: 75.55555555555556%;"></a>
+    
+        <a href="../content/微软是如何输掉API之战的.html" title="微软是如何输掉API之战的" class="chapter done " data-progress="43" style="left: 77.77777777777777%;"></a>
+    
+        <a href="../content/微软疯了.html" title="微软疯了" class="chapter done " data-progress="44" style="left: 80%;"></a>
+    
+        <a href="../content/我们的.NET战略.html" title="我们的.NET战略" class="chapter done " data-progress="45" style="left: 82.22222222222223%;"></a>
+    
+        <a href="../content/先生我能要个编译器么.html" title="先生我能要个编译器么" class="chapter done " data-progress="46" style="left: 84.44444444444444%;"></a>
+    
+        <a href="../content/里克查普曼在搜寻愚蠢.html" title="里克查普曼在搜寻愚蠢" class="chapter done " data-progress="47" style="left: 86.66666666666667%;"></a>
+    
+        <a href="../content/巨无霸vs裸身大厨.html" title="巨无霸vs裸身大厨" class="chapter done " data-progress="48" style="left: 88.88888888888889%;"></a>
+    
+        <a href="../content/无痛功能规范-第一部分.html" title="无痛功能规范-第一部分" class="chapter done new-chapter" data-progress="5" style="left: 91.11111111111111%;"></a>
+    
+        <a href="../content/功能规范-样例.html" title="功能规范-样例" class="chapter done new-chapter" data-progress="6" style="left: 93.33333333333333%;"></a>
+    
+        <a href="../content/无痛功能规范-第二部分.html" title="无痛功能规范-第二部分" class="chapter done new-chapter" data-progress="7" style="left: 95.55555555555556%;"></a>
+    
+        <a href="../content/无痛功能规范-第三部分.html" title="无痛功能规范-第三部分" class="chapter done new-chapter" data-progress="8" style="left: 97.77777777777777%;"></a>
+    
+        <a href="../content/无痛功能规范-第四部分.html" title="无痛功能规范-第四部分" class="chapter  new-chapter" data-progress="9" style="left: 100%;"></a>
+    
+    </div>
+</div>
+
+                <div class="page-inner">
+                
+                    <section class="normal" id="section-gitbook_45">
+                    
+                        <p>Joel on Software</p>
+<blockquote>
+<h1 id="painless-functional-specifications-part-3-but-how-">Painless Functional Specifications - Part 3: But... How?</h1>
+</blockquote>
+<h1 id="-">无痛功能规范 – 第三部分：不过…如何去做？</h1>
+<blockquote>
+<h3 id="by-joel-spolsky-wednesday-october-04-2000">by Joel Spolsky Wednesday, October 04, 2000</h3>
+</blockquote>
+<hr>
+<blockquote>
+<p>Now that you&#39;ve read all about why you need a spec and what a spec has in it, let&#39;s talk about who should write them.</p>
+</blockquote>
+<p>既然你已经了解了为什么你需要规范和规范包含了那些部分，让我们聊聊谁应该写规范。</p>
+<blockquote>
+<p>Who writes specs?</p>
+</blockquote>
+<p>谁应该写规范。</p>
+<blockquote>
+<p>Let me give you a little Microsoft history here. When Microsoft started growing seriously in the 1980s, everybody there had read The Mythical Man-Month, one of the classics of software management. (If you haven&#39;t read it, I highly recommend it.) The main point of that book was that when you add more programmers to a late project, it gets even later. That&#39;s because when you have n programmers on a team, the number of communication paths is n(n-1)/2, which grows at O(n2).</p>
+</blockquote>
+<p>让我先给你讲一点微软的历史。严格来说，20世纪80年代的微软开始增长的时候，每个人都读过 人月神话 ，软件管理的经典之一。（如果你没读过，我极度推荐你去读读。） 那本书的主要观点是当你往一个延迟的项目加派程序员的时候，项目会延迟的更多。 因为当你的团队里有n个程序员的时候， 沟通路径为n(n-1)/2，以O(n2)渐进速度增长。</p>
+<blockquote>
+<p>So the programmers at Microsoft were worried about how to write bigger and bigger programs, when the prevailing wisdom of the day was that adding programmers just makes things worse.</p>
+</blockquote>
+<p>因此微软的程序员担心如何来编写越来越大的程序，因为那个时候盛行的观点认为往项目加派程序员只会把事情变得更糟。</p>
+<blockquote>
+<p>Charles Simonyi, Microsoft&#39;s long time &quot;chief architect&quot;, suggested the concept of master programmers. The idea was basically that one master programmer would be responsible for writing all the code, but he or she would rely on a team of junior programmers as &quot;code slaves&quot;. Instead of worrying about debugging every function, the master programmer would basically just prototype each function, creating the bare outline, and then throw it to one of the junior programmers to implement.  (Of course, Simonyi would be the Master Master Programmer.) The term &quot;Master Programmer&quot; was a bit too medieval, so Microsoft went with &quot;Program Manager.&quot;</p>
+</blockquote>
+<p>Charles Simonyi，微软长久以来的“首席架构师”，提出了称为“主程序员”的概念。主要观点是：一个主程序员负责所有代码的编写，但是他或她可以依赖一个团队的初级程序员-“码奴”。主程序员基本上应该给出每个程序的原型，仅创建大致的轮廓，然后把它扔给初级的程序员去实现而不是担心去调试每一个函数。（当然，Charles Simonyi自己是主程序员。）“主程序员”的这种概念太中世纪了，所以微软使用了“程序经理”这一称谓。</p>
+<blockquote>
+<p>Theoretically, this was supposed to solve the Mythical Man-Month problem, because nobody has to talk to anyone else -- every junior programmer only talks to the one program manager, and so communication grows at O(n) instead of O(n2).</p>
+</blockquote>
+<p>理论上，这应该可以解决“人月神话”问题的，因为没有人需要跟其他人交谈了—每个初级的程序员只和一个程序经理交流，因此交流以O(n)而非O(n2)渐进增长。</p>
+<blockquote>
+<p>Well, Simonyi may know Hungarian Notation, but he doesn&#39;t knowPeopleware. Nobody wants to be a code slave. The system didn&#39;t work at all. Eventually, Microsoft discovered that despite the alleged Mythical Man Month, you can still add smart people to a team and get increased output, although at decreasing marginal values. The Excel team had 50 programmers when I was there, and it was marginally more productive than a team of 25 would have been -- but not twiceas productive.</p>
+</blockquote>
+<p>恩，Simonyi也许知道匈牙利符号表示，但他不知道人件。没有人想要成为码奴。这种体系根本无法工作。实际上，微软发现虽然有宣称的人月神话，但你还是可以把聪明人加入到团队里获得增长的家国，虽然边际效值减了。当我在的时候Excel团队有50个程序员，边际上来讲是比25个人的团队更加有效率的， 应该是 – 但不是两倍那么有效率。</p>
+<blockquote>
+<p>The idea of master/slave programming was discredited, but Microsoft still had these people called program managers bouncing around. A smart man named Jabe Blumenthal basically reinvented the position of program manager. Henceforth, the program manager would own thedesign and the spec for products.</p>
+</blockquote>
+<p>主/从编程的概念被扫地出门了，但微软还是到处保留着这些叫做程序经理的人。一个叫做Jabe Blumenthal的聪明人基本上重新发明了这种程序经理的职位。从那以后，程序经理负责产品的功能规范和设计。</p>
+<blockquote>
+<p>Since then, program managers at Microsoft gather requirements, figure out what the code is supposed to do, and write the specs. There are usually about 5 programmers for every program manager; these programmers are responsible for implementing in code what the program manager has implemented in the form of a spec. A program manager also needs to coordinate marketing, documentation, testing, localization, and all the other annoying details that programmers shouldn&#39;t spend time on. Finally, program managers at Microsoft are supposed to have the &quot;big picture&quot; of the company in mind, while programmers are free to concentrate on getting their bits of code exactly right.</p>
+</blockquote>
+<p>从那以后，微软的程序经理搜集需求，搞清楚代码应该要做什么，然后编写规范。 通常一个程序经理配有5个程序员；这些程序员负责用代码实现程序经理用规范描述的功能。程序经理同时需要协调销售，文档，测试，本地化，以及其他所有程序员不应该花时间的繁琐细节。 最后微软的程序经理应该脑海中有公司的“大方向”，而程序员可以自由地专注在把他们的代码写对。</p>
+<blockquote>
+<p>Program managers are invaluable. If you&#39;ve ever complained about how programmers are more concerned with technical elegance than with marketability, you need a program manager. If you&#39;ve ever complained about how people who can write good code never do a good job of writing good English, you need a program manager. If you&#39;ve ever complained about how your product seems to drift without any clear direction, you need a program manager.</p>
+</blockquote>
+<p>程序经理是无价的，如果你曾经抱怨过程序员应该专注员技术优雅而不是销售，那么你需要个程序经理。如果你曾经抱怨过能够写得一手好代码的人绝不可能写出好英语文章，那么你需要个程序经理。如果你曾经抱怨过你的产品如何漂浮着找不到方向，那么你需要个程序经理。</p>
+<blockquote>
+<p>How do you hire a program manager?</p>
+</blockquote>
+<p>怎样招聘程序经理？</p>
+<blockquote>
+<p>Most companies don&#39;t even have the concept of program manager. I think that&#39;s too bad. In my time, the groups at Microsoft with strong program managers had very successful products: Excel, Windows 95, and Access come to mind. But other groups (such as MSN 1.0 and Windows NT 1.0) were run by developers who generally ignored the program managers (who weren&#39;t very good anyway, and probably deserved to be ignored), and their products were not as successful.</p>
+</blockquote>
+<p>大多数公司甚至没有程序经理的概念。这太糟糕了。在我那个年代，微软有着优秀程序员的团队有着非常成功的产品：Excel，Windows95和Access浮现在脑海里。但其他的团队（例如MSN1.0和WindowsNT1.0）由通常忽视程序经理（实际上没那么好，应许应该被忽略 ）的开发者运行，他们的产品就没那么成功。</p>
+<blockquote>
+<p>Here are three things to avoid.</p>
+</blockquote>
+<p>三件事性应该避免。</p>
+<blockquote>
+<ul>
+<li>Don&#39;t promote a coder to be a program manager.  The skills for being a good program manager (writing clear English, diplomacy, market awareness, user empathy, and good UI design) are very rarely the skills for being a good coder. Sure, some people can do both, but they are rare. Rewarding good coders by promoting them to a different position, one that involves writing English, not C++, is a classic case of the Peter Principle: people tend to be promoted to their level of incompetence.</li>
+</ul>
+</blockquote>
+<ul>
+<li>不要把程序员提升成程序经理。 当好程序经理需要的技能（清晰的英语写作，沟通能力，销售意识，深入用户，好的界面设计）通常不会是好的程序员的技能。 当然有的人两样都能做，但是这很少见。奖励好的程序员但把他们提升到不同的职位上，这个职位要求的是好的英语写作水平而不是C++编写水平，这种情况是典型的Perter原则：人们倾向于被提升到他们不擅长的水平。</li>
+</ul>
+<blockquote>
+<ul>
+<li>Don&#39;t let the marketing people be program managers. No offense, but I think my readers will agree that good marketing people rarely have a good enough grasp of the technology issues to design products.</li>
+</ul>
+</blockquote>
+<ul>
+<li>不要让销售人员担任程序经理。无意冒犯，但我觉得读者们都会同意好的销售人员几乎不可能足够了解技术问题来设计产品。</li>
+</ul>
+<blockquote>
+<ul>
+<li>Basically, program management is a separate career path. All program managers need to be very technical, but they don&#39;t have to be good coders.  Program managers study UI, meet customers, and write specs. They need to get along with a wide variety of people -- from &quot;moron&quot; customers, to irritating hermit programmers who come to work in Star Trek uniforms, to pompous sales guys in $2000 suits. In some ways, program managers are the glue of software teams. Charisma is crucial.</li>
+</ul>
+</blockquote>
+<p>基本上，项目管理是个完全不同的职业发展。所有的程序经理都必须是非常技术类型的，但他们不需要成为很好的程序员。程序经理研究UI，拜会顾客并且编写规范。他们需要和各种各样的人搞好关系 -- 从“白痴”客户，到穿着星际迷航制服来上班的烦人的隐士程序员，到自大的穿着2000美金的销售人员。 在某种程度上程序经理是软件团队的胶水。魅力是至关重要的。</p>
+<blockquote>
+<ul>
+<li>Don&#39;t have coders report to the program manager. This is a subtle mistake. As a program manager at Microsoft, I designed the Visual Basic (VBA) strategy for Excel and completely speced out, to the smallest detail, how VBA should be implemented in Excel. My spec ran to about 500 pages. At the height of development for Excel 5.0, I estimated that every morning, 250 people came to work and basically worked off of that huge spec I wrote. I had no idea who all these people were, but there were about a dozen people on the Visual Basic team alone just writing documentation for this thing (not to mention the team writing documentation from the Excel side, or the full time person who was responsible for hyperlinks in the help file.) The weird thing was that I was at the &quot;bottom&quot; of the reporting tree. That&#39;s right.NOBODY reported to me. If I wanted people to do something, I had to convince them that it was the right thing to do. When Ben Waldman, the lead developer, didn&#39;t want to do something I had speced out, he just didn&#39;t do it. When the testers complained that something I had speced was impossible to test completely, I had to simplify it. If any of these people had reported to me, the product wouldn&#39;t have been as good. Some of them would have thought that it&#39;s inappropriate to second-guess a superior. Other times, I would have just put my foot down and ordered them to do it my way, out of conceit or nearsightedness. As it was, I had no choice but to build consensus. This form of decision making was the best way to get the right thingdone.</li>
+</ul>
+</blockquote>
+<p>  *不要让程序员汇报给程序经理。 这是个细微的错误。作为微软的程序经理， 我设计了Excel VisualBasic（VBA）策略，完整的规范了所有最小细节，VBA在Excel里应该如何实现。 我的规范大概有500多页。 在Excel5.0开发的时候，我预计每天早上，250个人来上班，都在实现那个大规范里的东西。 我完全不知道这些人是谁，但是仅VisualBasic团队就有几十个人在负责为这个东西文档（更不要说为Excel那边写文档的团队了，或者是负责为帮助文件创建超链接的那些人了）奇怪的是，我处于汇报层级的底端。这是对的。没人汇报给我。如果我想要人们做点儿什么，我必须说服他们这是正确的要做的事情。当开发领导Ben Waldman不想要做我规范里的东西的时候，他就没做，当测试人员抱怨说我规范里的东西无法完整测试的时候，我就要去简化它。如果这些人汇报给我，产品就不会像现在这样好。 他们中的某些人认为不应该猜测上级。其他时候，实际上是的，处于短见和虚荣，我就会把腿放下命令他们以我的方式来做。 这种形式的决策制定是做好正确事情的最佳方式。</p>
+<blockquote>
+<p>The final article in my series on specs talks about how to write good specs that people want to read.</p>
+</blockquote>
+<p>这一系列里的最后一篇文章讨论了如何写出人们想要读的功能规范。</p>
+
+                    
+                    </section>
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../content/无痛功能规范-第二部分.html" class="navigation navigation-prev "><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../content/无痛功能规范-第四部分.html" class="navigation navigation-next "><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.1.3/ace.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.1.3/mode-javascript.js"></script>
+        <script src="..\gitbook/jsrepl/jsrepl.js" id="jsrepl-script"></script>
+        <script src="..\gitbook/app.js"></script>
+        
+
+    
+    <script src="..\gitbook/plugins/gitbook-plugin-mixpanel/plugin.js"></script>
+    
+
+    
+    <script src="http://cdn.mathjax.org/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+    
+    <script src="..\gitbook/plugins/gitbook-plugin-mathjax/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {};
+    gitbook.start(config);
+});
+</script>
+
+    </body>
+</html>

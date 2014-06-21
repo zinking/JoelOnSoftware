@@ -1,13 +1,53 @@
 CACHE MANIFEST
-# Revision 1399787349230
+# Revision 1403332886421
 
 CACHE:
 index.html
-content/Unicode.html
+content/战略书信五-开源经济学.html
 content/Joel测试.html
+content/一周疯狂遭遇墨菲定律.html
+content/不用测试人员的五大错误理由.html
+content/两种文化.html
+content/五个世界.html
+content/从用户处自动获得崩溃报告.html
+content/先生我能要个编译器么.html
+content/再小的事也不简单.html
+content/初出茅庐的时候把事情做完.html
+content/别让宇航架构师吓倒你.html
+content/功能规范-样例.html
 content/回归基础.html
+content/基于事实的进度计划.html
+content/巨无霸vs裸身大厨.html
+content/帕默斯顿勋爵谈编程.html
+content/微软是如何输掉API之战的.html
+content/微软疯了.html
+content/我们的.NET战略.html
+content/战略书信-让我回去.html
+content/战略书信二-鸡和蛋问题.html
+content/Unicode.html
+content/战略书信四-膨胀软件和神秘的8020原则.html
+content/战略来信一-本杰瑞vs亚马逊.html
+content/手艺.html
+content/抽象失效定律.html
+content/揭露冰山般的秘密.html
+content/支持非我所创综合症.html
 content/无痛功能规范-第一部分.html
+content/无痛功能规范-第三部分.html
+content/无痛功能规范-第二部分.html
+content/无痛功能规范-第四部分.html
+content/最困难的软件错误修复.html
+content/有害的工作切换.html
+content/有害的薪酬激励.html
+content/每日构建是你的朋友.html
+content/狗在这个国家是干什么的.html
+content/移动-开火.html
+content/突击面试指南-3.0.html
+content/纸质原型.html
+content/绝对不要做-第一部分.html
+content/衡量.html
+content/计算机科学的三个错误观念.html
 content/选择一门语言.html
+content/里克查普曼在搜寻愚蠢.html
 gitbook\app.js
 gitbook\fonts\anonymouspro\400.woff
 gitbook\fonts\anonymouspro\400i.woff
@@ -44,8 +84,8 @@ gitbook\jsrepl\sandbox.html
 gitbook\jsrepl\sandbox.js
 gitbook\print.css
 gitbook\style.css
-gitbook\plugins\gitbook-plugin-mixpanel\plugin.js
 gitbook\plugins\gitbook-plugin-mathjax\plugin.js
+gitbook\plugins\gitbook-plugin-mixpanel\plugin.js
 
 NETWORK:
 *
