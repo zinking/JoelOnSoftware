@@ -42,7 +42,7 @@
 
 
         
-    <div class="book" data-github="zinking/JoelOnSoftware" data-level="26" data-basepath=".." data-revision="1403333303678">
+    <div class="book" data-github="zinking/JoelOnSoftware" data-level="26" data-basepath=".." data-revision="1403891743779">
     <div class="book-header">
     <!-- Actions Left -->
     
@@ -431,7 +431,7 @@
         
             <li  data-level="34" >
                 
-                <span><b>34.</b> [两个故事两个故事.md)</span>
+                <span><b>34.</b> [两个故事.md)</span>
                 
                 
             </li>
@@ -678,18 +678,17 @@
 
                 <div class="page-inner">
                 
-                    <section class="normal" id="section-gitbook_38">
+                    <section class="normal" id="section-gitbook_78">
                     
-                        <blockquote>
-<p>Joel on Software</p>
-<p>Craftsmanship</p>
-</blockquote>
-<p>手艺</p>
+                        <p>Joel on Software</p>
 <blockquote>
-<p>by Joel Spolsky Monday, December 01, 2003</p>
+<h1 id="craftsmanship">Craftsmanship</h1>
 </blockquote>
-<p>&gt;</p>
-<p>&gt;</p>
+<h1 id="-">手艺</h1>
+<blockquote>
+<h6 id="by-joel-spolsky-monday-december-01-2003">by Joel Spolsky Monday, December 01, 2003</h6>
+</blockquote>
+<hr>
 <blockquote>
 <p>Making software is not a manufacturing process. In the 1980s everyone was running around terrified that Japanese software companies were setting up &quot;software factories&quot; that could churn out high quality code on an assembly line. It didn&#39;t make any sense then and it doesn&#39;t make sense now. Shoving a lot of programmers into a room and lining them up in neat rows did not really help get the bug counts down.</p>
 </blockquote>
@@ -708,60 +707,30 @@
 <p>规范看起来像是任何简单的代码片段都能完成的那样。 用户通过一个标准对话框选择一个文件，然后CityDesk程序就会把这个文件导入到系统数据库。</p>
 <blockquote>
 <p>This turned out to be a great example of one of those places where &quot;the last 1% of the code takes 90% of the time.&quot; The first draft of the code looked like this:</p>
-<ol>
-<li>Open the file</li>
-</ol>
-<ol>
-<li>Read it all into a big byte array</li>
-</ol>
-<ol>
-<li>Store the byte array in a record</li>
-</ol>
+<p> 1 .    Open the file</p>
+<p> 2 .    Read it all into a big byte array</p>
+<p> 3 .    Store the byte array in a record</p>
 </blockquote>
-<p>&gt;</p>
 <p>结果这项功能成了那个经典的“1%的代码是如何花掉90%时间”讨论的又一个样板。 第一版的代码实现的功能大概是这个样子的：</p>
 <blockquote>
-<ol>
-<li>打开文件</li>
-</ol>
-<ol>
-<li>把文件全部读入大字节数组</li>
-</ol>
-<ol>
-<li>将字节数组存入数据记录</li>
-</ol>
+<p> 1 .    打开文件</p>
+<p> 2 .    把文件全部读入大字节数组</p>
+<p> 3 .    将字节数组存入数据记录</p>
+</blockquote>
 <p>Worked great. For reasonable sized existing files it was practically instantaneous. It had a few little bugs, which I worked through one at a time.</p>
 <p>The big bug surfaced when I stress-tested it by dragging a 120 MB file into CityDesk. Now, it is not common by any means for people to post 120 MB files on their web sites. In fact, it&#39;s quite rare. But it&#39;s not impossible, either. The code worked but took almost a minute and provided no visual feedback -- the app just froze and appeared to be completely locked up. This is obviously not ideal.</p>
-</blockquote>
 <p>完美的工作， 对于合理大小的存在文件，上传几乎是瞬间的事情。我也遇到一些小的错误，不过我一个个的解决了。</p>
 <p>大麻烦是当我开始压力测试这个功能的时候，我拖了一个120MB的文件进CityDesk。 现在虽然不管怎么说人们都已经很少发布120MB的文件到网站了。 事实上确实很少，但这也还是可能的。这段代码还能工作，不过花了几乎整整一分钟，而且没有任何的视觉反馈 – 程序就像冻结住了那样，看起来像完全被锁住了。 很显然这不是理想状态。</p>
-<p>&gt;</p>
 <blockquote>
 <p>From a UI perspective, what I really wanted was for long operations to bring up a progress bar of some sort, along with a Cancel button. In the ideal world you would be able to continue doing other operations with CityDesk while the file copy proceeded in the background. There were three obvious ways to do this:</p>
-<ol>
-<li>From a single thread, polling frequently for input events</li>
-</ol>
-<ol>
-<li>By launching a second thread and synchronizing it carefully</li>
-</ol>
-<ol>
-<li>By launching a second process and synchronizing it less carefully</li>
-</ol>
+<p> 1 .    From a single thread, polling frequently for input events</p>
+<p> 2 .    By launching a second thread and synchronizing it carefully</p>
+<p> 3 .    By launching a second process and synchronizing it less carefully</p>
 </blockquote>
-<p>&gt;</p>
 <p>从用户界面设计的角度， 我实际想要的就是对于这样的长时间的操作，系统会弹出某个进度条，以及一个取消按钮。 理想情况下，在文件在后台上传的时候你应该还是要能够用CityDesk进行其他操作。 有三种最直观的方法来达成这个设计：</p>
-<blockquote>
-<ol>
-<li>单线程， 频繁的轮询用户的输入信息。</li>
-</ol>
-<ol>
-<li>开第二个线程，小心的进行线程同步。</li>
-</ol>
-<ol>
-<li>开第二个进程，粗心的进行进程同步。</li>
-</ol>
-</blockquote>
-<p>&gt;</p>
+<p>  1 .    单线程， 频繁的轮询用户的输入信息。</p>
+<p>  2 .    开第二个线程，小心的进行线程同步。</p>
+<p>  3 .    开第二个进程，粗心的进行进程同步。</p>
 <blockquote>
 <p>My experience with #1 is that it never quite works. It is too hard to ensure that all the code throughout your application can be run safely while a file copy operation is in progress. And Eric S. Raymond has convinced me that threads are usually not as good a solution as separate processes: indeed years of experience have shown me that programming with multiple threads creates much additional complexity and introduces whole new categories of dangerously frightful heisenbugs. #3 seemed like a good solution, especially since our underlying database is multiuser and doesn&#39;t mind lots of processes banging on it at the same time. So that&#39;s what I&#39;m planning to do when I get back from Thanksgiving vacation.</p>
 </blockquote>
@@ -770,7 +739,6 @@
 <p>Notice, though, the big picture. We&#39;ve gone from read the file/save it in the database to something significantly more complicated: launch a child process, tell it to read the file and save it in the database, add a progress bar and cancel button to the child process, and then some kind of mechanism so the child can notify the parent when the file has arrived so it can be displayed. There will also be some work passing command line arguments to the child process, and making sure the window focus behaves in an expected manner, and handling the case of the user shutting down their system while a file copy is in progress. I would guesstimate that when all is said and done I&#39;ll have ten times as much code to handle large files gracefully, code that maybe 1% of our users will ever see.</p>
 </blockquote>
 <p>注意，恩，注意高层次的场景。 我们已经从读/写文件然后存入数据库转换到了要复杂的多的场景：启动一个子进程，告诉它去读取文件然后存入数据库， 添加一个进度条和取消按钮到子进程上， 然后通过某种机制，子进程能够通知父进程文件已经寸好了所以能显示了。 当然也还会有一些传递行参数到紫禁城的工作， 还会有一些确保窗口焦点正确的工作， 还要考虑用户在上传文件的时候关机的情况。 我估算了一下当所有这些都确定下来的时候我大概要花10倍的时间来完美的处理大文件，而这些代码可能只有1%的用户才会用到。</p>
-<p>&gt;</p>
 <blockquote>
 <p>And of course, a certain type of programmer will argue that my new child-process architecture is inferior to the original. It&#39;s &quot;bloated&quot; (because of all the extra lines of code). It has more potential for bugs, because of all the extra lines of code. It&#39;s overkill. It&#39;s somehow emblematic of why Windows is an inferior operating system, they will say. What&#39;s all this about progress indicators? they sneer. Just hit Ctrl+Z and then &quot;ls -l&quot; repeatedly and watch to see if the file size is growing!</p>
 </blockquote>
@@ -789,8 +757,6 @@
 </blockquote>
 <p>这样说下来软件有一个品质人们还是会觉得像手艺的。 当软件是被一个真正的手艺人制作的时候， 所有的扭曲都会被完全对齐。 当你做些不常见的事情的时，程序会显的很智能。 当主要的功能开始工作的时候，要花更多的精力来让这些极端的情况完全正确。虽然这要花500%的代价去解决1%的情况。</p>
 <p>手艺当然是非常昂贵的。 你能承受的起的唯一情况就是你在为大量的受众开发软件。 很抱歉，不过保险公司开发的内部人事系统永远达不到这种手工品的程度，因为没有足够的用户来承担这些额外的花费。 而对于一个包装袋软件公司，这种程度的手艺正是让用户满意 并且为用户带来长足有竞争力的优势， 所以我要花时间把这件事情做对。 等等吧。</p>
-<p>&gt;</p>
-<p>&gt;</p>
 
                     
                     </section>

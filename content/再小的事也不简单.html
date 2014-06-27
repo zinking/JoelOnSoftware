@@ -40,7 +40,7 @@
 
 
         
-    <div class="book" data-github="zinking/JoelOnSoftware" data-level="35" data-basepath=".." data-revision="1403333303678">
+    <div class="book" data-github="zinking/JoelOnSoftware" data-level="35" data-basepath=".." data-revision="1403891743779">
     <div class="book-header">
     <!-- Actions Left -->
     
@@ -429,7 +429,7 @@
         
             <li  data-level="34" >
                 
-                <span><b>34.</b> [两个故事两个故事.md)</span>
+                <span><b>34.</b> [两个故事.md)</span>
                 
                 
             </li>
@@ -676,99 +676,128 @@
 
                 <div class="page-inner">
                 
-                    <section class="normal" id="section-gitbook_10">
+                    <section class="normal" id="section-gitbook_17">
                     
-                        <blockquote>
-<p>Joel on Software</p>
-<p>Nothing is as Simple as it Seems</p>
-</blockquote>
-<p>再小的事也不简单</p>
+                        <p>Joel on Software</p>
 <blockquote>
-<p>by Joel Spolsky Monday, March 04, 2002</p>
+<h1 id="nothing-is-as-simple-as-it-seems">Nothing is as Simple as it Seems</h1>
 </blockquote>
-<p>&gt;</p>
-<p>看起来.NET似乎给了我们一种语言选择，在语法上要操心更多。</p>
+<h1 id="-">再小的事也不简单</h1>
+<blockquote>
+<h3 id="by-joel-spolsky-monday-march-04-2002">by Joel Spolsky Monday, March 04, 2002</h3>
+</blockquote>
+<hr>
 <blockquote>
 <p>We had a little usability problem in CityDesk.</p>
-<p>Here was the problem: you could import files from the web using a menu command (&quot;Import Web Page&quot;). And you could import files from a disk into CityDesk by dragging them with the mouse. But there was no menu command to import files from a disk. So either people didn&#39;t discover that it was possible, or people tried to use the Import Web Page feature to import from disk, which didn&#39;t work right.</p>
-<p>I thought that it would be easy to fix with a two page wizard. Roughly speaking, page one of the wizard would ask you &quot;Where do you want to import from?&quot; If you chose &quot;disk,&quot; page two would prompt you for a file. If you chose &quot;web,&quot; page two would prompt you for a URL.</p>
 </blockquote>
 <p>我们的CityDesk遇到了一些小的可用性问题。</p>
+<blockquote>
+<p>Here was the problem: you could import files from the web using a menu command (&quot;Import Web Page&quot;). And you could import files from a disk into CityDesk by dragging them with the mouse. But there was no menu command to import files from a disk. So either people didn&#39;t discover that it was possible, or people tried to use the Import Web Page feature to import from disk, which didn&#39;t work right.</p>
+</blockquote>
 <p>问题就是：你可以选择一个菜单命令（“导入网页”）从网站上导入文件。你也可以从磁盘导入文件，只要用鼠标把他们拖拽进CityDesk就可以了。但是并没有一个菜单命令说可以从磁盘上导入文件，所以要么人们没有发现这个功能，要么人们就尝试用导入网页功能来导入文件。而这样做是不正确的。</p>
+<blockquote>
+<p>I thought that it would be easy to fix with a two page wizard. Roughly speaking, page one of the wizard would ask you &quot;Where do you want to import from?&quot; If you chose &quot;disk,&quot; page two would prompt you for a file. If you chose &quot;web,&quot; page two would prompt you for a URL.</p>
+</blockquote>
 <p>我觉得这个问题很容易就可以用一个两页的导入向导来解决。大致说来：向导上的第一页会问你：“你想从哪里导入？”如果你选择磁盘，第二页就会向你提示输入一个文件地址；如果你选择网页，第二页就会向你提示输入一个url。</p>
 <blockquote>
 <p>I almost started implementing this, but something stopped me, and instead, I started to write a mini-spec. Here&#39;s the spec, in its entirety:</p>
+</blockquote>
+<p>我几乎都开始实现这项功能了，突然有些情况让我停了下来，我开始编写一个迷你规范。下面就是这个完整规范。</p>
+<hr>
+<blockquote>
 <p>Page One</p>
 <p>Where do you want to import from? (Disk/Web)</p>
-</blockquote>
-<p>&gt;</p>
-<blockquote>
 <p>Page Two (Disk)</p>
 <p>Standard File/Open dialog</p>
 <p>Page Two (Web)</p>
 <p>URL prompt with mini-web-browser</p>
-<p>Suddenly something occurred to me. Can you put the Windows standard file open dialog, which is usually supplied in toto by the OS, into a wizard?</p>
-<p>Hmm.</p>
-<p>I investigated. Yes, you can, but it&#39;s no fun and takes a few hours of work. How could I make this not be a wizard? I rewrote the spec:</p>
-<p>Two Menu Items:</p>
-<p>1) Import Web Page From Internet -&gt; Pops Up URL Dialog</p>
-<p>2) Import Web Page From Disk -&gt; Pops Up File Open Dialog</p>
-<p>Much better. Three minutes of design work saved me hours of coding.</p>
-<p>If you&#39;ve spent more than 20 minutes of your life writing code, you&#39;ve probably discovered a good rule of thumb by now: nothing is as simple as it seems.</p>
-<p>Something as simple as copying a file is full of perils. What if the first argument is a directory? What if the second argument is a file? What if a file with the same name already exists in the destination? What if you don&#39;t have write permission?</p>
 </blockquote>
-<p>我几乎都开始实现这项功能了，突然有些情况让我停了下来，我开始编写一个迷你规范。下面就是这个完整规范。</p>
+<hr>
 <p>第一页</p>
 <p>你想从哪里导入（磁盘还是网络）？</p>
-<p>&gt;</p>
 <p>第二页（磁盘）</p>
 <p>标准文件打开对话框。</p>
 <p>第二页（网络）</p>
 <p>自带迷你网络浏览器的url提示输入匡。</p>
-<p>&gt;</p>
+<hr>
+<blockquote>
+<p>Suddenly something occurred to me. Can you put the Windows standard file open dialog, which is usually supplied in toto by the OS, into a wizard?</p>
+</blockquote>
 <p>突然有一样东西出现在我脑海里，你可以把windows的标准文件打开对话框放入向导吗？标准文件对话框通常都是由操作系统直接提供的。</p>
-<p>恩。</p>
-<p>经过一番调查是可以的。但是这么做一点乐趣都没有，而且要花费几个小时的工作。我应该怎样把这个变成不是一个向导呢？，于是我重写了规范。</p>
+<blockquote>
+<p>Hmm.
+I investigated. Yes, you can, but it&#39;s no fun and takes a few hours of work. How could I make this not be a wizard? I rewrote the spec:</p>
+</blockquote>
+<p>恩。
+经过一番调查是可以的。但是这么做一点乐趣都没有，而且要花费几个小时的工作。我应该怎样把这个变成不是一个向导呢？，于是我重写了规范。</p>
+<blockquote>
+<p>Two Menu Items:</p>
+<p> 1 ) Import Web Page From Internet -&gt; Pops Up URL Dialog</p>
+<p> 2 ) Import Web Page From Disk -&gt; Pops Up File Open Dialog</p>
+</blockquote>
 <p>两个菜单项：</p>
-<p>第一，从因特网导入网页-》弹出url输入对话框。</p>
-<p>第二，从磁盘导入网页  -》 弹出标准文件输入对话框。</p>
+<p>  第一 ，从因特网导入网页-》弹出url输入对话框。</p>
+<p>  第二 ，从磁盘导入网页  -》 弹出标准文件输入对话框。</p>
+<blockquote>
+<p>Much better. Three minutes of design work saved me hours of coding.</p>
+</blockquote>
 <p>感觉好多了。三分钟的设计工作省去了我几个小时的编码工作。</p>
+<blockquote>
+<p>If you&#39;ve spent more than 20 minutes of your life writing code, you&#39;ve probably discovered a good rule of thumb by now: nothing is as simple as it seems.</p>
+</blockquote>
 <p>如果你曾经花费过二十分钟以上时间来编码。你可能已经发现了一个至理名言：就是再小的事也没有看上去那么简单。</p>
+<blockquote>
+<p>Something as simple as copying a file is full of perils. What if the first argument is a directory? What if the second argument is a file? What if a file with the same name already exists in the destination? What if you don&#39;t have write permission?</p>
+</blockquote>
 <p>最简单的例如拷贝一个文件这样的事情都充满了出错的可能：如果第一个输入的参数是一个文件夹呢？如果第二个参数是一个文件呢？如果一个相同文件名的文件已经存在目标文件夹下面呢？如果你没有写权限呢？</p>
-<p>&gt;</p>
 <blockquote>
 <p>What if the copy fails in the middle? What if the destination is on a remote machine which is available, but which requires authentication to continue? What if the files are large and the link is slow and you need to show a progress indicator? What if the transfer speed slows down to almost zero... when do you give up and return an error message?</p>
-<p>A good way to interview candidates for testing jobs is to give them a simple operation and ask them to enumerate all the things that can possibly go wrong. A classic Microsoft test interview question: how do you test the File Open dialog box? A good tester will be able to rattle off several dozen weird things to test (&quot;file is deleted by another user between the time it is listed in the box and the time you select it and click Open&quot;).</p>
-<p>OK, so we have one axiom: nothing is as simple as it seems.</p>
-<p>There&#39;s another axiom in software engineering, which is, always try to reduce risk. One particularly important piece of risk to avoid is schedule risk, when something takes longer than expected. Schedule risk is bad because your boss yells at you, which makes you unhappy. If that&#39;s not enough motivation for you, the economic reason why schedule risk is bad is because you decided to do a feature based on information that it would take 1 week. Now that you realize that it has taken 20 weeks to accomplish, that decision might well have been wrong. Perhaps if you knew it was going to take 20 weeks, you would have made a different decision. The more wrong decisions you make, the more likely all those tote bags with your company logo will end up in the liquidator&#39;s warehouse while your ex-CEO mopes that &quot;what sucks is, we weren&#39;t even successful enough to get mentioned onfuckedcompany when we shut down!&quot;</p>
 </blockquote>
 <p>如果拷贝到一半失败了呢？如果目标文件夹是在一个远程的机器上，这个机器可用，却需要认证才能继续呢？如果文件很大而连接却很慢，然后你需要一个进度条呢？传输速度慢到差不多0了，你什么时候才会取消这个操作，然后返回一个错误信息呢？</p>
+<blockquote>
+<p>A good way to interview candidates for testing jobs is to give them a simple operation and ask them to enumerate all the things that can possibly go wrong. A classic Microsoft test interview question: how do you test the File Open dialog box? A good tester will be able to rattle off several dozen weird things to test (&quot;file is deleted by another user between the time it is listed in the box and the time you select it and click Open&quot;).</p>
+</blockquote>
 <p>一种面试测试工作候选人的最好的方式就是让他们做一件简单的操作，然后让他们列举所有可能出错的情况。微软经典的测试面试问题就是：如何测试一个文件打开对话框？一个好的测试人员应该能够列举出几十种奇怪的情况来测试。（例如：当用户在文件打开对话框中列出这个文件的同时另外一个用户已经把这个文件删除了。）</p>
+<blockquote>
+<p>OK, so we have one axiom: nothing is as simple as it seems.</p>
+</blockquote>
 <p>好我们已经得到了一个定理：再小的事情也没有看上去那么简单。</p>
+<blockquote>
+<p>There&#39;s another axiom in software engineering, which is, always try to reduce risk. One particularly important piece of risk to avoid is schedule risk, when something takes longer than expected. Schedule risk is bad because your boss yells at you, which makes you unhappy. If that&#39;s not enough motivation for you, the economic reason why schedule risk is bad is because you decided to do a feature based on information that it would take 1 week. Now that you realize that it has taken 20 weeks to accomplish, that decision might well have been wrong. Perhaps if you knew it was going to take 20 weeks, you would have made a different decision. The more wrong decisions you make, the more likely all those tote bags with your company logo will end up in the liquidator&#39;s warehouse while your ex-CEO mopes that &quot;what sucks is, we weren&#39;t even successful enough to get mentioned onfuckedcompany when we shut down!&quot;</p>
+</blockquote>
 <p>软件工程的另外一个定理就是一直尝试降低风险。一个特别重要要避免的风险就是进度风险。如果某样任务已经花费了比你预期更长的时间。那么进度风险就很糟糕，因为老板会朝你嚷嚷，这会让你不高兴。如果这都不能让你信服，为什么进度风险很糟糕的经济原因就是，比方说：根据你得到的信息，一个功能可能要花一个星期，因此你决定去实现该功能。然后你突然意识到这个功能要花上二十周才能实现，你发现你的决定可能是错误的。也许如果你早知道这个功能要花二十周的话，你就会做出一个不同的决定。你做出的决定越糟，印有你们公司标致的那些礼品包就越有可能出现在债主们的仓库里面。前CEO就会闷闷不乐的说道：最惨的是，当我们关门的时候，我们甚至都还没有走到那一步，就是能够被列在搞砸公司排行榜上面。</p>
 <blockquote>
 <p>The combination of nothing-is-as-simple-as-it-seems and reduce-risk can only lead you to one conclusion:</p>
-<p>You have to design things before you implement them.</p>
-<p>I&#39;m sorry to disappoint you. Yeah, I know, you read Kent Beck and now you think it&#39;s OK to not design things before you implement them. Sorry, it&#39;s not OK. You can not change things in code &quot;just as easily&quot; as you could change them in the design documents. People say this all the time and it&#39;s wrong. &quot;We use high-level tools these days, like Java and XML. We can change things in minutes in the code. Why not design it in code?&quot; My friend, you can put wheels on your mama but that doesn&#39;t make her a bus, and if you think you can refactor your wrongly-implemented file-copy function to make it preemptive rather than threaded as quickly as I could write that sentence, you&#39;re in deep denial.</p>
-<p>Anyway, I don&#39;t think Extreme Programming really advocates zero design. They just say &quot;don&#39;t do any more design than needed,&quot; which is fine. But that&#39;s not what people hear. Most programmers are looking for any excuse they can find not to do basic design before implementing features. So they latch onto the &quot;no-design&quot; idea like flies in a bug zapper. Dzzzzzzt! It&#39;s one of those weird forms of laziness where you end up doing more work than you would have done otherwise. I&#39;m too lazy to design the feature on paper first, so I just write some code, and then it&#39;s not right, so I have to fix it, and I spend more time than I would have otherwise. Or, more commonly, I write some code, and then it&#39;s not right, but it&#39;s too late, and my product is inferior and I spend until the end of time making up excuses for why it &quot;has to be that way.&quot; It&#39;s just sloppy and unprofessional.</p>
 </blockquote>
 <p>把没有东西看起来那么简单和降低风险结合起来考虑，你只能得到一个结论：</p>
+<blockquote>
+<p>You have to design things before you implement them.</p>
+</blockquote>
 <p>在你动手实现之前你必须先要动手设计。</p>
+<blockquote>
+<p>I&#39;m sorry to disappoint you. Yeah, I know, you read Kent Beck and now you think it&#39;s OK to not design things before you implement them. Sorry, it&#39;s not OK. You can not change things in code &quot;just as easily&quot; as you could change them in the design documents. People say this all the time and it&#39;s wrong. &quot;We use high-level tools these days, like Java and XML. We can change things in minutes in the code. Why not design it in code?&quot; My friend, you can put wheels on your mama but that doesn&#39;t make her a bus, and if you think you can refactor your wrongly-implemented file-copy function to make it preemptive rather than threaded as quickly as I could write that sentence, you&#39;re in deep denial.</p>
+</blockquote>
 <p>如果让你不高兴，很抱歉。是的，我知道，如果你读过KentBeck然后你认为在动手实践之前并不需要设计是可以的。很抱歉，行不通的。你在代码里面改动东西的时候，是没有在设计文档里面改动东西那么容易的。“如今我们会用高层的工具，例如Java和XML，我分分钟就可以改变代码实现，为什么不在代码里面进行设计呢？”人们可能一直都会这样说，但是这是错误的。我的朋友们，你可以给你妈妈安上轮子，但是这并不代表她就变成了一辆公共汽车。如果你觉得你把你错误实践的文件拷贝函数从多线程改成抢占式的速度可以跟我在设计文档里面改写那句话一样快的话，那么你不过在抵赖罢了。</p>
+<blockquote>
+<p>Anyway, I don&#39;t think Extreme Programming really advocates zero design. They just say &quot;don&#39;t do any more design than needed,&quot; which is fine. But that&#39;s not what people hear. Most programmers are looking for any excuse they can find not to do basic design before implementing features. So they latch onto the &quot;no-design&quot; idea like flies in a bug zapper. Dzzzzzzt! It&#39;s one of those weird forms of laziness where you end up doing more work than you would have done otherwise. I&#39;m too lazy to design the feature on paper first, so I just write some code, and then it&#39;s not right, so I have to fix it, and I spend more time than I would have otherwise. Or, more commonly, I write some code, and then it&#39;s not right, but it&#39;s too late, and my product is inferior and I spend until the end of time making up excuses for why it &quot;has to be that way.&quot; It&#39;s just sloppy and unprofessional.</p>
+</blockquote>
 <p>不管怎么说。我并不觉得极限编程真正倡导的是0设计。他们只是说：不要做过多的设计，这是可以的。但这并不是人们所听到的那样。大多数的程序员都只是在找各种借口，这样他们就能够在实现特性之前不做任何基本设计了。他们就像苍蝇飞向捕蝇器那样赖上了设计。最后只会“兹兹”。这就是那些形形色色的奇怪的懒惰形式中的一种，本来你可以少费不少事结果却多做了工作。我太懒了不想在纸上设计功能。所以我就着手实现，然后发现不能正确工作，所以我得修正它，然后就花了比原来更多的时间。或者更普遍的：我写了一些代码，然后发现他不是正确的，但是已经太晚了。这让我的产品更次，然后到最后我都一直花时间编造借口解释说为什么做成这个样子。这实在太糟糕，太不不专业了。</p>
 <blockquote>
 <p>When Linus Torvalds bashes design, he&#39;s talking about huge systems, which have to evolve, or they become Multics. He&#39;s not talking about your File Copy code. And when you consider that he had a pretty clear road map of exactly where he was going, it&#39;s no wonder Linus doesn&#39;t see much value in design. Don&#39;t fall for it. Chances are it doesn&#39;t apply to you. And anyway, Linus is much smarter than we are, so things that work for him don&#39;t work for us normal people.</p>
-<p>Incremental design and implementation is good. Frequent releases are fine (although for shrink-wrapped or mass market software, it drives customers crazy, never a good idea -- instead do frequent internal milestones.) Too much formality in design is a waste of time -- I&#39;ve never seen a project benefit from mindless flowcharting or UMLing or CRCing or whatever the flavor-du-jour is. And those huge 10 million lines-of-code behemoth systems Linus is talking aboutshould evolve, because humans don&#39;t really know how to design software on that scale.</p>
-<p>But when you sit down to write File Copy, or when you sit down to plan the features of the next release of your software, you gotta design. Don&#39;t let the sirens persuade you otherwise.</p>
-<p>Come argue with me about this in person at the Cutter Summit, April 29-May 1st, in Cambridge, MA, where I&#39;ll be on a panel with Tom DeMarco, Kent Beck, and others.</p>
 </blockquote>
 <p>当LinusTorvalds攻击设计的时候，他的讨论的可是大型系统，大型系统也得演化。否则它们就会变成Multics 。他讨论的可不是你的文件拷贝代码。如果你考虑到他对于将来这个系统要变成什么样子有着非常清楚的里程表的话，他觉得设计没有多大价值也就不足为奇了。但你不要就赖上这个借口。情况是，这可能并不适用于你。而且不管怎么说Linus比我们要聪明多了，所以对他来说行得通的方式并不一定适用于我们平常人。</p>
+<blockquote>
+<p>Incremental design and implementation is good. Frequent releases are fine (although for shrink-wrapped or mass market software, it drives customers crazy, never a good idea -- instead do frequent internal milestones.) Too much formality in design is a waste of time -- I&#39;ve never seen a project benefit from mindless flowcharting or UMLing or CRCing or whatever the flavor-du-jour is. And those huge 10 million lines-of-code behemoth systems Linus is talking aboutshould evolve, because humans don&#39;t really know how to design software on that scale.</p>
+</blockquote>
 <p>增量设计和实现是可行的，频繁的发布也是可行的。（但是对于快速消费和大众市场产品，这种做法会让客户发疯，这并不是什么好主意—不过你可以在内部做频繁的发布和里程碑）在设计的形式上花太多功夫就是浪费时间而已。我没有看到过一个项目会受益不经思考的流程图或者是UML图或者是CRC图或者不管什么乱七八糟的图。然后Linus讨论的那个巨大的一千万行代码写成的河马系统也会演变。因为人们其实并不知道如何去设计那种规模的大型软件。</p>
+<blockquote>
+<p>But when you sit down to write File Copy, or when you sit down to plan the features of the next release of your software, you gotta design. Don&#39;t let the sirens persuade you otherwise.</p>
+</blockquote>
 <p>但是当你坐下来开始实现文件拷贝，或者开始坐下来计划你的软件产品下一个发布功能的时候，你需要设计。不要被那些海妖们歌声迷惑了。</p>
 <blockquote>
-<p>4月29号到5月1号 MA 剑桥，你可以在卡特峰会的时候面对面来跟我争论这个观点。届时我会和KentBeck TomDeMacro一起参加一个座谈</p>
+<p>Come argue with me about this in person at the Cutter Summit, April 29-May 1st, in Cambridge, MA, where I&#39;ll be on a panel with Tom DeMarco, Kent Beck, and others.</p>
 </blockquote>
-<p>&gt;</p>
+<p>4月29号到5月1号 MA 剑桥，你可以在卡特峰会的时候面对面来跟我争论这个观点。届时我会和KentBeck TomDeMacro一起参加一个座谈</p>
 
                     
                     </section>

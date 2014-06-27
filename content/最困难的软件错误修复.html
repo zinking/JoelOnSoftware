@@ -42,7 +42,7 @@
 
 
         
-    <div class="book" data-github="zinking/JoelOnSoftware" data-level="14" data-basepath=".." data-revision="1403333303678">
+    <div class="book" data-github="zinking/JoelOnSoftware" data-level="14" data-basepath=".." data-revision="1403891743779">
     <div class="book-header">
     <!-- Actions Left -->
     
@@ -431,7 +431,7 @@
         
             <li  data-level="34" >
                 
-                <span><b>34.</b> [两个故事两个故事.md)</span>
+                <span><b>34.</b> [两个故事.md)</span>
                 
                 
             </li>
@@ -678,18 +678,17 @@
 
                 <div class="page-inner">
                 
-                    <section class="normal" id="section-gitbook_50">
+                    <section class="normal" id="section-gitbook_94">
                     
-                        <blockquote>
-<p>Joel on Software</p>
-<p>Hard-assed Bug Fixin&#39;</p>
-</blockquote>
-<p>最困难的软件错误修复</p>
+                        <p>Joel on Software</p>
 <blockquote>
-<p>by Joel Spolsky Tuesday, July 31, 2001</p>
+<h1 id="hard-assed-bug-fixin-">Hard-assed Bug Fixin&#39;</h1>
 </blockquote>
-<p>&gt;</p>
-<p>&gt;</p>
+<h1 id="-">最困难的软件错误修复</h1>
+<blockquote>
+<h6 id="by-joel-spolsky-tuesday-july-31-2001">by Joel Spolsky Tuesday, July 31, 2001</h6>
+</blockquote>
+<hr>
 <blockquote>
 <p>Software quality, or the lack thereof, is something everybody loves to gripe about. Now that I have my own company I finally decided to do something about it. Over the last two weeks we stopped everything atFog Creek to ship a new incremental version of FogBUGZ with the goal of eliminating all known bugs (there were about 30).</p>
 </blockquote>
@@ -699,7 +698,7 @@
 </blockquote>
 <p>作为软件开发人员，修复软件错误通常是件好事。对吧？难道不一定是一件好事？</p>
 <blockquote>
-<p>No!</p>
+<p>不一定!</p>
 <p>Fixing bugs is only important when the value of having the bug fixed exceeds the cost of the fixing it.</p>
 </blockquote>
 <p>是的。</p>
@@ -730,23 +729,31 @@
 </blockquote>
 <p>除此之外大多数情况下，还是值得去修复软件错误的。哪怕是“无害”的软件错误，它们会对你的公司以及公司的产品的信誉带来影响，而这，在长远的未来将对你公司的营收产生至关重要的影响。很难克服公司产品到处是错误的负面形象带来的影响。当你确实决定要发布一个.01版本的时候，下面是一些关于寻找和修复恰当错误的建议：要寻找那些经济上值得去修复的软件错误来修复。</p>
 <blockquote>
-<p>Step One: Make Sure You Find Out About The Bugs.</p>
+<h3 id="step-one-make-sure-you-find-out-about-the-bugs-">Step One: Make Sure You Find Out About The Bugs.</h3>
 </blockquote>
-<p>第一步：确定你找到了那些错误。</p>
+<h3 id="-">第一步：确定你找到了那些错误。</h3>
 <blockquote>
-<p>In the case of FogBUGZ, we have two ways of doing that. First, we trap all bugs on our free demo server, capture as much information as we can, and email the whole thing to the development team. That found an awful lot of bugs, which was very cool. For example, we discovered a bunch of people who didn&#39;t enter dates where they were supposed to in the &quot;Fix For&quot; screen. We didn&#39;t even have an error message in that case, we just &quot;crashed&quot; (which, in a web app, just means you got an ugly IIS error instead of what you expected). Oops.</p>
+<ul>
+<li>In the case of FogBUGZ, we have two ways of doing that. First, we trap all bugs on our free demo server, capture as much information as we can, and email the whole thing to the development team. That found an awful lot of bugs, which was very cool. For example, we discovered a bunch of people who didn&#39;t enter dates where they were supposed to in the &quot;Fix For&quot; screen. We didn&#39;t even have an error message in that case, we just &quot;crashed&quot; (which, in a web app, just means you got an ugly IIS error instead of what you expected). Oops.</li>
+</ul>
 </blockquote>
-<p>在FogBUGZ的例子中，我们有两种方法来做那件事情。首先，我们会在我们的演示服务器上捕获所有的软件错误，获得尽可能多的信息，然后把所有这些信息发电子邮件给开发团队。这个过程发现了一堆软件错误，超级酷。例如，我们发现有一堆人在“修复”页面应该要输入日期的地方没有输入日期。我们甚至没有考虑到这种错误情况，我们只好让程序崩溃（对于网站应用意味着一个丑陋的IIS出错页面而不是你预期的就诶过）。哎呦荷。</p>
+<ul>
+<li>在FogBUGZ的例子中，我们有两种方法来做那件事情。首先，我们会在我们的演示服务器上捕获所有的软件错误，获得尽可能多的信息，然后把所有这些信息发电子邮件给开发团队。这个过程发现了一堆软件错误，超级酷。例如，我们发现有一堆人在“修复”页面应该要输入日期的地方没有输入日期。我们甚至没有考虑到这种错误情况，我们只好让程序崩溃（对于网站应用意味着一个丑陋的IIS出错页面而不是你预期的就诶过）。哎呦荷。</li>
+</ul>
 <blockquote>
-<p>When I worked at Juno, we had an even cooler system in place to collect bugs &quot;from the field&quot; automatically. We installed a handler using TOOLHELP.DLL so that every time Juno crashed, it stayed alive just long enough to dump the stack into a log file before going to its grave. The next time the program connected to the Internet to send mail, it uploaded the log file. During betas, we gathered these log files, collated all the crashes, and entered them into the bug tracking database. This found literally hundreds of crashing bugs. When you have a million users, it is amazing what will crash, often because of severe low memory conditions or severely crappy computers (can you spell Packard Bell?) You could have code like this:</p>
+<ul>
+<li>When I worked at Juno, we had an even cooler system in place to collect bugs &quot;from the field&quot; automatically. We installed a handler using TOOLHELP.DLL so that every time Juno crashed, it stayed alive just long enough to dump the stack into a log file before going to its grave. The next time the program connected to the Internet to send mail, it uploaded the log file. During betas, we gathered these log files, collated all the crashes, and entered them into the bug tracking database. This found literally hundreds of crashing bugs. When you have a million users, it is amazing what will crash, often because of severe low memory conditions or severely crappy computers (can you spell Packard Bell?) You could have code like this:</li>
+</ul>
 </blockquote>
-<p>当我在Juno工作的时候，我们有个更“酷”的自建系统自动的从输入表单域搜集错误。我们给Juno用TOOLHELP.DLL安装了一个句柄，这样每次Juno崩溃的时候，它都有足够的时间在它消失之前把调用栈信息导出到一个日志文件。下一次程序连接到因特网的时候，它上传日志文件，发送邮件。在Beta测试的时候，我们搜集了所有这些日志文件，校对了这些崩溃，然后把它们输入到软件错误跟踪系统数据库。这个过程几乎发现了上百个会导致程序崩溃的软件错误。当你有了上百万用户的时候，你会很吃惊什么样的场景造成程序崩溃， 通常会是极低的内存条件或是超级破的电脑（你能想象小霸王么？）你可能会这样的代码：</p>
-<blockquote>
-<p>int foo( object&amp; r )</p>
-<p>{</p>
-<p>   r.Blah();</p>
-<p>   return 1;</p>
-<p>}</p>
+<ul>
+<li>当我在Juno工作的时候，我们有个更“酷”的自建系统自动的从输入表单域搜集错误。我们给Juno用TOOLHELP.DLL安装了一个句柄，这样每次Juno崩溃的时候，它都有足够的时间在它消失之前把调用栈信息导出到一个日志文件。下一次程序连接到因特网的时候，它上传日志文件，发送邮件。在Beta测试的时候，我们搜集了所有这些日志文件，校对了这些崩溃，然后把它们输入到软件错误跟踪系统数据库。这个过程几乎发现了上百个会导致程序崩溃的软件错误。当你有了上百万用户的时候，你会很吃惊什么样的场景造成程序崩溃， 通常会是极低的内存条件或是超级破的电脑（你能想象小霸王么？）你可能会这样的代码：</li>
+</ul>
+<pre><code>int foo( object&amp; r )
+{
+    r.Blah();
+    return 1;
+}
+</code></pre><blockquote>
 <p>and you would get crashes there because the r reference was NULL, even though that&#39;s completely impossible, there&#39;s no such thing as a NULL reference, C++ guarantees it, and you don&#39;t have to believe me but when you wait long enough and have millions of users and religiously collect their stack dumps, you will find crashes in places like that and you won&#39;t believe your eyes. (And you won&#39;t fix them. Cosmic rays, man. Get a new computer and this time don&#39;t install every cool shareware taskbar lint gizmo you find. Sheesh.)</p>
 </blockquote>
 <p>你会发现有个软件崩溃因为r引用是空的，即使完全不可能，根本没有这种“空引用”的概念，C++保证这点，你可以不相信我但是当你等了足够长时间开始有上百万用户了，然后开始yicheng的搜集他们的崩溃时调用堆栈转储，你就会发现奔溃出现在你眼睛无法直视的地方。（你没办法修复，宇宙射线导致的，亲。重新买个电脑吧，这回不要把你找到的每个很酷的共享任务栏小插件软件全部都装到电脑上。天）</p>
@@ -755,9 +762,9 @@
 </blockquote>
 <p>另外一件事就是要把每一桶打来的技术支持电话都当作是软件错误的证据。当我们接了这种电话，我们通常会尝试用我们知道的方法来消除这些现象。例如，旧的FogBUGZ安装过程会假设FogBUGZ会以匿名因特网账户运行。95%的情况下这都是很好的架设，不过还有5%的情况是不正确的架设，那些5%的假设里的人最后就会通过技术支持热线打进来找你。所以我们最后修改了安装过程，提示用户来选择上网账户。</p>
 <blockquote>
-<p>Step Two: Make Sure You Get Economic Feedback</p>
+<h3 id="step-two-make-sure-you-get-economic-feedback">Step Two: Make Sure You Get Economic Feedback</h3>
 </blockquote>
-<p>第二步：确保你获得经济实用的反馈</p>
+<h3 id="-">第二步：确保你获得经济实用的反馈</h3>
 <blockquote>
 <p>You may not be able to figure out exactly how much it&#39;s worth to fix each bug, but there&#39;s something you can do: charge the &quot;cost&quot; of tech support back to the business unit. In the early nineties there was a financial reorganization at Microsoft under which each product unit was charged for the full cost of all tech support calls. So the product units started insisting that PSS (Microsoft&#39;s tech support) provide lists of Top Ten Bugs regularly. When the development team concentrated on those, product support costs plummeted.</p>
 </blockquote>
@@ -771,9 +778,9 @@
 </blockquote>
 <p>解决这两个问题的一个方法是：当用户的技术支持电话是因为你软件本身的错误导致的，那么就不要让用户付钱。 微软是这样做的，这相当友善，我从来没因为技术支持电话给微软打过钱。相反，把如今一个开发者支持的费用约$245记回到产品部门头上。那就会彻底干掉他们卖给你产品获得的利润（甚至是超过几倍），而且这个过程产生了完全合理的经济学动机。这让我想起了为什么DOS游戏是烂生意的一个理由。。。。。。为了让这些游戏看上去不错而且能快速运行， 你通常需要奇怪的视频驱动，简单一个关于视频驱动的技术支持电话就足以完全抹去你销售20份产品挣来的利润，这还是在假设在知识，理论和MTV广告上的开销还没有耗光你所有盈利的情况下。</p>
 <blockquote>
-<p>Step Three: Figure Out What It&#39;s Worth To You To Fix Them All.</p>
+<h3 id="step-three-figure-out-what-it-s-worth-to-you-to-fix-them-all-">Step Three: Figure Out What It&#39;s Worth To You To Fix Them All.</h3>
 </blockquote>
-<p>第三步：搞清楚全部修复这些软件错误给你带来的价值在哪里。</p>
+<h3 id="-">第三步：搞清楚全部修复这些软件错误给你带来的价值在哪里。</h3>
 <blockquote>
 <p>At Fog Creek Software, well, we&#39;re a tiny company (except in our own minds), and the development team just takes the tech support calls. The cost was running about 1 hour per day, which, based on our consulting rates, is somewhere around $75000 a year. We were pretty confident that we could get that down to 15 minutes a day by fixing all known bugs.</p>
 </blockquote>
@@ -806,7 +813,6 @@
 <p>With all that said, I&#39;m optimistic at heart, and I believe that there is a lot of hidden value to producing very high quality products that is not very easy to capture. Your employees will be prouder. Fewer of your customers will send you back your CD in the mail after microwaving it and chopping it to bits with an ax. So I tend to err on the side of quality (indeed, we fixed every known bug in FogBUGZ, not just the big bang ones) and take pride in that, and feel confident, by the complete elimination of errors from the demo server, that we have a rock-solid product.</p>
 </blockquote>
 <p>综上所述，我本质上是个乐观主义者，而且我相信创造高质量的软件产品隐含了很多不容易发现的价值。你的员工会更自豪。把你的软件安装CD先用微波炉煮了然后用大斧砍成一片一片然后寄回给你的用户会越来越少。所以我会诟病软件质量（实际上，我们修复了FogBUGZ里的所有已知软件错误，不仅仅是那些重量级的错误），我为之骄傲，感到自信，通过从展示版本服务器上完全的消除错误，我们获得了坚如磐石的软件产品。</p>
-<p>。</p>
 
                     
                     </section>

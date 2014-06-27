@@ -42,7 +42,7 @@
 
 
         
-    <div class="book" data-github="zinking/JoelOnSoftware" data-level="20" data-basepath=".." data-revision="1403333303678">
+    <div class="book" data-github="zinking/JoelOnSoftware" data-level="20" data-basepath=".." data-revision="1403891743779">
     <div class="book-header">
     <!-- Actions Left -->
     
@@ -431,7 +431,7 @@
         
             <li  data-level="34" >
                 
-                <span><b>34.</b> [两个故事两个故事.md)</span>
+                <span><b>34.</b> [两个故事.md)</span>
                 
                 
             </li>
@@ -678,15 +678,18 @@
 
                 <div class="page-inner">
                 
-                    <section class="normal" id="section-gitbook_8">
+                    <section class="normal" id="section-gitbook_13">
                     
-                        <blockquote>
-<p>Joel on Software</p>
-<p>Get Crash Reports from Your Users - Automatically</p>
-</blockquote>
-<p>从用户处自动获得崩溃报告</p>
+                        <p>Joel on Software</p>
 <blockquote>
-<p>by Joel Spolsky Monday, April  18th, 2003</p>
+<h1 id="get-crash-reports-from-your-users-automatically">Get Crash Reports from Your Users - Automatically</h1>
+</blockquote>
+<h1 id="-">从用户处自动获得崩溃报告</h1>
+<blockquote>
+<h6 id="by-joel-spolsky-monday-april-18th-2003">by Joel Spolsky Monday, April  18th, 2003</h6>
+</blockquote>
+<hr>
+<blockquote>
 <p>I used to work as a developer on the client software for one of the largest American ISPs. Our software was used by literally millions of people. Even the rarest bug had the potential to affect hundreds or thousands of users. Yet I felt extremely confident when we decided to push the button releasing our latest code. I remember telling my dad, &quot;The beta is looking great; yesterday we only had twelve crashes in all of North America.&quot;</p>
 </blockquote>
 <p>我曾经为美国的最大的ISP服务商工作两年，工作内容是开发客户端软件。我们软件的真实用户有数百万人。 哪怕是最罕见的错误都有可能影响成百上千人。 然而当我们决定按下发布最新版按钮的时候仍然感到十分自信。我记得这样告诉我爹，“Beta版本看起来相当不错；昨天即使全美我们也只有12个崩溃事件”。</p>
@@ -709,10 +712,14 @@
 </blockquote>
 <p>现在我创立了自己的公司，我是这种技术一大信徒。 几乎我们在FogCreek软件公司编写的代码都有这种向开发团队错误追踪数据库反馈错误的机制。 包含了我们卖给客户的代码，例如windows桌面程序CityDesk，还有FogBugz本身，这是基于网页的应用程序，客户需要安装在他们自己的服务器上。 他们都通过因特网来报告崩溃事件。 甚至是我们写的内部使用的软件，例如运行FogCreek在线商店的e电商软件，如果出现崩溃事件的话也会通知开发团队。</p>
 <blockquote>
-<p>Anatomy of a Crash 分析一次崩溃事件</p>
+<h2 id="anatomy-of-a-crash">Anatomy of a Crash</h2>
+</blockquote>
+<h2 id="-">分析一次崩溃事件</h2>
+<blockquote>
 <p>OK, so your code crashed. In almost every programming environment, there&#39;s some way to recover from the crash at a central location.  At this point, instead of letting the program die, we display a dialog box (see Figure 1).</p>
 </blockquote>
 <p>好吧，既然你的代码崩溃了。几乎在任意一种编程环境里，都会有一个从崩溃中恢复的中心。 到这里我们会显示一个对话框（如图1）而不是让程序消亡。</p>
+<p><img src="crashdialog.png" alt="Crash Report Dialog"></p>
 <blockquote>
 <p>Figure 1: Our automated crash reporting dialog box is short and to the point.</p>
 </blockquote>
@@ -728,36 +735,49 @@
 <p>几乎所有你觉得重要的信息都能自动搜集到， 例如他们用的是什么操作系统， 有多大的内存，之类的。 </p>
 <p>强调崩溃报告的匿名性和隐私非常重要。 工作设计到保密的人如果觉得崩溃报告会反馈上传他的工作内容的时候就不会提交崩溃报告， 所以我们提供了一个链接，用户可以点击过去看看我们到底传输了些什么。 甚至为了避免看起来不恰当，要小心的告诉用户你们要传输的自动搜集的信息内容。</p>
 <blockquote>
-<p>Collecting Data 搜集数据</p>
+<h2 id="collecting-data">Collecting Data</h2>
+</blockquote>
+<h2 id="-">搜集数据</h2>
+<blockquote>
 <p>The next question is, what data should we collect that will help our developers find the crash? There is a temptation to grab everything. Every bit of system information you can find. The versions of every DLL and COM control on the user&#39;s system. Even a complete memory dump (a.k.a. core dump).</p>
 </blockquote>
 <p>下一个问题就是，我们应该搜集什么样的数据以帮助开发人员定位这次崩溃？ 有一种倾向是搜集所有的信息。 所有你能找到的关于系统的信息。 用户系统的所有DLL和COM插件的信息。甚至是完整的内存印象（即内核转储）</p>
 <blockquote>
 <p>After several years working as a developer and never quite knowing what I&#39;m supposed to do with core dumps, I have discovered that collecting this data is not, actually, necessary. Instead, here is the data we collect:</p>
+<ul>
+<li><p>The exact version of our product</p>
+</li>
+<li><p>The OS version and the version of Internet Explorer. (So many parts of Windows are actually provided by Internet Explorer and its components that this is important even for GUI applications.)</p>
+</li>
+<li><p>The file and line number in the code where the crash occurred</p>
+</li>
+<li><p>The error message, as a string</p>
+</li>
+<li><p>A unique numeric code for this type of error</p>
+</li>
+<li><p>The user&#39;s description of what they were doing</p>
+</li>
+<li><p>The user&#39;s email address</p>
+</li>
+</ul>
 </blockquote>
-<p>•    The exact version of our product</p>
-<p>•    The OS version and the version of Internet Explorer. (So many parts of Windows are actually provided by Internet Explorer and its components that this is important even for GUI applications.)</p>
-<p>•    The file and line number in the code where the crash occurred</p>
-<p>•    The error message, as a string</p>
-<p>•    A unique numeric code for this type of error</p>
-<p>•    The user&#39;s description of what they were doing</p>
-<p>•    The user&#39;s email address</p>
-<p>&gt;</p>
 <p>做了几年开发人员却从没有搞清楚要如何处理内核转储，我觉得发现和搜集这个信息实际上并不必要。 相反我们会搜集以下数据：</p>
-<p>    产品的确切版本</p>
-<p>    操作系统版本和IE版本。(Windows很多部分是有IE实现的而且IE的组件对于哪怕是图形界面程序都是至关重要的)</p>
-<p>    奔溃发生时候的文件行号</p>
-<p>    错误信息，字符串</p>
-<p>    这种错误类型的代码号</p>
-<p>    用户关于正在进行的事项的描述</p>
-<p>    用户的email地址</p>
-<p>&gt;</p>
+<p>  *    产品的确切版本</p>
+<p>  *    操作系统版本和IE版本。(Windows很多部分是有IE实现的而且IE的组件对于哪怕是图形界面程序都是至关重要的)</p>
+<p>  *    奔溃发生时候的文件行号</p>
+<p>  *    错误信息，字符串</p>
+<p>  *    这种错误类型的代码号</p>
+<p>  *    用户关于正在进行的事项的描述</p>
+<p>  *    用户的email地址</p>
 <blockquote>
 <p>That&#39;s it! Over the years we&#39;ve found that knowing the exact line of code where the code crashed is enough information to fix almost any crash. For those rare cases where this isn&#39;t enough information, you can contact one of the users who experienced the crash via email and ask for any additional information that might help. The benefit of gathering so little information is that the crash reporting process is very fast, making users less impatient. Just checking the version numbers of all the DLLs and COM controls can take quite a while, especially when you factor in the upload time over modems, and very rarely provides useful information. Even if you discover that a certain crash only happens with a certain version of one of Microsoft&#39;s system DLLs, what are you going to do about it? You still have to fix the code to work around the crash.</p>
 </blockquote>
 <p>就这些！这些年下来我们发现知道了崩溃发生的代码行号对于修复几乎所有的错误来说就已经足够了。 对于那些极端情况缺乏信息的， 你可以通过email联系遇到该崩溃的那个用户然后询问相关有用细节。 搜集这么少的信息的好处在于崩溃报告会变得非常快，不至于让用户觉得不耐烦。 仅仅检查用户所有的DLL和COM控件版本号就要花上好长时间， 特别是如果你算上拨号上网的上传时间，而这些东西几乎不会带来特别有用的信息。 哪怕你发现了这种特定的崩溃只有在微软系统的某个特定的DLL才有， 你又能做什么呢？ 你还是要修正你的代码来避免这种崩溃。</p>
 <blockquote>
-<p>Phoning Home 打电话回家</p>
+<h2 id="phoning-home">Phoning Home</h2>
+</blockquote>
+<h2 id="-">打电话回家</h2>
+<blockquote>
 <p>Thanks to the pervasiveness of the Internet, there&#39;s almost always one best way to send the information home: over the web. By sending a standard HTTP request, you will get your bug report past almost any kind of firewall customers may have in place. Virtually every programming environment now has built-in libraries to send an HTTP request and get the response back. For example, on Windows, there are built in functions in the WININET library that use Internet Explorer&#39;s network transport code to send an HTTP request and get the response. The best thing about these functions is that even if the user has configured his web browser to go through a proxy server, which is common inside firewalls, the WININET calls will automatically go through the proxy server, with no additional work on your part.</p>
 </blockquote>
 <p>多亏了因特网的普及，总有一种最好的办法把信息送回家：通过网页。 通过发送一个标准的HTTP请求，你的错误报告就能穿过客户会安装的几乎所有的防火墙。 现在几乎所有的编程环境都提供了发送HTTP请求然后获得响应的库。 例如在Windows上，WINNET库里就有使用IE发送HTTTP请求获得响应的网络传输代码。 这些函数最好的地方是哪怕用户为他的浏览器配置了代理服务器（在防火墙内部很常见）WINNET调用也能自动的帮你穿越同样的代理服务器，而不需要你做任何额外的事情。</p>
@@ -769,7 +789,7 @@
 <p>If your application is web based, there&#39;s something even easier you can do: display a web page containing a form that submits data to your server. It&#39;s as simple as changing the action attribute of the form tag to point to a URL on your bug tracking server. See Figure 2.</p>
 </blockquote>
 <p>如果你的程序是基于网页的，那么你可以做一件更简单的事情：显示一个包含要提交的数据到你服务器的表单。 就跟修改表单的Action属性来指向你的错误跟踪服务器的URL一样。 如图2</p>
-<p>&gt;</p>
+<p><img src="crashdialog2.png" alt="Internal Crash Report Dialog"></p>
 <blockquote>
 <p>Figure 2: the web page that appears when FogBugz is about to crash. The HTML for this page contains a form which sends the complete crash report to a URL at Fog Creek Software that collects the crash data.</p>
 </blockquote>
@@ -782,6 +802,7 @@
 <p>All crash reports arrive at Fog Creek via a single URL on our public-facing server. Our bug tracking database receives bug reports via this unique URL. In fact that URL is the only public access to our database; everything else is locked out, so people can submit bugs, but they can&#39;t get into the database.</p>
 </blockquote>
 <p>所有崩溃报告都会通过一个我们公开的服务器URL发送到FogCreek。我们的错误跟踪数据库通过这个独特的URL获得错误报告。 实际上这个URL是访问我们数据库的唯一接口； 其他所有的东西都锁起来了，所以大家可以提交错误，但这些错误没法进入数据库。</p>
+<p><img src="crashdialog3.png" alt="Internal Crash Report Dialog"></p>
 <blockquote>
 <p>Figure 3: What a bug reported by BugzScout looks like in FogBugz. Note the BugzScout-specific fields &quot;Scout Msg&quot; and &quot;Scout Will&quot;, shown highlighted.</p>
 </blockquote>
@@ -791,7 +812,10 @@
 </blockquote>
 <p>图3显示了当一个错误进入我们数据的时候是什么样子的。 我们本来可以这样设置，当一个错误进来的时候就会自动被分配到一个开发团队成员， 但现在我们设立了一个虚拟的任务叫做“CityDesk新错误”而不是打扰某一个人。 每隔一段时间当我们想筛选崩溃报告的时候，我们可以搜索分配给这个虚拟人物的崩溃报告， 然后决定是否修复这些错误。我们决定修复的错误就会被分配给真实的人。</p>
 <blockquote>
-<p>Identifying Duplicate Crashes 区分出重复的奔溃事件</p>
+<h2 id="identifying-duplicate-crashes">Identifying Duplicate Crashes</h2>
+</blockquote>
+<h2 id="-">区分出重复的奔溃事件</h2>
+<blockquote>
 <p>An important aspect of automatic crash collection is that the same crash will probably happen many times to many people, and you don&#39;t really want a new bug in your database for every duplicate of the crash. We handle this by constructing a unique string that contains key elements of the crash data.</p>
 </blockquote>
 <p>自动奔溃收集的一个重要方面就是同样的奔溃也许会在很多人身上发生，你不希望在数据库里对这种重复的崩溃搜集一个新的错误报告。 我们通过构建一个包含崩溃数据的关键字符串来处理这种重复情况。</p>
@@ -801,7 +825,9 @@
 <p>我们很小心的构造这种字符串，这样两个人遇到同样的崩溃的时候就会产生同样的字符串。 通过一些实验，我们发现处理的最好办法就是包含错误号，文件名，函数名，行号，然后是软件的版本号。 在图3中，该唯一字符床就是“Error 91 (global:IsRoot:0) V1.0.32”。意思是 在文件名为global.bas文件中出现的91号错误，该错误位于IsRoot函数，在第0行，当时正运行着软件的1.0版本低32个构建。顺便说下：我们使用偶数构建号作为内部构建，这种构建不会分发给用户， 而奇数号的所有构建会分发给客户，所以我一下子就能看出来这个崩溃发生在一个开发者身上而不是客户身上。</p>
 <blockquote>
 <p>FogBugz will automatically append future crashes with the same unique string to this case, rather than opening a new case. This helps the programmer see all the duplicates of the same crash in one place.</p>
+</blockquote>
 <p>FogBugz会把新的崩溃追加到现有的相同特征字符崩溃记录上，而不是新开一个错误。 这就使程序员能够在同一个地方查看某个相同奔溃的所有重复版本。</p>
+<blockquote>
 <p>Designing the format of the unique string can be tricky. In the past, we included the entire text of the crash error message in this string. However, we soon discovered that the error message was translated into different languages. So for every crash report, we would find out about it separately in English, German, Spanish, French, and a few other languages I can&#39;t identify! We solved that problem by putting the error message in the body of the crash report but only putting the unique error number in the title, which doesn&#39;t vary from language to language, so we get far fewer dupes.</p>
 </blockquote>
 <p>设计这种独特特征字符串的格式可能很难。 过去， 我们通常会把处所的所有错误信息字符都包含在这个字符串里。 但是我们很快发现错误信息会被翻译成各种语言。 所以同一个崩溃报告我们通常会有英语版本，德语版本，西班牙语版本，法语以及一些我无法辨识的语言！ 我们通过把这段字符嵌入到错误消息中间而在标题中只用错误号， 错误号不会随语言而改变，因此我们的崩溃报告重复率大大降低。</p>
@@ -818,7 +844,10 @@
 </blockquote>
 <p>造成重复崩溃报告的一个常见原因就是发生在崩溃处理代码里的崩溃。 这不是说崩溃处理代码本身有什么问题 – 可能就是崩溃已经造成了如此之大的破坏以至于没有代码能够成功运行。</p>
 <blockquote>
-<p>Debugging 调试</p>
+<h2 id="debugging">Debugging</h2>
+</blockquote>
+<h2 id="-">调试</h2>
+<blockquote>
 <p>During beta testing periods, we try to look at each crash report right away. When the user provides their email address, developers can hit the Reply button in FogBugz to send them an email message on the spot if they need additional information. FogBugz automatically keeps a copy of all the correspondence related to this bug, incoming and outgoing, in the bug report itself.</p>
 </blockquote>
 <p>在beta测试阶段，我们会尽量马上处理崩溃报告。 当用户提供他们的email地址的时候，开发者可以很轻松的点击Fogbugz里的“回复”按钮立刻给他们发送一封电子邮件，询问他们需要的额外的信息。 FogBugz会自动的保存这起事件的所有相关资料， 进来的和出去的，都存在错误报告里面。</p>
@@ -827,31 +856,48 @@
 </blockquote>
 <p>当产品发布，开发者开始准备下一个大的发布的时候， 他们通常没有时间来处理新进来的所有崩溃。 通常我们会等一个月来分析最常见的崩溃是什么。 缺点是你没办法让用户几个月前提交的错误报告记起来。他们没办法记起那么多的细节来。 但我发现如果相同的崩溃发生很多次，总归会有用户会给出足够多的细节这样我就能够在测试实验中重现这个错误。 实际上，虽然很难搞清楚重现的错误，但如果不知道可能的问题是什么那么基本上更不可能知道哪行代码崩溃了。有一次，我几乎真的通过了应用逻辑逆向了代码的逻辑运算来搞清楚重现的错误案例。如果是伪阳性，那么这个IF语句就一定是成立的。注入此类，知道我发现了什么样的值组合能够导致崩溃，肯定就是这样的值组合造成的。</p>
 <blockquote>
-<p>Triage 分门别类</p>
+<h2 id="triage">Triage</h2>
+</blockquote>
+<h2 id="-">分门别类</h2>
+<blockquote>
 <p>As soon as you build an automatic crash reporting system, you&#39;re going to get a pretty steady stream of crash reports. So good triage skills - deciding which bugs are most important to fix, and ignoring the others - are more important than usual.</p>
 </blockquote>
 <p>一旦你建立的自动崩溃报告系统，你就会获得一个相当稳定的崩溃错误报告流。 所以好的分类技巧 – 决定哪些崩溃是重要的需要修复， 忽略其他的崩溃报告就比通常重要的多。</p>
 <blockquote>
 <p>CityDesk has about 20,000 copies in use and most of our customers tell us it&#39;s rock solid, but still we get a couple of crash reports every day, but many of them only happened once. When I investigated these, I usually discover various signs of bugs that we&#39;re probably never going to fix. For example:</p>
 </blockquote>
-<p>•    The user&#39;s computer is failing or has faulty RAM</p>
-<p>•    The user is experimenting by manually editing our files</p>
-<p>•    The user is running an old operating system like Windows 95 that is in the advanced stages of crashing</p>
-<p>•    The user is running our program under severe low memory conditions, possibly with a full disk and full memory</p>
+<ul>
+<li><p>The user&#39;s computer is failing or has faulty RAM</p>
+</li>
+<li><p>The user is experimenting by manually editing our files</p>
+</li>
+<li><p>The user is running an old operating system like Windows 95 that is in the advanced stages of crashing</p>
+</li>
+<li><p>The user is running our program under severe low memory conditions, possibly with a full disk and full memory</p>
+</li>
+</ul>
 <blockquote>
 <p>CityDesk有大约两万份拷贝被投入使用，大部分的用户告诉我们它坚不可摧， 但我们每天还是会收到一两个崩溃报告， 但其中大多数都只发生过一次。 当我去调查这些问题的时候， 我通常会发现一些我们大概永远都没法修复的迹象。 例如：</p>
 </blockquote>
-<p>    用户的电脑宕机或者RAM错误</p>
-<p>    用户在尝试手动编辑我们的文件</p>
-<p>    用户在使用旧的Windows95操作系统 这已经算是崩溃事件中的高级形式了</p>
-<p>    用户在极端的内存情况下运行我们的软件，例如磁盘满或者内存满</p>
+<ul>
+<li><p>用户的电脑宕机或者RAM错误</p>
+</li>
+<li><p>用户在尝试手动编辑我们的文件</p>
+</li>
+<li><p>用户在使用旧的Windows95操作系统 这已经算是崩溃事件中的高级形式了</p>
+</li>
+<li><p>用户在极端的内存情况下运行我们的软件，例如磁盘满或者内存满</p>
+</li>
+</ul>
 <blockquote>
 <p>And sometimes, you just can&#39;t figure out what caused the crash. Especially with crashes that only happened once. That&#39;s life. It&#39;s important not to get too bogged down in fixing every crash you see. You can get a lot more bang for the buck by focusing on the common crashes. In fact my policy is that I won&#39;t even look at a crash that only happened once. We&#39;ve got bigger fish to fry. If it&#39;s not reproducible in the field, it&#39;s not likely to be reproducible in the lab.</p>
 </blockquote>
 <p>有时候，你就是无法分辨出造成崩溃的原因是什么。 特别是那些只发生过一次的崩溃。 这就是生活。 不要纠缠于要修复你看见的每一个崩溃事件。 专注在那些更常见的崩溃上更有意义。 实际上我的策略就是我根本不会去调查那些只发生过一次的崩溃。我们还要炸更大的鱼。 如果在这个例子里无法重现， 那么在实验室就更不可能重现。</p>
-<p>&gt;</p>
 <blockquote>
-<p>Shrink-wrapped Versus In-house Software? 包装袋还是内部软件</p>
+<h2 id="shrink-wrapped-versus-in-house-software-">Shrink-wrapped Versus In-house Software?</h2>
+</blockquote>
+<h2 id="-">包装袋还是内部软件</h2>
+<blockquote>
 <p>So, now that you&#39;ve seen what&#39;s involved, is crash reporting for you? The answer, to some extent, depends on your user base.</p>
 </blockquote>
 <p>所以现在你明白了要报告崩溃包含了哪些事情，那崩溃报告适合你么？ 答案一定程度上取决于你的用户面。</p>
@@ -867,41 +913,46 @@
 <p>In conclusion, building a robust system to handle crashes from the field, report them, classify them, and track them will delight your customers and pay for itself many times over in the quality of code that you ship.</p>
 </blockquote>
 <p>结论就是，要构建一个健壮的系统来处理崩溃信息，报告，分类然后追踪。 相比于软件产品质量，这本身就会让你的客户更加高兴的购买产品。</p>
-<p>&gt;</p>
-<p>&gt;</p>
 <blockquote>
-<p>How Do I Get This Working With FogBugz?如何使用FogBugz？</p>
+<h2 id="how-do-i-get-this-working-with-fogbugz-">How Do I Get This Working With FogBugz?</h2>
+</blockquote>
+<h2 id="-fogbugz-">如何使用FogBugz？</h2>
+<blockquote>
 <p>Included in every FogBugz installation is a file called scoutSubmit.asp (that&#39;s scoutSubmit.php in non-Windows versions of FogBugz).  This file is the entry point for all automatic bug submissions.  You can create an HTTP post with the correct form values and post directly to this file on your web server.  Alternatively, you can use our free BugzScout ActiveX control which will package up the values for you and submit them via HTTP to your FogBugz installation. See the this article for more details about the BugzScout files that are included with FogBugz. </p>
 </blockquote>
 <p>每个FogBugz安装盘都会包含一个叫做scoutSubmit.asp的文件（在非windows系统下叫做scoutSubmit.php）。 这个文件是所有自动错误提交的入口点。 你可以通过HTTP请求附加正确的表单信息，把信息直接发送你的服务器。 或者你也可以使用我们的免费的BugzScoutActiveX插件来包装然后通过HTTP提交你的错误信息。…</p>
-<p>&gt;</p>
 <blockquote>
-<p>Appendix One: Handling Crashes in Visual Basic Code</p>
+<h2 id="appendix-one-handling-crashes-in-visual-basic-code">Appendix One: Handling Crashes in Visual Basic Code</h2>
 </blockquote>
-<p>附件一：在VB代码里如何处理崩溃</p>
+<h2 id="-vb-">附件一：在VB代码里如何处理崩溃</h2>
 <blockquote>
 <p>Because a typical Visual Basic 6.0 event-driven program has so many entry points (one for each event that you handle), the only way to catch crashes which occur anywhere in the code is to add error handling to every function. Here&#39;s whatall our functions look like:</p>
-<p>Private Sub cmd_Click()</p>
-<p>On Error GoTo ERROR_cmd_Click </p>
-<p>&#39; the actual code for the function &#39;</p>
-<p>Exit Sub</p>
-<p>ERROR_cmd_Click:</p>
-<p>HandleError &quot;moduleName&quot;, &quot;cmd_Click&quot;</p>
-<p>End Sub</p>
-<p>Adding this code can be a pain; luckily there&#39;s a utility you can get called ErrorAssist which will add error-trapping code to all your functions automatically. In every case, we just call a global function called HandleError which displays our custom crash dialog. The crash dialog contains the BugzScout ActiveX control. This is a small ActiveX control which comes free with FogBugz, which can be used to transmit bug reports into a FogBugz bug tracking database.</p>
-<p>Appendix Two: Handling Crashes in Windows API Code</p>
 </blockquote>
-<p>附件二：在windowsAPI里如何处理崩溃</p>
+<pre><code>Private Sub cmd_Click()
+On Error GoTo ERROR_cmd_Click 
+    &#39; the actual code for the function &#39;
+Exit Sub
+
+ERROR_cmd_Click:
+    HandleError &quot;moduleName&quot;, &quot;cmd_Click&quot;
+End Sub
+</code></pre><blockquote>
+<p>Adding this code can be a pain; luckily there&#39;s a utility you can get called ErrorAssist which will add error-trapping code to all your functions automatically. In every case, we just call a global function called HandleError which displays our custom crash dialog. The crash dialog contains the BugzScout ActiveX control. This is a small ActiveX control which comes free with FogBugz, which can be used to transmit bug reports into a FogBugz bug tracking database.</p>
+<h2 id="appendix-two-handling-crashes-in-windows-api-code">Appendix Two: Handling Crashes in Windows API Code</h2>
+</blockquote>
+<h2 id="-windowsapi-">附件二：在windowsAPI里如何处理崩溃</h2>
 <blockquote>
 <p>The Win32 API contains a concept called structured exception handling. When a crash occurs, Windows searches for the current unhandled exception handler function and calls it. If there is no unhandled exception function, it will display the usual user-aggressive &quot;This program has performed an illegal operation&quot; dialog box.</p>
 <p>To install your own unhandled exception function, you have to do two things. First, implement your own function of the form</p>
-<p>LONG UnhandledExceptionFilter( STRUCT _EXCEPTION_POINTERS *ExceptionInfo );</p>
+</blockquote>
+<pre><code>LONG UnhandledExceptionFilter( STRUCT _EXCEPTION_POINTERS *ExceptionInfo );
+</code></pre><blockquote>
 <p>Then call the SetUnhandledExceptionFilter function, passing in a pointer to your UnhandledExceptionFilter function.</p>
 <p>Another way to accomplish the same thing from C++ code is to surround main entry point with a <strong>try/</strong>except clause. Notice the two underlines which cause the compiler to handle structured exceptions which come from low level failures like dereferencing null pointers, not the garden variety C++ exceptions you throw yourself and handle with try and catch.</p>
 <p>Search for Using Structured Exception Handling in the Windows Platform SDK or MSDN for more details.</p>
-<p>Appendix Three: Handling Crashes in ASP Applications</p>
+<h2 id="appendix-three-handling-crashes-in-asp-applications">Appendix Three: Handling Crashes in ASP Applications</h2>
 </blockquote>
-<p>附件三：在ASP程序里如何处理崩溃</p>
+<h2 id="-asp-">附件三：在ASP程序里如何处理崩溃</h2>
 <blockquote>
 <p>Microsoft&#39;s Internet Services Manager lets you set up a custom error handling page, either HTML or ASP, which is processed for any scripting errors that aren&#39;t handled with On Error statements. In particular, when an ASP (Active Server Pages) application crashes or has an unhandled error of any sort, the page is redirected to the error handler for &quot;500;100&quot; errors. In all our applications, we have an ASP page set up to catch 500;100 errors.</p>
 <p>That page contains the following key bit of VBScript code:</p>
@@ -910,9 +961,6 @@
 <p>Sample code for handling ASP errors comes preinstalled on every computer with IIS: look in the \windows\help\iishelp\common directory for a file called 500-100.asp. This simply displays the details of the ASP error to the end-user. Using the 500-100.asp file as a starting point, you can create your own customized message page, containing a form with hidden elements containing the crash data. The form should have an action attribute which submits all the error information to another web page. If you&#39;re using FogBugz, you just direct the form to</p>
 <p>http://<your FogBugz URL>/scoutSubmit.asp</p>
 <p>to open a new case in your bug database.</p>
-</blockquote>
-<p>&gt;</p>
-<blockquote>
 <p><a href="http://support.leagueusa.com/help/Articles/GetCrashReportsFromUsersA.html" target="_blank">http://support.leagueusa.com/help/Articles/GetCrashReportsFromUsersA.html</a></p>
 </blockquote>
 

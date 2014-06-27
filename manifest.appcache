@@ -1,9 +1,9 @@
 CACHE MANIFEST
-# Revision 1403333303679
+# Revision 1403891743780
 
 CACHE:
 index.html
-content/战略书信五-开源经济学.html
+content/战略书信二-鸡和蛋问题.html
 content/Joel测试.html
 content/一周疯狂遭遇墨菲定律.html
 content/不用测试人员的五大错误理由.html
@@ -24,6 +24,7 @@ content/微软疯了.html
 content/我们的.NET战略.html
 content/战略书信-让我回去.html
 content/Unicode.html
+content/战略书信五-开源经济学.html
 content/战略书信四-膨胀软件和神秘的8020原则.html
 content/战略来信一-本杰瑞vs亚马逊.html
 content/手艺.html
@@ -47,7 +48,6 @@ content/衡量.html
 content/计算机科学的三个错误观念.html
 content/选择一门语言.html
 content/里克查普曼在搜寻愚蠢.html
-content/战略书信二-鸡和蛋问题.html
 gitbook\app.js
 gitbook\fonts\anonymouspro\400.woff
 gitbook\fonts\anonymouspro\400i.woff

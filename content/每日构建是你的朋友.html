@@ -42,7 +42,7 @@
 
 
         
-    <div class="book" data-github="zinking/JoelOnSoftware" data-level="13" data-basepath=".." data-revision="1403333303678">
+    <div class="book" data-github="zinking/JoelOnSoftware" data-level="13" data-basepath=".." data-revision="1403891743779">
     <div class="book-header">
     <!-- Actions Left -->
     
@@ -431,7 +431,7 @@
         
             <li  data-level="34" >
                 
-                <span><b>34.</b> [两个故事两个故事.md)</span>
+                <span><b>34.</b> [两个故事.md)</span>
                 
                 
             </li>
@@ -678,17 +678,22 @@
 
                 <div class="page-inner">
                 
-                    <section class="normal" id="section-gitbook_53">
+                    <section class="normal" id="section-gitbook_100">
                     
-                        <blockquote>
-<p>Joel on Software</p>
-<p>Daily Builds Are Your Friend</p>
-</blockquote>
-<p>每日构建是你的朋友</p>
+                        <p>Joel on Software</p>
 <blockquote>
-<p>by Joel Spolsky Saturday, January 27, 2001</p>
-<p>In 1982, my family took delivery of the very first IBM-PC in Israel. We actually went down to the warehouse and waited while our PC was delivered from the port. Somehow, I convinced my dad to get the fully-decked out version, with two floppy disks, 128 K memory, and both a dot-matrix printer (for fast drafts) and a Brother Letter-Quality Daisy Wheel printer, which sounds exactly like a machine gun when it is operating, only louder. I think we got almost every accessory available: PC-DOS 1.0, the $75 technical reference manual with a complete source code listing of the BIOS, Macro Assembler, and the stunning IBM Monochrome display with a full 80 columns and ... lower case letters! The whole thing cost about $10,000 including Israel&#39;s then-ridiculous import taxes. Extravagant!</p>
+<h1 id="daily-builds-are-your-friend">Daily Builds Are Your Friend</h1>
+</blockquote>
+<h1 id="-">每日构建是你的朋友</h1>
+<blockquote>
+<h6 id="by-joel-spolsky-saturday-january-27-2001">by Joel Spolsky Saturday, January 27, 2001</h6>
+</blockquote>
+<hr>
+<blockquote>
+<p>In 1982, my family took delivery of the very first IBM-PC in Israel. We actually went down to the warehouse and waited while our PC was delivered from the port. Somehow, I convinced my dad to get the fully-decked out version, with two floppy disks, 128 K memory, and both a dot-matrix printer (for fast drafts) and a Brother Letter-Quality Daisy Wheel printer, which sounds exactly like a machine gun when it is operating, only louder. I think we got almost every accessory available: PC-DOS 1.0, the $75 technical reference manual with a complete source code listing of the BIOS, Macro Assembler, and the stunning IBM Monochrome display with a full 80 columns and . lower case letters! The whole thing cost about $10,000 including Israel&#39;s then-ridiculous import taxes. Extravagant!</p>
+</blockquote>
 <p>1982年，我家在以色列提取了第一台IBM-PC。实际上，我们电脑从港口交货的时候，我们全家跑去了仓库并在那儿等着。我设法说法了我爸购买了完整版，两张软盘，128K内存，还有一个点阵打印机（快速打印草稿）和打印书信的菊轮式打印机，菊轮打印机工作的时候就像机关枪一样，甚至更响。我觉得我们买齐了几乎所有能买到的附件：PC-DOS1.0，75$的技术参考手册以及完整BIOS,宏汇编源代码，以及IBM80列黑白显示器，还有…小写字母！包含以色列那个时候可笑的进口税总共花了约10，000$。太奢侈了！</p>
+<blockquote>
 <p>Now, &quot;everybody&quot; knew that BASIC was a children&#39;s language that requires you to write spaghetti code and turns your brain into Camembert cheese. So we shelled out $600 for IBM Pascal, which came on three floppy diskettes. The compiler&#39;s first pass was on the first diskette, the second pass was on the second diskette, and the linker was on the third diskette. I wrote a simple &quot;hello, world&quot; program and compiled it. Total time elapsed: 8 minutes.</p>
 </blockquote>
 <p>现在，几乎所有人都懂得BASIC是小朋友语言，它让你写出意大利面条一样的代码，然后把你的脑袋变成卡门佩尔奶酪。所以我们掏了600$买了IBM Pascal，分三张软盘。 编译器的第一遍程序放在第一张软盘上， 第二遍程序放在第二张软盘上， 连接器放在第三章软盘上。 我写的简单的“hello World”程序，编译了一下，总共花费：8分钟。</p>
@@ -739,76 +744,159 @@
 <blockquote>
 <p>Here are some of the many benefits of daily builds:</p>
 </blockquote>
-<p>下面是每日构建的一些有点：</p>
+<p>下面是每日构建的一些优点：</p>
 <blockquote>
-<ol>
+<ul>
 <li>When a bug is fixed, testers get the new version quickly and can retest to see if the bug was really fixed.</li>
-</ol>
-<ol>
+</ul>
+</blockquote>
+<ul>
 <li>当一个错误被修复之后，测试人员能够迅速的获得一个最新版本然后重新测试来确定错误是否真的被修复了。</li>
-</ol>
-<ol>
+</ul>
+<blockquote>
+<ul>
 <li>Developers can feel more secure that a change they made isn&#39;t going to break any of the 1024 versions of the system that get produced, without actually having an OS/2 box on their desk to test on.</li>
-</ol>
-<ol>
+</ul>
+</blockquote>
+<ul>
 <li>程序员们在获悉他们的改动没有打破该系统要产生的1024个版本构建会感觉更安全一点。实际上他们桌上没有OS/2箱子供他们做测试用。</li>
-</ol>
-<ol>
+</ul>
+<blockquote>
+<ul>
 <li>Developers who check in their changes right before the scheduled daily build know that they aren&#39;t going to hose everybody else by checking in something which &quot;breaks the build&quot; -- that is, something that causes nobody to be able to compile. This is the equivalent of the Blue Screen of Death for an entire programming team, and happens a lot when a programmer forgets to add a new file they created to the repository. The build runs fine ontheir machines, but when anyone else checks out, they get linker errors and are stopped cold from doing any work.</li>
-</ol>
-<ol>
+</ul>
+</blockquote>
+<ul>
 <li>在计划的每日构建发生之前提交更改的开发者知道他们不会因为提交了一些“打破构建”的东西（也即导致没人能编译的更改）而成为他人的软管。“打破构建的提交”简直就跟宣判整个编程团队无法工作一样，而且在程序员忘了把新创建的文件加到代码库里的时候经常会发生。构建在他们自己的机器上运行很好，但其他人检出代码的时候，他们就会遇到链接错误，然后停在那里不能继续完成自己的工作。</li>
-</ol>
-<ol>
+</ul>
+<blockquote>
+<ul>
 <li>Outside groups like marketing, beta customer sites, and so forth who need to use the immature product can pick a build that is known to be fairly stable and keep using it for a while.</li>
-</ol>
-<ol>
+</ul>
+</blockquote>
+<ul>
 <li>在销售团队之外，BETA用户站点之类的需要在产品成熟之前就开始使用的用户可以挑选一个足够稳定的构建版本用上一阵子了。</li>
-</ol>
-<ol>
+</ul>
+<blockquote>
+<ul>
 <li>By maintaining an archive of all daily builds, when you discover a really strange, new bug and you have no idea what&#39;s causing it, you can use binary search on the historical archive to pinpoint when the bug first appeared in the code. Combined with good source control, you can probably track down which check-in caused the problem.</li>
-</ol>
-<ol>
+</ul>
+</blockquote>
+<ul>
 <li>通过维护每日构建的归档，当你发现一个非常奇怪的新错误，而你又不知道是什么原因导致的时候，你可以从历史归档里找出那个错误出现的第一个二进制版本，通过良好的代码管理，你大概就可以追踪到是那些更改导致了这个问题。</li>
-</ol>
-<ol>
+</ul>
+<blockquote>
+<ul>
 <li>When a tester reports a problem that the programmer thinks is fixed, the tester can say which build they saw the problem in. Then the programmer looks at when he checked in the fix and figure out whether it&#39;s really fixed.</li>
-</ol>
-<ol>
+</ul>
+</blockquote>
+<ul>
 <li>当测试人员报告了一个程序员认为已经修正的错误的时候，测试人员可以说明他们在哪个构建里发现了这个问题。然后程序员就可以检查他什么时候提交了修改，然后弄清楚到底有没有真的修正问题。</li>
-</ol>
+</ul>
+<blockquote>
 <p>Here&#39;s how to do them. You need a daily build server, which will probably be the fastest computer you can get your hands on. Write a script which checks out a complete copy of the current source code from the repository (you are using source control, aren&#39;t you?) and then builds, from scratch, every version of the code that you ship. If you have an installer or setup program, build that too. Everything you ship to customers should be produced by the daily build process. Put each build in its own directory, coded by date. Run your script at a fixed time every day.</p>
 </blockquote>
 <p>下面是如何进行每日构建。 你需要一个每日构建服务器， 这个服务器最好得是你手边能获得的最快的电脑。 写个脚本从当前的代码仓库完整的检出所有的当前源代码（你用了代码管理，是吧？）然后从头开始构建，包括你递交的每一版代码。如果你有个安装程序，同时也要构建这个安装程序。你要发布给客户的所有东西都应该由每日构建过程产生。把每次的构建结果放在不同的文件夹下，以日期编码。然后在每天固定的时候运行你的代码。</p>
-<p>•    It&#39;s crucial that everything it takes to make a final build is done by the daily build script, from checking out the code up to and including putting the bits up on a web server in the right place for the public to download (although during the development process, this will be a test server, of course). That&#39;s the only way to insure that there is nothing about the build process that is only &quot;documented&quot; in one person&#39;s head. You never get into a situation where you can&#39;t release a product because only Shaniqua knows how to create the installer, and she was hit by a bus. On the Juno team, the only thing you needed to know to create a full build from scratch was where the build server was, and how to double-click on its &quot;Daily Build&quot; icon.</p>
-<p>•    至关重要的一点是，所有你最终要构建的东西都必须要由每日构建产生， 从检出代码到把产品放到服务器的正确位置以供下载（虽然在开发过程中，这当然只是个测试服务器）。这是唯一的方法来确保没有任何一处关于构建的细节仅保留在某个人的脑海中。你就不会碰到那种问题，你无法发布一个产品，因为只有Shaniqua一个人知道如何创建安装文件，而她可能刚好被公共汽车撞了。 在聪明的开发团队里，要创建一个完整的构建你需要知道的唯一事情就是构建服务器在哪儿，然后如何双击它的“每日构建”按钮。</p>
-<p>•    There is nothing worse for your sanity then when you are trying to ship the code, and there&#39;s one tiny bug, so you fix that one tiny bug right on the daily build server and ship it. As a golden rule, you should only ship code that has been produced by a full, clean daily build that started from a complete checkout.</p>
-<p>•    当你发布代码的时候，发现了一个小缺陷，然后你就在构建服务器上修正了这个错误然后发布了产品，这对你的理性来讲没什么好觉得糟糕的。首要原则就是你只应该发布一个完整，干净的每日构建从头开始的完整构建产生的产品。</p>
-<p>•    Set your compilers to maximum warning level (-W4 in Microsoft&#39;s world; -Wall in gcc land) and set them to stop if they encounter even the smallest warning.</p>
-<p>•    把你的编译器调到最大警告级别（微软世界里为 –W4； GCC里是 –Wall），将他们设置为哪怕遇到最小的警告就停下来。</p>
-<p>•    If a daily build is broken, you run the risk of stopping the whole team. Stop everything and keep rebuilding until it&#39;s fixed. Some days, you may have multiple daily builds.</p>
-<p>•    如果每日构建被打破了，你就冒着让整个团队停工的风险。停下任何事情，继续重新构建直到解决问题。有的时候，你可能会到每天多个构建。</p>
-<p>•    Your daily build script should report failures, via email, to the whole development team. It&#39;s not too hard to grep the logs for &quot;error&quot; or &quot;warning&quot; and include that in the email, too. The script can also append status reports to an HTML page visible to everyone so programmers and testers can quickly determine which builds were successful.</p>
-<p>•    你的每日构建脚本应该通过电子邮件向全组报告错误。 通过日志文件来搜寻“错误”和“警告”并不困难，把这些也放到邮件里去。脚本同时应该能够把构建结果添加到所有人都能看见的网页里去，这样程序员和测试人员就能很快的确定哪些构建是成功的。</p>
-<p>•    One rule we followed on the Microsoft Excel team, to great effect, was that whoever broke the build became responsible for babysitting builds until somebody else broke it. In addition to serving as a clever incentive to keep the build working, it rotated almost everybody through the job of buildmaster so everybody learned about how builds are produced.</p>
-<p>•    我们在Excel团队里大范围采用的一个原则是，不管谁打破了构建，都必须照看构建，知道其他人打破构建为止。除了能够让构建工作之外，这项措施让几乎团队里的所有人都了解了构建人员的工作，这样所有人都学习到了构建是如何产生的。</p>
-<p>•    If your team works in one time zone, a good time to do builds is at lunchtime. That way everybody checks in their latest code right before lunch, the build runs while they&#39;re eating, and when they get back, if the build is broken, everybody is around to fix it. As soon as the build is working everybody can check out the latest version without fear that they will be hosed due to a broken build.</p>
-<p>•    如果你的团队全部在一个时区，那么做每日构建的一个最佳时机就是午饭时间。那样，每个人都在午饭前提交更改，然后在他们吃午饭的时候，构建可以运行，然后当他们回来的时候，构建被打破了，所有人都可以来修复被打破的构建。一旦构建又正常运行了每个人又都可以检出最新的代码而不用担心自己因为打破的构建成为软管。</p>
-<p>•    If your team is working in two time zones, schedule the daily build so that the people in one time zone don&#39;t hose the people in the other time zone. On the Juno team, the New York people would check things in at 7 PM New York time and go home. If they broke the build, the Hyderabad, India team would get into work (at about 8 PM New York Time) and be completely stuck for a whole day. We started doing two daily builds, about an hour before each team went home, and completely solved that problem.</p>
-<p>•    如果你的团队在两个时区，那么每日构建应该合理安排以便一个时区的人不会限制另一个时区的人。在一个聪明的团队里，纽约的团队可以在纽约时间下午7点的时候提交更新然后回家。如果他们打破了构建，海德拉巴，印度的团队就上班了（大约纽约时间下午8点钟）然后就整整卡在哪里一整天。 我们开始做两个日常构建，大约在每个团队回家之前1个小时，并且完整的解决这个问题。</p>
+<blockquote>
+<ul>
+<li>It&#39;s crucial that everything it takes to make a final build is done by the daily build script, from checking out the code up to and including putting the bits up on a web server in the right place for the public to download (although during the development process, this will be a test server, of course). That&#39;s the only way to insure that there is nothing about the build process that is only &quot;documented&quot; in one person&#39;s head. You never get into a situation where you can&#39;t release a product because only Shaniqua knows how to create the installer, and she was hit by a bus. On the Juno team, the only thing you needed to know to create a full build from scratch was where the build server was, and how to double-click on its &quot;Daily Build&quot; icon.</li>
+</ul>
+</blockquote>
+<ul>
+<li>至关重要的一点是，所有你最终要构建的东西都必须要由每日构建产生， 从检出代码到把产品放到服务器的正确位置以供下载（虽然在开发过程中，这当然只是个测试服务器）。这是唯一的方法来确保没有任何一处关于构建的细节仅保留在某个人的脑海中。你就不会碰到那种问题，你无法发布一个产品，因为只有Shaniqua一个人知道如何创建安装文件，而她可能刚好被公共汽车撞了。 在聪明的开发团队里，要创建一个完整的构建你需要知道的唯一事情就是构建服务器在哪儿，然后如何双击它的“每日构建”按钮。</li>
+</ul>
+<blockquote>
+<ul>
+<li>There is nothing worse for your sanity then when you are trying to ship the code, and there&#39;s one tiny bug, so you fix that one tiny bug right on the daily build server and ship it. As a golden rule, you should only ship code that has been produced by a full, clean daily build that started from a complete checkout.</li>
+</ul>
+</blockquote>
+<ul>
+<li>当你发布代码的时候，发现了一个小缺陷，然后你就在构建服务器上修正了这个错误然后发布了产品，这对你的理性来讲没什么好觉得糟糕的。首要原则就是你只应该发布一个完整，干净的每日构建从头开始的完整构建产生的产品。</li>
+</ul>
+<blockquote>
+<ul>
+<li>Set your compilers to maximum warning level (-W4 in Microsoft&#39;s world; -Wall in gcc land) and set them to stop if they encounter even the smallest warning.</li>
+</ul>
+</blockquote>
+<ul>
+<li>把你的编译器调到最大警告级别（微软世界里为 –W4； GCC里是 –Wall），将他们设置为哪怕遇到最小的警告就停下来。</li>
+</ul>
+<blockquote>
+<ul>
+<li>If a daily build is broken, you run the risk of stopping the whole team. Stop everything and keep rebuilding until it&#39;s fixed. Some days, you may have multiple daily builds.</li>
+</ul>
+</blockquote>
+<ul>
+<li>如果每日构建被打破了，你就冒着让整个团队停工的风险。停下任何事情，继续重新构建直到解决问题。有的时候，你可能会到每天多个构建。</li>
+</ul>
+<blockquote>
+<ul>
+<li>Your daily build script should report failures, via email, to the whole development team. It&#39;s not too hard to grep the logs for &quot;error&quot; or &quot;warning&quot; and include that in the email, too. The script can also append status reports to an HTML page visible to everyone so programmers and testers can quickly determine which builds were successful.</li>
+</ul>
+</blockquote>
+<ul>
+<li>你的每日构建脚本应该通过电子邮件向全组报告错误。 通过日志文件来搜寻“错误”和“警告”并不困难，把这些也放到邮件里去。脚本同时应该能够把构建结果添加到所有人都能看见的网页里去，这样程序员和测试人员就能很快的确定哪些构建是成功的。</li>
+</ul>
+<blockquote>
+<ul>
+<li>One rule we followed on the Microsoft Excel team, to great effect, was that whoever broke the build became responsible for babysitting builds until somebody else broke it. In addition to serving as a clever incentive to keep the build working, it rotated almost everybody through the job of buildmaster so everybody learned about how builds are produced.</li>
+</ul>
+</blockquote>
+<ul>
+<li>我们在Excel团队里大范围采用的一个原则是，不管谁打破了构建，都必须照看构建，知道其他人打破构建为止。除了能够让构建工作之外，这项措施让几乎团队里的所有人都了解了构建人员的工作，这样所有人都学习到了构建是如何产生的。</li>
+</ul>
+<blockquote>
+<ul>
+<li>If your team works in one time zone, a good time to do builds is at lunchtime. That way everybody checks in their latest code right before lunch, the build runs while they&#39;re eating, and when they get back, if the build is broken, everybody is around to fix it. As soon as the build is working everybody can check out the latest version without fear that they will be hosed due to a broken build.</li>
+</ul>
+</blockquote>
+<ul>
+<li>如果你的团队全部在一个时区，那么做每日构建的一个最佳时机就是午饭时间。那样，每个人都在午饭前提交更改，然后在他们吃午饭的时候，构建可以运行，然后当他们回来的时候，构建被打破了，所有人都可以来修复被打破的构建。一旦构建又正常运行了每个人又都可以检出最新的代码而不用担心自己因为打破的构建成为软管。</li>
+</ul>
+<blockquote>
+<ul>
+<li>If your team is working in two time zones, schedule the daily build so that the people in one time zone don&#39;t hose the people in the other time zone. On the Juno team, the New York people would check things in at 7 PM New York time and go home. If they broke the build, the Hyderabad, India team would get into work (at about 8 PM New York Time) and be completely stuck for a whole day. We started doing two daily builds, about an hour before each team went home, and completely solved that problem.</li>
+</ul>
+</blockquote>
+<ul>
+<li>如果你的团队在两个时区，那么每日构建应该合理安排以便一个时区的人不会限制另一个时区的人。在一个聪明的团队里，纽约的团队可以在纽约时间下午7点的时候提交更新然后回家。如果他们打破了构建，海德拉巴，印度的团队就上班了（大约纽约时间下午8点钟）然后就整整卡在哪里一整天。 我们开始做两个日常构建，大约在每个团队回家之前1个小时，并且完整的解决这个问题。</li>
+</ul>
 <blockquote>
 <p>For Further Reading:</p>
 </blockquote>
 <p>更多阅读。</p>
-<p>•    Some discussion on tools for daily builds</p>
-<p>•    一些关于每日构建工具的讨论。</p>
-<p>•    Making daily builds is important enough that it&#39;s one of the 12 steps to better code.</p>
-<p>•    每日构建很重要，以至于它成为12步写出好代码中的一步。</p>
-<p>•    There&#39;s a lot of interesting stuff about the builds made (weekly) by the Windows NT team in G. Pascal Zachary&#39;s bookShowstopper.</p>
-<p>•    windowsNT 团队的G.Pascal Zachary写的书《搅局者》里有很多关于每周产生构建的有趣的、东西。</p>
-<p>•    Steve McConnell writes about daily builds here.</p>
-<p>•    Steve McConnell写了关于每日构建的东西。</p>
-<p>&gt;</p>
+<blockquote>
+<ul>
+<li>Some discussion on tools for daily builds</li>
+</ul>
+</blockquote>
+<ul>
+<li>一些关于每日构建工具的讨论。</li>
+</ul>
+<blockquote>
+<ul>
+<li>Making daily builds is important enough that it&#39;s one of the 12 steps to better code.</li>
+</ul>
+</blockquote>
+<ul>
+<li>每日构建很重要，以至于它成为12步写出好代码中的一步。</li>
+</ul>
+<blockquote>
+<ul>
+<li>There&#39;s a lot of interesting stuff about the builds made (weekly) by the Windows NT team in G. Pascal Zachary&#39;s bookShowstopper.</li>
+</ul>
+</blockquote>
+<ul>
+<li>windowsNT 团队的G.Pascal Zachary写的书《搅局者》里有很多关于每周产生构建的有趣的、东西。</li>
+</ul>
+<blockquote>
+<ul>
+<li>Steve McConnell writes about daily builds here.</li>
+</ul>
+</blockquote>
+<ul>
+<li>Steve McConnell写了关于每日构建的东西。</li>
+</ul>
 
                     
                     </section>
