@@ -5,10 +5,12 @@
 #Joel测试：12步写出更高质量代码
 
 >######by Joel Spolsky Wednesday, August 09, 2000
+
 ---
+
 >Have you ever heard of SEMA ? It's a fairly esoteric system for measuring how good a software team is. No, wait! Don't follow that link! It will take you about six years just to understand that stuff. So I've come up with my own, highly irresponsible, sloppy test to rate the quality of a software team. The great part about it is that it takes about 3 minutes. With all the time you save, you can go to medical school.
 
-你听说过SEMA么？是一种非常深奥的测试软件开发团队水平的系统标准。 等等，先别点开那个链接！那可要花费你约6年的时间去理解。所以我发明了我的“高度不负责”“草率”测试来衡量软件开发团队的质量。 不过这种测试方法的好处是它只需花3分钟。省下来的那些时间，够你再去读个医学院了。
+你听说过SEMA么？是一种非常深奥的测试软件开发团队水平的系统标准。 等等，先别点开那个链接！那可要花费你约6年的时间去理解。所以我发明了我的“高度不负责”“草率”测试来衡量软件开发团队的质量。 不过这种测试方法的好处是它只需花3分钟。省下来的那些时间，够你再去读个医学院文凭了。
 
 
 
@@ -45,7 +47,7 @@ Joel测试的优点是每个问题很容易都能得到一个“是”或“否�
 
 >I've used commercial source control packages, and I've used CVS, which is free, and let me tell you, CVS is fine. But if you don't have source control, you're going to stress out trying to get programmers to work together. Programmers have no way to know what other people did. Mistakes can't be rolled back easily. The other neat thing about source control systems is that the source code itself is checked out on every programmer's hard drive -- I've never heard of a project using source control that lost a lot of code.
 
-我使用了商业代码管理包，我使用的是CVS，免费的，而且告诉你，CVS挺好的。 但如果你不用代码管理，你要让程序员协同工作就压力山大了。 程序员无法知道其他人做了什么。 发生错误无法很容的回滚。 代码管理的另一优点是：源代码本身是被检出到每个程序员自己的硬盘的 – 我从没听说过使用代码管理的项目丢失过一大堆的源代码。
+我使用了商业代码管理包，我使用的是CVS，免费的，而且告诉你，CVS挺好的。 但如果你不用代码管理，你要让程序员协同工作就压力山大了。 程序员无法知道其他人做了什么。 发生错误无法很容易的回滚。 代码管理的另一优点是：源代码本身是被提取到每个程序员自己的硬盘的 – 我从没听说过使用代码管理的项目丢失过一大堆的源代码。
 
 >###2. Can you make a build in one step? 
 
@@ -89,29 +91,39 @@ Joel测试的优点是每个问题很容易都能得到一个“是”或“否�
 
 >I don't care what you say. If you are developing code, even on a team of one, without an organized database listing all known bugs in the code, you are going to ship low quality code. Lots of programmers think they can hold the bug list in their heads. Nonsense. I can't remember more than two or three bugs at a time, and the next morning, or in the rush of shipping, they are forgotten. You absolutely have to keep track of bugs formally.
 
-我不管你说什么。如果你在做代码开发，哪怕是只有一个人的团队，如果你没有一个组织的很好的数据库来罗列代码中的所有错误，你只能交付低质量的代码。 很多程序员觉得他们能够在大脑里罗列所有的软件问题。胡扯。我一次都没办法记得两个或三个错误，而且第二天造成，或者急着发布，这些问题就被忘掉了。 你必须正式的来追踪管理这些软件错误。
+不管你说什么。如果你在做代码开发，哪怕是只有一个人的团队，如果你没有一个组织的很好的数据库来罗列代码中的所有错误，你只能交付低质量的代码。 很多程序员觉得他们能够在大脑里罗列所有的软件问题。胡扯。我一次都没办法记得两个或三个错误，而且第二天早晨，或者急着发布，这些问题就被忘掉了。 你必须正式的来追踪管理这些软件错误。
 
 >Bug databases can be complicated or simple. A minimal useful bug database must include the following data for every bug:
+
 >:	complete steps to reproduce the bug
+
 >:	expected behavior
+
 >:	observed (buggy) behavior
+
 >:	who it's assigned to
+
 >:	whether it has been fixed or not
 
 软件错误数据库可以复杂也可以简单。 最精简的可用的软件错误数据库必须为软件错误包含以下数据：
+
 :    重现错误的完整步骤
+
 :    期望的行为
+
 :    实际（错误）行为
+
 :    分配给谁修正
+
 :    是否已经被修正
 
 >If the complexity of bug tracking software is the only thing stopping you from tracking your bugs, just make a simple 5 column table with these crucial fields and start using it.
 
 如果软件错误管理软件的复杂性是唯一让你对追踪软件错误望而却步的因素的话，那就简单的画个5列的包含这些重要数据的表格，就用这个表格就好了。
 
->For more on bug tracking, read Painless Bug Tracking.
+>For more on bug tracking, read `Painless Bug Tracking`.
 
-你可以阅读我的文章 “无痛苦软件错误跟踪” 来了解更多。
+你可以阅读我的文章 `无痛苦软件错误跟踪` 来了解更多。
 
 >###5. Do you fix bugs before writing new code? 
 
@@ -119,11 +131,11 @@ Joel测试的优点是每个问题很容易都能得到一个“是”或“否�
 
 >The very first version of Microsoft Word for Windows was considered a "death march" project. It took forever. It kept slipping. The whole team was working ridiculous hours, the project was delayed again, and again, and again, and the stress was incredible. When the dang thing finally shipped, years late, Microsoft sent the whole team off to Cancun for a vacation, then sat down for some serious soul-searching.
 
-Windows上word的第一个版本被视为是一个“死亡不前”的项目。 花了无限长时间，不断跳票。 整个团队工作时间长的出奇， 项目被一拖再拖，压力无比巨大。几年后， 这个悬着的产品最终被发布的时候，微软把真那个团队送到了坎昆 去度假，他们在那儿停下来做些很严肃的“灵魂搜寻（灵修？）”活动。
+Windows上word的第一个版本被视为是一个“进军死亡”的项目。 花了无限长时间，不断跳票。 整个团队工作时间长的出奇， 项目被一拖再拖，压力无比巨大。几年后， 这个悬着的产品最终被发布的时候，微软把真那个团队送到了坎昆去度假，他们在那儿停下来做些很严肃的“灵魂搜寻（灵修）”活动。
 
 >What they realized was that the project managers had been so insistent on keeping to the "schedule" that programmers simply rushed through the coding process, writing extremely bad code, because the bug fixing phase was not a part of the formal schedule. There was no attempt to keep the bug-count down. Quite the opposite. The story goes that one programmer, who had to write the code to calculate the height of a line of text, simply wrote "return 12;" and waited for the bug report to come in about how his function is not always correct. The schedule was merely a checklist of features waiting to be turned into bugs. In the post-mortem, this was referred to as "infinite defects methodology".
 
-他们后来意识到项目经理是在管理项目啊那批的时候是如此的不一致，以至于程序员匆匆的结束了编码过程， 写出了及其糟糕的代码，因为修正软件错误不是正式项目安排的一部分。 并没有尝试去降低软件错误数量，相反的，据说有个程序员要编写代码来计算行的高度，简单的写了“return 12；”然后等着软件错误报告进来告诉他这个函数不总是正确。 所谓的进度也不过就是一堆等着变成软件错误的功能列表。 在事后的备忘录中，这被称为“无限软件错误开发方法”。
+他们后来意识到项目经理是在管理项目的时候行为是如此的不一致，以至于程序员匆匆的结束了编码过程， 写出了及其糟糕的代码，因为修正软件错误不是正式项目安排的一部分。 并没有尝试去降低软件错误数量，相反的，据说有个程序员要编写代码来计算行的高度，简单的写了“return 12；”然后等着软件错误报告进来告诉他这个函数不总是正确。 所谓的进度也不过就是一堆等着变成软件错误的功能列表。 在事后的备忘录中，这被称为“无限软件错误开发方法”。
 
 >To correct the problem, Microsoft universally adopted something called a "zero defects methodology". Many of the programmers in the company giggled, since it sounded like management thought they could reduce the bug count by executive fiat. Actually, "zero defects" meant that at any given time, the highest priority is to eliminate bugs beforewriting any new code. Here's why. 
 
