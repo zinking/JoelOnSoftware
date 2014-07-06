@@ -2,7 +2,7 @@ Joel on Software
 
 >#Big Macs vs. The Naked Chef
 
-#巨无霸 vs 裸身大厨
+#巨无霸 vs 赤裸大厨
 
 >###by Joel Spolsky Thursday, January 18, 2001
 
@@ -30,7 +30,7 @@ Joel on Software
 这套系统，基本上假设每个人都会犯各种各样的错误，但是做出来的汉堡，还是一如既往的标准。然后还是会标准的问你：“你要不要配一些薯条？”
 
 >Just for the sake of amusement, let's compare a McDonald's cook, who is following a set of rules exactly and doesn't know anything about food, to a genius like The Naked Chef, the British cutie Jamie Oliver. (If you chose to leave this site now and follow that link to watch the MTV-like videos of The Naked Chef making basil aioli, you have my blessing. Go in good health.) Anyway, comparing McDonald's to a gourmet chef is completely absurd, but please suspend disbelief for a moment, because there's something to be learned here.
-纯粹娱乐起见。让我们来比较一下麦当劳的厨师（那些只会严格地遵守一些规则，但是对食物一无所知的人）和一个天才裸身大厨 - 英国的Jammie Oliver （如果你现在选择点击那个超链接离开这个站点，然后去看那个视频，关于大厨教你如何制作basil aloili。我深深的祝福你，保持身体健康）
+纯粹娱乐起见。让我们来比较一下麦当劳的厨师（那些只会严格地遵守一些规则，但是对食物一无所知的人）和一个天才赤裸大厨 - 英国的Jammie Oliver （如果你现在选择点击那个超链接离开这个站点，然后去看那个视频，关于大厨教你如何制作basil aloili。我深深的祝福你，保持身体健康）
 
 >Now, the Naked Chef doesn't follow no stinkin' Operations Manual. He doesn't measure anything. While he's cooking, you see a flurry of food tossed around willy-nilly. "We'll just put a bit of extra rosemary in there, that won't hurt, and give it a good old shake," he says. " Mash it up. Perfect. Just chuck it all over the place." (Yes, it really looks like he's just chucking it all over the place. Sorry, but if I tried to chuck it all over the place, it wouldn't work.) It takes about 14 seconds and he's basically improvised a complete gourmet meal with roasted slashed fillet of sea-bass stuffed with herbs, baked on mushroom potatoes with a salsa-verde. Yum.
 
@@ -41,7 +41,7 @@ Joel on Software
 我觉得很明显。裸体大厨做的食物比你在麦当劳买到的要好得多。老实说这个问题听起来是一个很愚蠢的问题，但是却值得你花点时间问下为什么？这并不是一个十分愚蠢的问题。为什么一个大的公司有着无尽的资源，很广的幅度，通过无尽的现金流赚的钱能够雇到世界上最好的食品加工设计师，却不能做一顿美味的饭呢？
 
 >Imagine that The Naked Chef gets bored doing "telly" and opens a restaurant. Of course, he's a brilliant chef, the food would be incredible, so the place is hopping with customers and shockingly profitable.
-想象一下裸身大厨开始厌烦了做‘Telly’然后开了一家餐馆。当然他是一个聪明的大厨，食物绝对十分美味。所以这个餐馆绝对有希望获得大量的顾客并且绝对超级赚钱。
+想象一下赤裸大厨开始厌烦了做‘Telly’然后开了一家餐馆。当然他是一个聪明的大厨，食物绝对十分美味。所以这个餐馆绝对有希望获得大量的顾客并且绝对超级赚钱。
 
 >When you have a shockingly profitable restaurant, you quickly realize that even if you fill up every night, and even if you charge $19 for an appetizer and $3.95 for a coke, your profits reach a natural limit, because one chef can only make so much food. So you hire another chef, and maybe open some more branches, maybe in other cities.
 当你有一家超级赚钱的餐馆的时候。你很快就会意识到。那怕你每天晚上都工作排得满满的，开胃菜都标19美元，咖啡标3.95美元，你的利润很快就会达到一个上限。一个厨师只能做这么多食物。所以你就雇另外一个厨师。并且可能在其他城市开更多的连锁店。
