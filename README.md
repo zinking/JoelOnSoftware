@@ -13,3 +13,6 @@
 
 
 [1]: http://zinking.github.io/JoelOnSoftware/
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/zinking/joelonsoftware/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
