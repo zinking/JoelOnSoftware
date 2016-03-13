@@ -10,7 +10,7 @@
 
 >Have you ever heard of SEMA ? It's a fairly esoteric system for measuring how good a software team is. No, wait! Don't follow that link! It will take you about six years just to understand that stuff. So I've come up with my own, highly irresponsible, sloppy test to rate the quality of a software team. The great part about it is that it takes about 3 minutes. With all the time you save, you can go to medical school.
 
-你听说过SEMA么？是一种非常深奥的测试软件开发团队水平的系统标准。 等等，先别点开那个链接！那可要花费你约6年的时间去理解。所以我发明了我的“高度不负责”“草率”测试来衡量软件开发团队的质量。 不过这种测试方法的好处是它只需花3分钟。省下来的那些时间，够你再去读个医学院文凭了。
+你听说过SEMA么？是一种非常深奥的测试软件开发团队水平的系统标准。 等等，先别点开那个链接！你可能要花6年的时间才能理解。所以我发明了我的“高度不负责”“草率”测试来衡量软件开发团队的质量。 不过这种测试方法的好处是它只需花3分钟。省下来的那些时间，够你再去读个医学博士了。
 
 
 
@@ -24,14 +24,14 @@ The Joel Test                                               |Joel测试
 6.	Do you have an up-to-date schedule?                     |你们有最新的日程安排么？
 7.	Do you have a spec?                                     |你们有规范么？
 8.	Do programmers have quiet working conditions?           |你们的程序员有安静的工作环境么？
-9.	Do you use the best tools money can buy?                |你们会使用能花钱买到的最好工具么？
+9.	Do you use the best tools money can buy?                |你们会花钱买最好的工具么？
 10.	Do you have testers?                                    |你们有测试人员么？
 11.	Do new candidates write code during their interview?    |你们在面试的时候会让候选人写代码么？
-12.	Do you do hallway usability testing?                    |你们有过道可用性测试么
+12.	Do you do hallway usability testing?                    |你们有走廊可用性测试么
 
 >The neat thing about The Joel Test is that it's easy to get a quick yesor no to each question. You don't have to figure out lines-of-code-per-day or average-bugs-per-inflection-point. Give your team 1 point for each "yes" answer. The bummer about The Joel Test is that you really shouldn't use it to make sure that your nuclear power plant software is safe.
 
-Joel测试的优点是每个问题很容易都能得到一个“是”或“否”的回答。你不需要去计算 每天代码行数 或者 每转折点软件错误数。每一个“是”的回答就给你的团队加一分。 Joel测试不足的是：你可不要拿它去测试你的核电反应堆控制软件是安全的。
+Joel测试的优点是每个问题很容易都能得到一个“是”或“否”的回答。你不需要去计算 `每天代码行数` 或者 `每转折点软件错误数`。每一个“是”的回答就给你的团队加一分。 Joel测试不足的是：你可不要拿它去测试你的核电反应堆控制软件是安全的。
 
 >A score of 12 is perfect, 11 is tolerable, but 10 or lower and you've got serious problems. The truth is that most software organizations are running with a score of 2 or 3, and they need serious help, because companies like Microsoft run at 12 full-time. 
 
@@ -39,7 +39,7 @@ Joel测试的优点是每个问题很容易都能得到一个“是”或“否�
 
 >Of course, these are not the only factors that determine success or failure: in particular, if you have a great software team working on a product that nobody wants, well, people aren't going to want it. And it's possible to imagine a team of "gunslingers" that doesn't do any of this stuff that still manages to produce incredible software that changes the world. But, all else being equal, if you get these 12 things right, you'll have a disciplined team that can consistently deliver.
 
-当然，这些不是衡量软件开发成功或失败的唯一因素：特别是，如果你有个很优秀的团队在开发一个没人想要的产品，恩，人们不会想要的那东西的。而且很难想象一个团队的“高手”不做任何这些条目却仍然能够设法交付能够改变世界的优秀软件。不过，不考虑其他因素，如果你把这12样事情做好了，那么你就拥有一个能够持续交付的纪律严明开发小组。
+当然，这些不是衡量软件开发成功或失败的唯一因素：特别是，如果你有个很优秀的团队在开发一个没人想要的产品，恩，人们不会想要的那东西的。而且很难想象一个团队的“高手”不做任何这些条目却仍然能够设法交付能够改变世界的优秀软件。不过，不考虑其他因素，如果你把这12样事情做好了，那么你就拥有一个能够持续交付而且纪律严明的开发小组。
 
 >###1. Do you use source control? 
 
@@ -47,7 +47,7 @@ Joel测试的优点是每个问题很容易都能得到一个“是”或“否�
 
 >I've used commercial source control packages, and I've used CVS, which is free, and let me tell you, CVS is fine. But if you don't have source control, you're going to stress out trying to get programmers to work together. Programmers have no way to know what other people did. Mistakes can't be rolled back easily. The other neat thing about source control systems is that the source code itself is checked out on every programmer's hard drive -- I've never heard of a project using source control that lost a lot of code.
 
-我使用了商业代码管理包，我使用的是CVS，免费的，而且告诉你，CVS挺好的。 但如果你不用代码管理，你要让程序员协同工作就压力山大了。 程序员无法知道其他人做了什么。 发生错误无法很容易的回滚。 代码管理的另一优点是：源代码本身是被提取到每个程序员自己的硬盘的 – 我从没听说过使用代码管理的项目丢失过一大堆的源代码。
+我用商业代码管理包，用的是CVS，免费的。而且告诉你，CVS挺好的。 但如果你不用代码管理，但是要让程序员协同工作， 那可就压力山大了。 程序员无法知道其他人做了什么， 发生错误无法很容易的回滚。 代码管理的另一优点是：源代码本身是被提取到每个程序员自己的硬盘的 – 我从没听说过使用代码管理的项目丢失过一大堆源代码。
 
 >###2. Can you make a build in one step? 
 
@@ -55,15 +55,15 @@ Joel测试的优点是每个问题很容易都能得到一个“是”或“否�
 
 >By this I mean: how many steps does it take to make a shipping build from the latest source snapshot? On good teams, there's a single script you can run that does a full checkout from scratch, rebuilds every line of code, makes the EXEs, in all their various versions, languages, and #ifdef combinations, creates the installation package, and creates the final media -- CDROM layout, download website, whatever.
 
-我这么说的意思是：你们从最新大代码映像构建出一个能发布的编译版本要花多少步？ 在好的团队里，会有一个你能运行的脚本，从头开始完整的检出代码，重新编译每一行代码，生成EXE文件，不管版本，语言，#ifdef预编译宏的组合是怎样。 它能生成安装包，乃至最终的媒体版本—CDROM格式，网站下载之类的。
+我这么说的意思是：从最新代码映像构建出一个能发布的编译版本要多少步？ 在好的团队里，会有一个能运行的脚本，从头开始完整的检出代码，重新编译每一行代码，生成EXE文件。 不管版本，语言，#ifdef预编译宏如何组合， 它都能生成安装包，甚至是最终的媒体版本—CDROM格式，网站下载之类的。
 
 >If the process takes any more than one step, it is prone to errors. And when you get closer to shipping, you want to have a very fast cycle of fixing the "last" bug, making the final EXEs, etc. If it takes 20 steps to compile the code, run the installation builder, etc., you're going to go crazy and you're going to make silly mistakes.
 
-如果这个过程花费超过一步，那么就容易产生错误。你越是接近发布日期，你就越想以更迅速的的周期去修正“最后”的软件错误，生成最终的可执行文件，等等。 如果要花20步才能编译代码，运行安装构建器，等等。 你就会发疯而且会犯很傻的错误。
+如果这个过程花超过一步，那么就容易产生错误。越是接近发布日期，就越想以更迅速的的周期去修正“最后”的软件错误，生成最终的可执行文件，等等。 如果要花20步才能编译代码，运行安装构建器等等。 你就会发疯然后会犯很傻的错误。
 
 >For this very reason, the last company I worked at switched from WISE to InstallShield: we required that the installation process be able to run, from a script, automatically, overnight, using the NT scheduler, and WISE couldn't run from the scheduler overnight, so we threw it out. (The kind folks at WISE assure me that their latest version does support nightly builds.)
 
-因为这个原因，我工作的上家公司从WISE转到了InstallShield:因为我们要求整个安装过程要能使用NT任务调度在晚上自动的从脚本运行，而WISE不能在晚上以计划任务运行，我们就把它给抛弃了。（WISE公司的家伙们向我保证了他们最新的版本确实支持隔夜自动构建）
+因为这个原因，我工作的上家公司从WISE转到了InstallShield:因为我们要求整个安装过程要能使用NT任务调度在晚上自动的从脚本运行，而WISE不能在晚上以计划任务运行，我们就把它给抛弃了。（不过WISE公司的家伙们向我保证了他们最新的版本确实支持隔夜自动构建）
 
 >###3. Do you make daily builds? 
 
@@ -71,11 +71,11 @@ Joel测试的优点是每个问题很容易都能得到一个“是”或“否�
 
 >When you're using source control, sometimes one programmer accidentally checks in something that breaks the build. For example, they've added a new source file, and everything compiles fine on their machine, but they forgot to add the source file to the code repository. So they lock their machine and go home, oblivious and happy. But nobody else can work, so they have to go home too, unhappy.
 
-当你在使用源代码管理的时候，有时候一个程序员意外的提交了会导致项目编译构建失败的代码。例如，他们新加了一个源文件，所有东西在他们自己的机器上是能够正确构建的，但是他们忘了把这个源文件提交到代码库了。他们没注意就锁定自己的机器高高兴兴回家去了。但其他人都不能工作了，所以他们也得回家了，不过是不高兴地。
+在使用源代码管理工具的时候，有时候一个程序员意外的提交了会导致项目编译构建失败的代码。例如，他们新加了一个源文件，所有代码在他们自己机器上是能够正确构建的，但是他们忘了把这个源文件提交到代码库了。没注意就锁定自己的机器然后高高兴兴回家去了。但其他人都不能工作了，所以他们也得回家了，不过是不高兴地。
 
 >Breaking the build is so bad (and so common) that it helps to make daily builds, to insure that no breakage goes unnoticed. On large teams, one good way to insure that breakages are fixed right away is to do the daily build every afternoon at, say, lunchtime. Everyone does as many checkins as possible before lunch. When they come back, the build is done. If it worked, great! Everybody checks out the latest version of the source and goes on working. If the build failed, you fix it, but everybody can keep on working with the pre-build, unbroken version of the source.
 
-打破系统正确编译构建的影响是如此之坏（并且很常见），这使得必须创建每天的版本构建来保证没有一次这样的中断会被忽略掉。在大的团队里，一个有效的保证这种中断马上被修正的方法是在每天中午的时候进行日常的版本构建，每个人在饭前都尽可能多的提交自己的工作。当他们吃饭回来，版本构建已经完成，如果构建成功，那太好了！每个人都把代码更新到最新的版本并继续工作。如果版本构建失败了，你就得修正它，但每个人都一个用前一个成功的未被打破的构建继续工作。
+打破系统正确编译构建的影响是如此之坏（并且很常见），这使得必须创建每天的版本构建来保证没有一次这样的中断会被忽略掉。在大的团队里，一个有效的保证这种中断马上被修正的方法是在每天中午的时候进行日常的版本构建，每个人在饭前都尽可能多的提交自己的工作。当他们吃饭回来，版本构建已经完成，如果构建成功，那太好了！每个人都把代码更新到最新的版本并继续工作。如果版本构建失败了，就得修正它，但每个人都应该用前一个成功的未被打破的构建继续工作。
 
 >On the Excel team we had a rule that whoever broke the build, as their "punishment", was responsible for babysitting the builds until someone else broke it. This was a good incentive not to break the build, and a good way to rotate everyone through the build process so that everyone learned how it worked. 
 
@@ -131,15 +131,15 @@ Joel测试的优点是每个问题很容易都能得到一个“是”或“否�
 
 >The very first version of Microsoft Word for Windows was considered a "death march" project. It took forever. It kept slipping. The whole team was working ridiculous hours, the project was delayed again, and again, and again, and the stress was incredible. When the dang thing finally shipped, years late, Microsoft sent the whole team off to Cancun for a vacation, then sat down for some serious soul-searching.
 
-Windows上word的第一个版本被视为是一个“进军死亡”的项目。 花了无限长时间，不断跳票。 整个团队工作时间长的出奇， 项目被一拖再拖，压力无比巨大。几年后， 这个悬着的产品最终被发布的时候，微软把真那个团队送到了坎昆去度假，他们在那儿停下来做些很严肃的“灵魂搜寻（灵修）”活动。
+Windows上word的第一个版本被视为是一个“死亡行军”的项目。 花了无限长时间，不断跳票。 整个团队工作时间长的出奇， 项目被一拖再拖，压力无比巨大。几年后， 这个悬着的产品最终被发布的时候，微软把整个团队送到了坎昆去度假，他们在那儿停下来做些很严肃的“灵修”活动。
 
 >What they realized was that the project managers had been so insistent on keeping to the "schedule" that programmers simply rushed through the coding process, writing extremely bad code, because the bug fixing phase was not a part of the formal schedule. There was no attempt to keep the bug-count down. Quite the opposite. The story goes that one programmer, who had to write the code to calculate the height of a line of text, simply wrote "return 12;" and waited for the bug report to come in about how his function is not always correct. The schedule was merely a checklist of features waiting to be turned into bugs. In the post-mortem, this was referred to as "infinite defects methodology".
 
-他们后来意识到项目经理是在管理项目的时候行为是如此的不一致，以至于程序员匆匆的结束了编码过程， 写出了及其糟糕的代码，因为修正软件错误不是正式项目安排的一部分。 并没有尝试去降低软件错误数量，相反的，据说有个程序员要编写代码来计算行的高度，简单的写了“return 12；”然后等着软件错误报告进来告诉他这个函数不总是正确。 所谓的进度也不过就是一堆等着变成软件错误的功能列表。 在事后的备忘录中，这被称为“无限软件错误开发方法”。
+他们后来意识到项目经理是在管理项目的时候行为是如此的不一致，以至于程序员匆匆的结束了编码过程， 写出了及其糟糕的代码。因为修正软件错误不是正式项目安排的一部分， 并没有尝试去降低软件错误数量。相反的，据说有个程序员要编写代码来计算行的高度，简单的写了“return 12；”然后等着软件错误报告进来告诉他这个函数不总是正确。 所谓的进度也不过就是一堆等着变成软件错误的功能列表。 在事后的备忘录中，这被称为“无限软件错误开发方法”。
 
 >To correct the problem, Microsoft universally adopted something called a "zero defects methodology". Many of the programmers in the company giggled, since it sounded like management thought they could reduce the bug count by executive fiat. Actually, "zero defects" meant that at any given time, the highest priority is to eliminate bugs beforewriting any new code. Here's why. 
 
-为了纠正这个问题，微软在全球采用了一种叫做“零缺陷开放方法”。公司很多的程序员偷笑，因为听起来管理层认为他们能够通过执行命令来减少软件错误数量。 实际上，“0缺陷”意味着在任何时候，最优先的始终是消减软件错误，在写任何新的代码之前。 这就是为什么。
+为了纠正这个问题，微软在全球采用了一种叫做“零缺陷开放方法”。公司很多程序员偷笑，因为听起来管理层认为他们能够通过执行命令来减少软件错误数量。 实际上，“0缺陷”意味着在任何时候，最优先的始终是消减软件错误，在写任何新的代码之前。 这就是为什么。
 
 >In general, the longer you wait before fixing a bug, the costlier (in time and money) it is to fix.
 
@@ -183,7 +183,7 @@ Windows上word的第一个版本被视为是一个“进军死亡”的项目。
 
 >Which brings us to schedules. If your code is at all important to the business, there are lots of reasons why it's important to the business to know when the code is going to be done. Programmers are notoriously crabby about making schedules. "It will be done when it's done!" they scream at the business people.
 
-这就提到了日程安排，如果你们的代码对于业务很重要，为什么让业务部门知道代码时候能够完成很重要就有很多答案了，程序员做日程安排是出了名的差。“做好的时候就好了啊”他们总会对业务部门的人这样吼道。
+这就提到了日程安排，如果代码对于业务很重要，让业务部门知道代码时候能够完成就至关重要了。程序员做日程安排是出了名的差。“做好的时候就好了啊”，他们总会对业务部门的人这样叫道。
 
 >Unfortunately, that just doesn't cut it. There are too many planning decisions that the business needs to make well in advance of shipping the code: demos, trade shows, advertising, etc. And the only way to do this is to have a schedule, and to keep it up to date.
 
@@ -213,7 +213,7 @@ Windows上word的第一个版本被视为是一个“进军死亡”的项目。
 
 >My pet theory is that this problem can be fixed by teaching programmers to be less reluctant writers by sending them off to takean intensive course in writing. Another solution is to hire smart program managers who produce the written spec. In either case, you should enforce the simple rule "no code without spec".
 
-在设计阶段，如果你发现问题，你可以很容易的编辑几行文字就解决这个问题。 一旦代码写完了，要解决问题的大家就高了无数倍，无论是从情感角度出发（人们讨厌舍弃写完的代码）还是从时间角度，因此实际上修正问题的时候还有一种抵制性。非软件规范构建出的软件通常会设计的不好而且进度失去控制。这似乎是网景公司曾经遇到过的问题，前4个发布已经进展得一团糟的时候，管理层愚蠢的决定扔掉所有的代码重头开始。然后Mozilla重新完整的犯了这个错误，创建了一个失去控制的怪物，花了数年将其推进到Alpha发布阶段。我的简单观点是这个问题可以通过将程序员送去参加高强度的写作训练使他们不那么不愿意写作而得以解决。另一个解决方案是雇佣聪明的项目经理来编写规范。不管哪一种方法，你必须确保这个简单的规定“没有规范，不写代码”
+在设计阶段，如果你发现问题，你可以很容易的编辑几行文字就解决这个问题。 一旦代码写完了，无论是从情感角度出发（人们讨厌舍弃写完的代码）还是从时间角度，要解决问题的代价就高了无数倍，因此实际上修正问题的时候还有一种抵触。非软件规范构建出的软件通常会设计的不好而且进度失去控制。这似乎是网景公司曾经遇到过的问题，前4个发布已经进展得一团糟的时候，管理层愚蠢的决定扔掉所有的代码重头开始。然后Mozilla重新完整的犯了这个错误，创建了一个失去控制的怪物，花了数年将其推进到Alpha发布阶段。我的简单观点是这个问题可以通过将程序员送去参加高强度的写作训练使他们不那么不愿意写作而得以解决。另一个解决方案是雇佣聪明的项目经理来编写规范。不管哪一种方法，你必须确保这个简单的规定“没有规范，不写代码”
 
 >Learn all about writing specs by reading my 4-part series.
 
@@ -233,19 +233,19 @@ Windows上word的第一个版本被视为是一个“进军死亡”的项目。
 
 >The trouble is, getting into "the zone" is not easy. When you try to measure it, it looks like it takes an average of 15 minutes to start working at maximum productivity. Sometimes, if you're tired or have already done a lot of creative work that day, you just can't get into the zone and you spend the rest of your work day fiddling around, reading the web, playing Tetris.
 
-问题是，要进入这种“状态”可不容易。 如果你尝试衡量它，看起来像是要达到最佳工作状态平均要花15分钟。 有时，如果你已经很累活着你已经进行了大量的创作性劳动，你就无法再进入那种状态，剩下的工作日你就会：到处闲逛，上网，玩俄罗斯方块等等。
+问题是，要进入这种“状态”可不容易。 如果你尝试衡量它，看起来像是要达到最佳工作状态平均要花15分钟。 有时，如果你已经很累或者你已经进行了大量的创作性劳动，你就无法再进入那种状态，剩下的工作日你就会：到处闲逛，上网，玩俄罗斯方块等等。
 
 >The other trouble is that it's so easy to get knocked out of the zone. Noise, phone calls, going out for lunch, having to drive 5 minutes to Starbucks for coffee, and interruptions by coworkers -- especiallyinterruptions by coworkers -- all knock you out of the zone. If a coworker asks you a question, causing a 1 minute interruption, but this knocks you out of the zone badly enough that it takes you half an hour to get productive again, your overall productivity is in serious trouble. If you're in a noisy bullpen environment like the type that caffeinated dotcoms love to create, with marketing guys screaming on the phone next to programmers, your productivity will plunge as knowledge workers get interrupted time after time and never get into the zone.
 
-另一个问题是，要脱离这种状态是如此容易。 噪音，电话，出去吃饭，要开5分钟车去星巴克喝咖啡，来自其他同事的打扰 – 特别是来自同事的打扰 – 所有这些都能把你拖出状态区。 如果你同事问了你一个问题，1分钟的间断， 但是这是如此严重的扰乱了你的状态，以至于你要重新回到状态要花半个小时， 这样你的整体工作效率就非常堪忧了。如果你在工作在那种咖啡因.COM 创业人员喜欢创建的那种格子式的工作空间里，程序员旁边的销售人员在电话里大声吼叫，你的工作效率就会急剧下降因为你时不时的就会被打断，永远无法进入状态。
+另一个问题是，要脱离这种状态是如此容易。 噪音，电话，出去吃饭，要开5分钟车去星巴克喝咖啡，来自其他同事的打扰 – 特别是来自同事的打扰 – 所有这些都能把你拖出状态区。 如果你同事问了你一个问题，1分钟的间断， 但是这是如此严重的扰乱了你的状态，以至于你要重新回到状态要花半个小时， 这样你的整体工作效率就非常堪忧了。如果你工作在那种咖啡因.COM 创业人员喜欢创建的那种格子式的工作空间里，程序员旁边的销售人员在电话里大声吼叫，你的工作效率就会急剧下降。因为你时不时的就会被打断，永远无法进入状态。
 
 >With programmers, it's especially hard. Productivity depends on being able to juggle a lot of little details in short term memory all at once. Any kind of interruption can cause these details to come crashing down. When you resume work, you can't remember any of the details (like local variable names you were using, or where you were up to in implementing that search algorithm) and you have to keep looking these things up, which slows you down a lot until you get back up to speed.
 
-对程序员来说，这特别困难。效率受制于一次性你在记忆中处理一大堆小细节的能力。 任何中断都可能导致这些小细节的丢失。 当你回到工作中来的时候，你无法想起一些细节（例如你正在使用的局部变量的名字，或者你在实现一个搜索算法的时候已经进行到什么地步了） 然后你就必须不停的去查找这些东西， 这就会急速降低你的处理速度知道你重新回到状态上来。
+对程序员来说，这特别困难。效率受制于一次性你在记忆中处理一大堆小细节的能力。 任何中断都可能导致这些小细节的丢失。 当你回到工作中来的时候，你无法想起一些细节（例如你正在使用的局部变量的名字，或者你在实现一个搜索算法的时候已经进行到什么地步了） 然后你就必须不停的去查找这些东西， 这就会急速降低你的处理速度直到你重新回到状态上来。
 
 >Here's the simple algebra. Let's say (as the evidence seems to suggest) that if we interrupt a programmer, even for a minute, we're really blowing away 15 minutes of productivity. For this example, lets put two programmers, Jeff and Mutt, in open cubicles next to each other in a standard Dilbert veal-fattening farm. Mutt can't remember the name of the Unicode version of the strcpy function. He could look it up, which takes 30 seconds, or he could ask Jeff, which takes 15 seconds. Since he's sitting right next to Jeff, he asks Jeff. Jeff gets distracted and loses 15 minutes of productivity (to save Mutt 15 seconds).
 
-这里有个简单的代数运算。让我们假定（有证据表明）如果我们打断了一个程序员，哪怕只有一分钟，我们就毁掉了15分钟的工作效率。在这个例子里，我们假设与两个程序员，Jeff和Mutt，相邻地坐在“标准呆伯特小牛育肥农场”的格子间里。Mutt记不起strcpy函数的Unicode版本函数了，他可以查一下的，大约要花30秒钟，或者他可以问一下Jeff，大约要花15秒钟，因为他就坐在Jeff旁边，所以他就问了Jeff，Jeff分了下心然后就丢失了15分钟能够的工作效率（以换取Mutt的15秒）。
+简单的算术：假定（实际有证据表明）如果我们打断了一个程序员，哪怕只有一分钟，我们就毁掉了15分钟的工作效率。在这个例子里，我们假设与两个程序员，Jeff和Mutt，相邻地坐在“标准呆伯特小牛育肥农场”的格子间里。Mutt记不起strcpy函数的Unicode版本函数了，他可以查一下的，大约要花30秒钟。或者他可以问一下Jeff，大约要花15秒钟，因为他就坐在Jeff旁边，所以他就问了Jeff，Jeff分了下心然后就丢失了15分钟能够的工作效率（以换取Mutt的15秒）。
 
 >Now let's move them into separate offices with walls and doors. Now when Mutt can't remember the name of that function, he could look it up, which still takes 30 seconds, or he could ask Jeff, which now takes 45 seconds and involves standing up (not an easy task given the average physical fitness of programmers!). So he looks it up. So now Mutt loses 30 seconds of productivity, but we save 15 minutes for Jeff. Ahhh!
 
@@ -257,11 +257,11 @@ Windows上word的第一个版本被视为是一个“进军死亡”的项目。
 
 >Writing code in a compiled language is one of the last things that still can't be done instantly on a garden variety home computer. If your compilation process takes more than a few seconds, getting the latest and greatest computer is going to save you time. If compiling takes even 15 seconds, programmers will get bored while the compiler runs and switch over to reading The Onion, which will suck them in and kill hours of productivity.
 
-写编译型语言代码是做后几项无法在一系列各种家用计算机上无法完成的最后几项事情之一。如果编译过程不止花费几秒钟，那么购买最新最强大的计算机还是能节省你时间的。如果编译过程花了15秒钟，那么编译运行的时候程序员就会不耐烦，跑去读其他东西，这会把他们拖出效率去浪费他们甚至是几个小时的工作效率。
+编写编译型代码是在一系列各种家用计算机上无法完成的几项事情之一。只要编译过程花费超过几秒钟，那么购买最新最强大的计算机还是能节省你时间的。要是编译过程花了15秒钟，那么编译运行的时候程序员就会不耐烦，跑去读其他东西，这会把他们拖出效率区，浪费他们甚至是几个小时工作效率。
 
 >Debugging GUI code with a single monitor system is painful if not impossible. If you're writing GUI code, two monitors will make things much easier.
 
-使用单显示器系统调试界面代码并不是不可能但是是非常痛苦的事情。如果你在编写界面代码，双显示器会让事情简单很多。
+使用单显示器系统调试界面代码并虽然并非不可但是是件非常痛苦的事情。要是你在编写界面代码，双显示器会让事情简单很多。
 
 >Most programmers eventually have to manipulate bitmaps for icons or toolbars, and most programmers don't have a good bitmap editor available. Trying to use Microsoft Paint to manipulate bitmaps is a joke, but that's what most programmers have to do.
 
@@ -273,11 +273,11 @@ Windows上word的第一个版本被视为是一个“进军死亡”的项目。
 
 >Top notch development teams don't torture their programmers. Even minor frustrations caused by using underpowered tools add up, making programmers grumpy and unhappy. And a grumpy programmer is an unproductive programmer.
 
-顶尖的开发团队不会折磨他们的程序员，哪怕是使用不够强大的工具带来的小小挫折感都能够使程序员暴躁，不高兴。而一个暴躁的程序员肯定是一个没什么效率的程序员。
+顶尖的开发团队不会折腾他们的程序员，哪怕是使用不够强大的工具带来的小小挫折感都能够使程序员闷闷不乐。而一个郁闷的程序员肯定是一个没什么效率的程序员。
 
 >To add to all this... programmers are easily bribed by giving them the coolest, latest stuff. This is a far cheaper way to get them to work for you than actually paying competitive salaries!
 
-最后再说一点：通过给程序员使用最新最酷的东西很容易就能贿赂程序员，比起有竞争力的薪水这是个便宜的多的方法来说服让程序员为你工作。
+最后再说一点：通过给程序员使用最新最酷的东西很容易就能贿赂程序员，比起有竞争力的薪水这是个便宜的多的方法来说服程序员为你工作。
 
 >###10. Do you have testers? 
 
@@ -285,7 +285,7 @@ Windows上word的第一个版本被视为是一个“进军死亡”的项目。
 
 >If your team doesn't have dedicated testers, at least one for every two or three programmers, you are either shipping buggy products, or you're wasting money by having $100/hour programmers do work that can be done by $30/hour testers. Skimping on testers is such an outrageous false economy that I'm simply blown away that more people don't recognize it.
 
-如果你的团队没有专门的测试人员，至少每两到三人配备一个测试人员，要么你们将交付有错误的产品，要么你们就要花费$100/小时让程序员给你做测试，而不是花费$30/小时让测试人员来做测试。 克扣测试人员配备是我难以理解的伪经济学，而更多的人则是没有意识到这个问题。
+如果你的团队没有专门的测试人员，至少每两到三人配备一个测试人员，要么你们将交付有错误的产品，要么你们就要花费$100/小时让程序员给你做测试，而不是花费$30/小时让测试人员来做测试。 克扣测试人员配备是我难以理解的伪经济学，而更多的人则没有意识到这个问题。
 
 >Read Top Five (Wrong) Reasons You Don't Have Testers, an article I wrote about this subject.
 
